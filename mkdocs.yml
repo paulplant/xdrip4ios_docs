@@ -2,6 +2,7 @@ site_name: xDrip4iOS
 theme: readthedocs
 extra_css:
     - css/admonitions.css
+    - css/extra.css
 markdown_extensions:
     - admonition
     - toc:
@@ -13,10 +14,10 @@ pages:
     - 'Install from Testflight': 'install/testflight.md'
     - 'Build from Source': 'install/build.md'
 - Connect:
-    - 'Introduction': 'connect/index.md'
+    - 'Initial Configuration': 'connect/index.md'
     - 'Connect to CGM as a Master': 'connect/cgm.md'
     - 'Connect to Nightscout as a Follower': 'connect/follower.md'
-    - 'Connect to M5Stack': 'connect/m5stack.md'
+    - 'Connect to M5Stack/M5StickC': 'connect/m5stack.md'
 - Configure/Use:
     - 'General': 'configure/index.md'
     - 'Alarms': 'configure/alarms.md'
@@ -24,9 +25,10 @@ pages:
     - 'Calibration': 'configure/calibrate.md'
     - 'Apple Watch': 'configure/applewatch.md'
     - 'Other Smartwatches': 'configure/smartwatches.md'
+    - 'Nightscout Integration': 'configure/nightscout.md'
     - 'FreeAPS Integration': 'configure/freeaps.md'
 - Use and Troubleshoot:
     - 'Troubleshooting': 'troubleshooting/index.md'
     - 'Cannot Connect?': 'troubleshooting/connection_troubles.md'
     - 'Disconnections?': 'troubleshooting/disconnections.md'
-    - 'How to send an Issue Report': 'troubleshooting/issue_report.md'
+    - 'How to Report Errors': 'troubleshooting/reporting.md'
