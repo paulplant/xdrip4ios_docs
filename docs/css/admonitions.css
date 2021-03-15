@@ -51,15 +51,15 @@
 }
 .admonition.info {
   border-left-color: #5bc0de;
-  background-color: #BAEAF8;
-  border-bottom-color: #BAEAF8;
-  border-right-color: #BAEAF8;
-  border-top-color: #BAEAF8;
+  background-color: #d1f2fc;
+  border-bottom-color: #d1f2fc;
+  border-right-color: #d1f2fc;
+  border-top-color: #d1f2fc;
 }
 .admonition.info .admonition-title {
   color: #1993B6;
-  background-color: #BAEAF8;
-  border-bottom-color: #BAEAF8;
+  background-color: #d1f2fc;
+  border-bottom-color: #d1f2fc;
 }
 
 /* Title */

@@ -37,16 +37,18 @@ TestFlight will open and you will see the xDrip4iOS icon. Click the Install butt
 Now you're all done, you can start to [connect](../connect/index.md) xDrip4iOS to your CGM source.
 </br>
 
-## Fixing Age Restrictions
+## Age Restrictions
 
-If you need to setup xDrip4iOS for a child under 13, you must change the iPhone account to an adult (i.e. your own) in order to install Testflight and join the xDrip4iOS test. Once installed, return to the child's account.
+If you need to setup xDrip4iOS for a Apple ID used by a child under 13, you must change the iPhone account to an adult's Apple ID (i.e. your own) in order to install Testflight and join the xDrip4iOS test.
+
+Once xDrip4iOS is installed, you can remove your Apple ID and add your child's account again.
 </br>
 
 ## Install Previous Builds
 
 If you are having problems with the latest version, then you can always try and revert back to a previous version.
 
-To do this, open Testflight, click on Previous Builds and Install the one that you know was working. 
+To do this, open Testflight, click on **Previous Builds** and **Install** the one that you know was working. 
 
 If you have to do this, make sure you [let us know about the problem](../troubleshoot/reporting_issues.md)!
 

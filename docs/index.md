@@ -8,10 +8,10 @@ It is able to connect as a **Master** device to various types of Continuous Gluc
 
 It is also able to act as a **Follower** device and pull remote CGM data from [Nightscout](https://nightscout.github.io/). This is a great way for parents and care-givers to be able to remotely monitor loved ones and patients.
 
-!!!warning "IMPORTANT"
+!!!info "FOR XDRIP+ USERS"
     Please note that **xDrip4iOS** is not related to the **xDrip+** project for **Android**.
 
-    For help and information about the **xDrip+** project for Android, please see [here](https://github.com/NightscoutFoundation/xDrip)
+    For help and information about the **xDrip+** project for Android, please see [here](https://github.com/NightscoutFoundation/xDrip) or look on [Facebook](https://www.facebook.com/groups/xDripG5).
 
 ## What Do I Need?
 
@@ -60,18 +60,19 @@ MiaoMiao 2          | All  | **<span style="color:green">Yes</span>**
 | GNSentry                                            | -                                | **<span style="color:red">No</span>**                             |
 
 </br> 
- **(1)** The MiaoMiao firmware can be upgraded, if needed, using Tomato App </br>
+ *(1)* The MiaoMiao firmware can be upgraded, if needed, using Tomato App </br>
 </br>
 
 **FreeStyle Libre 1/2 US *(10 day, 14 day & Libre 2)*, Libre Pro**
 
 - **<span style="color:red">Not compatible</span>**
-</br>
+</br> </br> 
 
 ### Dexcom 
 **Dexcom G4/G5**
 
 - **<span style="color:green">Fully compatible</span>**
+</br> 
 
 **Dexcom G6**
 
@@ -85,9 +86,9 @@ MiaoMiao 2          | All  | **<span style="color:green">Yes</span>**
 </br>
 
 
-## Who Can Help Me?
+## Where Can I Get Help?
 
-The main public support group for all support is the xDrip4iOS group on [Facebook](https://www.facebook.com/groups/853994615056838).
+The main public support group for all support is the xDrip4iOS group on [Facebook](https://www.facebook.com/groups/853994615056838). Feel free to join the group, ask questions and participate.
 
 You can also find all source code, technical information and register issues in our  [Github repository](https://github.com/JohanDegraeve/xdripswift).
 </br>
