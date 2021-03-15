@@ -1,15 +1,15 @@
 th {
   background-color: lightblue;
-  padding-top:10px;
-  padding-bottom:10px;
+  padding-top:8px;
+  padding-bottom:8px;
   padding-right:20px;  
   padding-left:8px; 
 }
 
 td {
   background-color:#F6F6F6;
-  padding-top:10px;
-  padding-bottom:10px;
+  padding-top:5px;
+  padding-bottom:5px;
   padding-right:20px;  
   padding-left:8px; 
 }

@@ -31,50 +31,56 @@ That's it. Nothing else is needed.
     
     **You must understand that you take full responsibility for using this software and you agree to do so at your own risk.**
 
-## Compatible Sensors/Transmitters
+## Compatible Sensors
 
 xDrip4iOS is compatible with many FreeStyle Libre sensors and also certain Dexcom sensors/transmitters.
 
-#### FreeStyle Libre 1 *(European 14 day)*
+### Freestyle Libre 
+**FreeStyle Libre 1 *(European 14 day)***
 
 Transmitter Type &nbsp;&nbsp;&nbsp;| Firmware Version &nbsp;&nbsp;&nbsp;| Compatible? &nbsp;&nbsp;&nbsp;
 :-------------- |:------------- | :-----------
-MiaoMiao 1        | All | **Yes** 
-MiaoMiao 2          | All  | **Yes** 
- Bubble | All | **Yes** 
- Atom | All | **Yes** 
- GNSentry | All | **Yes** 
+MiaoMiao 1        | All | **<span style="color:green">Yes</span>** 
+MiaoMiao 2          | All  | **<span style="color:green">Yes</span>** 
+ Bubble | All | **<span style="color:green">Yes</span>** 
+ Atom | All | **<span style="color:green">Yes</span>** 
+ GNSentry | All | **<span style="color:green">Yes</span>** 
 
 </br>
-#### FreeStyle Libre 2 *(European 14 day)*
+
+**FreeStyle Libre 2 *(European 14 day)***
 
 | Transmitter Type &nbsp;&nbsp;&nbsp;                 | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :-------------------------------------------------- | :---------------------------------- | :----------------------------- |
-| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **Yes**                        |
-| MiaoMiao 1                                          | >= 39                           | **Yes** *(1)*             |
-| MiaoMiao 2                                          | >= 7                             | **Yes** *(1)*          |
-| Bubble                                              | All                              | **Yes**                        |
-| Atom                                                | All                              | **Yes**                        |
-| GNSentry                                            | -                                | No                             |
+| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:green">Yes</span>**                        |
+| MiaoMiao 1                                          | >= 39                           | **<span style="color:green">Yes</span>** *(1)*             |
+| MiaoMiao 2                                          | >= 7                             | **<span style="color:green">Yes</span>** *(1)*          |
+| Bubble                                              | All                              | **<span style="color:green">Yes</span>**                        |
+| Atom                                                | All                              | **<span style="color:green">Yes</span>**                        |
+| GNSentry                                            | -                                | **<span style="color:red">No</span>**                             |
 
 </br> 
  **(1)** The MiaoMiao firmware can be upgraded, if needed, using Tomato App </br>
 </br>
 
-#### FreeStyle Libre 1/2 US *(10 day, 14 day & Libre 2)*, Libre Pro 
-- Not compatible
+**FreeStyle Libre 1/2 US *(10 day, 14 day & Libre 2)*, Libre Pro**
 
-#### Dexcom G4/G5
-- FullyCompatible
+- **<span style="color:red">Not compatible</span>**
+</br>
 
-#### Dexcom G6
+### Dexcom 
+**Dexcom G4/G5**
+
+- **<span style="color:green">Fully compatible</span>**
+
+**Dexcom G6**
 
 | Transmitter Serial Number &nbsp;&nbsp;&nbsp;        | Firmware/ Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :-------------------------------------------------- | :----------------------------------- | :----------------------------- |
-| 80xxxx                                              | All                                  | **Yes**                        |
-| 81**x**xxx (3rd digit is usually a **number**)      | <= x.x.x.25                          | **Yes**                        |
-| 81**x**xxx (3rd digit is usually a **letter**)      | \>= x.x.x.27                         | No                             |
-| 8Gxxxx, 8Hxxxx, 8Jxxxx ... etc *("Firefly")* &nbsp; | -                                    | No                             |
+| 80xxxx                                              | All                                  | **<span style="color:green">Yes</span>**                        |
+| 81**x**xxx (3rd digit is usually a **number**)      | <= x.x.x.25                          | **<span style="color:green">Yes</span>**                        |
+| 81**x**xxx (3rd digit is usually a **letter**)      | \>= x.x.x.27                         | **<span style="color:red">No</span>**                              |
+| 8Gxxxx, 8Hxxxx, 8Jxxxx ... etc *("Firefly")* &nbsp; | -                                    | **<span style="color:red">No</span>**                             |
 
 </br>
 
