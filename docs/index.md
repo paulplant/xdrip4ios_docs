@@ -13,6 +13,7 @@ It is also able to act as a **Follower** device and pull remote CGM data from [N
 
     For help and information about the **xDrip+** project for Android, please see [here](https://github.com/NightscoutFoundation/xDrip) or look on [Facebook](https://www.facebook.com/groups/xDripG5).
 
+___
 ## What Do I Need?
 
 To run xDrip4iOS you will firstly need an iPhone 7 or newer running minimum iOS13.
@@ -31,28 +32,29 @@ That's it. Nothing else is needed.
     
     **You must understand that you take full responsibility for using this software and you agree to do so at your own risk.**
 
+___
 ## Compatible Sensors
 
-xDrip4iOS is compatible with many FreeStyle Libre sensors and also certain Dexcom sensors/transmitters.
+xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/transmitters.
 
-### Freestyle Libre 
-**FreeStyle Libre 1 *(European 14 day)***
+### Libre 
+**Libre 1 *(European 14 day)***
 
-Transmitter Type &nbsp;&nbsp;&nbsp;| Firmware Version &nbsp;&nbsp;&nbsp;| Compatible? &nbsp;&nbsp;&nbsp;
-:-------------- |:------------- | :-----------
-MiaoMiao 1        | All | **<span style="color:green">Yes</span>** 
-MiaoMiao 2          | All  | **<span style="color:green">Yes</span>** 
- Bubble | All | **<span style="color:green">Yes</span>** 
- Atom | All | **<span style="color:green">Yes</span>** 
- GNSentry | All | **<span style="color:green">Yes</span>** 
+| Transmitter Type &nbsp;&nbsp;&nbsp;| Firmware Version &nbsp;&nbsp;&nbsp;| Compatible? &nbsp;&nbsp;&nbsp; |
+|:-------------- |:------------- | :----------- |
+| MiaoMiao 1        | All | **<span style="color:green">Yes</span>** |
+| MiaoMiao 2          | All  | **<span style="color:green">Yes</span>** | 
+ Bubble | All | **<span style="color:green">Yes</span>** |
+ Atom | All | **<span style="color:green">Yes</span>** |
+ GNSentry | All | **<span style="color:green">Yes</span>** |
 
 </br>
 
-**FreeStyle Libre 2 *(European 14 day)***
+**Libre 2 *(European 14 day)***
 
-| Transmitter Type &nbsp;&nbsp;&nbsp;                 | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
-| :-------------------------------------------------- | :---------------------------------- | :----------------------------- |
-| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:green">Yes</span>**                        |
+| Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
+| :------------------------------------ | :---------------------------------- | :----------------------------- |
+| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:green">Yes</span>** |
 | MiaoMiao 1                                          | >= 39                           | **<span style="color:green">Yes</span>** *(1)*             |
 | MiaoMiao 2                                          | >= 7                             | **<span style="color:green">Yes</span>** *(1)*          |
 | Bubble                                              | All                              | **<span style="color:green">Yes</span>**                        |
@@ -63,7 +65,7 @@ MiaoMiao 2          | All  | **<span style="color:green">Yes</span>**
  *(1)* The MiaoMiao firmware can be upgraded, if needed, using Tomato App </br>
 </br>
 
-**FreeStyle Libre 1/2 US *(10 day, 14 day & Libre 2)*, Libre Pro**
+**Libre 1/2 US, Libre Pro**
 
 - **<span style="color:red">Not compatible</span>**
 </br> </br> 
@@ -84,8 +86,7 @@ MiaoMiao 2          | All  | **<span style="color:green">Yes</span>**
 | 8Gxxxx, 8Hxxxx, 8Jxxxx ... etc *("Firefly")* &nbsp; | -                                    | **<span style="color:red">No</span>**                             |
 
 </br>
-
-
+___
 ## Where Can I Get Help?
 
 The main public support group for all support is the xDrip4iOS group on [Facebook](https://www.facebook.com/groups/853994615056838). Feel free to join the group, ask questions and participate.
@@ -93,16 +94,18 @@ The main public support group for all support is the xDrip4iOS group on [Faceboo
 You can also find all source code, technical information and register issues in our  [Github repository](https://github.com/JohanDegraeve/xdripswift).
 </br>
 
+___
 ## Development History
 
 This project was started back in 2017 by **Johan Degraeve**. His idea was to port the original xDrip algorithm to iOS.
 
 The original project he created was called **xdripiosreader**. This was later re-written in 2019 into native swift code and renamed to **xdripswift**.
 
-In 2020, the user interface was overhauled, more features were added and the project was renamed to **xDrip4iOS**.
+In 2020, the user interface was overhauled, more features were added and the user-facing project was renamed to **xDrip4iOS**.
 
-## How Can I Help?
+___
+## How Can I Get Involved?
 
-You'll find the source repository for this documentation [here](https://github.com/xxxxxxx). Please don't hesitate to improve or correct anything you see and create a pull request!
+You'll find the Github source repository for this documentation [here](https://github.com/paulplant/xdrip4ios_docs). Please don't hesitate to improve or correct anything you see and create a pull request!
 
-You're also welcome to contribute or report any error, unclear explanation, typo, broken link etc by going to Github and opening an [issue](https://github.com/JohanDegraeve/xdripswift/issues).
+You're also welcome to contribute or report any documentationerror, unclear explanation, typo, broken link etc by going to Github and opening an [issue](https://github.com/paulplant/xdrip4ios_docs/issues).

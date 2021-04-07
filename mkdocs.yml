@@ -17,7 +17,7 @@ pages:
     - 'Initial Configuration': 'connect/index.md'
     - 'Connect to CGM as a Master': 'connect/cgm.md'
     - 'Connect to Nightscout as a Follower': 'connect/follower.md'
-    - 'Connect to M5Stack/M5StickC': 'connect/m5stack.md'
+    - 'Connect to M5Stack/M5StickC': 'connect/devices.md'
 - Configure/Use:
     - 'General': 'configure/index.md'
     - 'Alarms': 'configure/alarms.md'

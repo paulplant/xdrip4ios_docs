@@ -7,7 +7,11 @@ There are two main ways to get xDrip4iOS on your iPhone:
 - Install from Testflight
 - Build and install from source code.
 
-The first option is easy for everybody. The second option is more difficult, but it allows you to modify the code and install custom versions as required.
+The first option is easy for everybody. 
+
+The second option is more complex and needs a Mac and some knowledge/experience, but it allows you to modify the code and install custom versions as required.
+
+Anybody who is using xDrip4iOS for looping should always build from source.
 </br>
 
 ## 1. Install Testflight
@@ -19,7 +23,7 @@ Once installed, open the Testflight app, press **Continue** at the start screen,
 
 ## 2. Join the Beta Test
 
-Once you have Testflight correctly installed, you can now join the xDrip4iOS Beta test. Click on the below link using your iPhone:
+Once you have Testflight correctly installed, you can now join the xDrip4iOS Beta test. Click on the below link **using your iPhone**:
 
 [Link for **xDrip4iOS Testflight Beta Invitation**](https://testflight.apple.com/join/dn0HF8ky)
 
@@ -39,7 +43,7 @@ Now you're all done, you can start to [connect](../connect/index.md) xDrip4iOS t
 
 ## Age Restrictions
 
-If you need to setup xDrip4iOS for a Apple ID used by a child under 13, you must change the iPhone account to an adult's Apple ID (i.e. your own) in order to install Testflight and join the xDrip4iOS test.
+If you need to setup xDrip4iOS for an Apple ID registered to a child under 13, you must change the iPhone account to an adult's Apple ID (i.e. your own) in order to install Testflight and join the xDrip4iOS test.
 
 Once xDrip4iOS is installed, you can remove your Apple ID and add your child's account again.
 </br>
