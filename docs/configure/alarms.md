@@ -1,6 +1,6 @@
 # Setting Alarms
 
-xDrip4iOS, the same as all other CGM apps, is able to alert you to certain events but sounding an alarm on your iPhone.
+xDrip4iOS, the same as all other CGM apps, is able to alert you to certain events by sounding an alarm on your iPhone.
 
 Alarms can be configured to happen for different reasons, such as:
 
