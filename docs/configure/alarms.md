@@ -49,10 +49,38 @@ We can set the following parameters for an Alarm Type:
 | **Snooze Via Notification**      | If enabled, any notification will give us the option to "snooze" the alarm during *x* minutes  |
 | **Default Snooze Time**      | Once we snooze an alarm, how many minutes should it wait before alarming again?  |
 
+<br />
+
 Once you've finished editing your Alarm Type, make sure you hit **Done** in the top-right corner. If you don't, you'll lose your changes.
+
 ___
 ## Alarms
+
+Now that we have an Alarm Type configured, we can configure the individual Alarms.
+
+An alarm will be triggered when the something meets a defined condition. For example you could define an alarm to be triggered:
+
+- "Sound an **Low Alarm** whenever my blood glucose drops **below 60mg/dl**"
+
+- "Sound a **High Alarm** if my blood glucose goes **over 250mg/dl**"
+
+- "Sound a **Low Alarm** When my blood glucose drops **below 80mg/dl** during the night"
+
+- "Sound an alarm if xDrip4iOS has been **Missing Readings** from my sensor in the last **30 minutes**"
+
+- "Sound an alarm **72 hours** after I last calibrated my sensor to **remind me to calibrate** again"
+
+In the above examples, you will see two things. The **Alarms** that are available and the **conditions** that we can set for them to be triggered.
+
 
 
 ___
 ## Volume Tests
+
+They alarm will sound with the volume that your iPhone is set to.
+
+This could mean that you have the volume turned right down and would then not hear anything.
+
+In order to be able to quickly test what volume your alarms will sound at (before going to bed for example), you can click the Volume Test buttons. A sample Alarm sound will play and you can adjust the volume as required using the volume keys on the side of your iPhone. Then just click OK to stop the alarm.
+
+If you have alarms that use the Override Mute function, then when silent mode is activated (the small switch above the volume keys), there will be a different volume level used. To test/set this level, click the Volume Test (Override Mute) button, set the level and click OK.

@@ -28,7 +28,7 @@ pages:
     - 'Nightscout Integration': 'configure/nightscout.md'
     - 'FreeAPS Integration': 'configure/freeaps.md'
 - Use and Troubleshoot:
-    - 'Troubleshooting': 'troubleshooting/index.md'
-    - 'Cannot Connect?': 'troubleshooting/connection_troubles.md'
-    - 'Disconnections?': 'troubleshooting/disconnections.md'
-    - 'How to Report Errors': 'troubleshooting/reporting.md'
+    - 'Troubleshooting': 'troubleshoot/index.md'
+    - 'Cannot Connect?': 'troubleshoot/connection_troubles.md'
+    - 'Disconnections?': 'troubleshoot/disconnections.md'
+    - 'How to Report Errors': 'troubleshoot/reporting.md'
