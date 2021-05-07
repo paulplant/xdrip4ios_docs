@@ -1,5 +1,13 @@
-<img src="..\..\img\xdrip4ios.jpg" />
+# Calibration of xDrip4iOS
 
-# Page under construction...
+## Why Calibrate?
+
+Placeholder
+___
+
+## Calibration Best Practices
+
+Placeholder
+ 
 
 </br>

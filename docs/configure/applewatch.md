@@ -1,5 +1,4 @@
-<img src="..\..\img\xdrip4ios.jpg" />
+# Connecting to an Apple Watch
 
-# Page under construction...
 
 </br>

@@ -42,12 +42,12 @@ We can set the following parameters for an Alarm Type:
 | Option &nbsp;&nbsp;&nbsp;| Description &nbsp;&nbsp;&nbsp; |
 |:-------------- |:------------- |
 | **Enabled**      | If enabled, any alarm assigned with this alarm type will alert us. If not enabled, the assigned alarm will not trigger  |
-| **Name**      | Enter a name here such as "Loud", "Urgent" or "Quiet"  |
+| **Name**      | Enter a name here such as "Loud", "Urgent" or "Quiet". The name can be anything you chose  |
 | **Vibrate**      | If enabled, the alarm will vibrate the phone  | 
 | **Sound**      | Choose the sound that you want to play when the alarm is triggered  |
-| **Override Mute**     | If enabled, the alarm will sound even if we have the phone in "Silent Mode"  |
-| **Snooze Via Notification**      | If enabled, any notification will give us the option to "snooze" the alarm during *x* minutes  |
-| **Default Snooze Time**      | Once we snooze an alarm, how many minutes should it wait before alarming again?  |
+| **Override Mute**     | If enabled, the alarm will sound even if the phone is in "Silent Mode"  |
+| **Snooze Via Notification**      | If enabled, any notification will contain the option to "snooze" the alarm during *x* minutes  |
+| **Default Snooze Time**      | Once an alarm is snoozed, how many minutes should it wait before alarming again?  |
 
 <br />
 

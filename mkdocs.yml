@@ -10,6 +10,7 @@ markdown_extensions:
 
 pages:
 - 'Introduction': 'index.md'
+- 'FAQ': 'faq.md'
 - Install: 
     - 'Install from Testflight': 'install/testflight.md'
     - 'Build from Source': 'install/build.md'
@@ -21,12 +22,12 @@ pages:
 - Configure/Use:
     - 'General': 'configure/index.md'
     - 'Alarms': 'configure/alarms.md'
-    - 'Data Sharing': 'configure/share.md'
     - 'Calibration': 'configure/calibrate.md'
+    - 'Algorithm': 'configure/algorithm.md'
     - 'Apple Watch': 'configure/applewatch.md'
     - 'Other Smartwatches': 'configure/smartwatches.md'
-    - 'Nightscout Integration': 'configure/nightscout.md'
-    - 'FreeAPS Integration': 'configure/freeaps.md'
+    - 'FreeAPS (Loop) Integration': 'configure/freeaps.md'
+    - 'FreeAPS X (OpenAPS) Integration': 'configure/freeapsx.md'
 - Use and Troubleshoot:
     - 'Troubleshooting': 'troubleshoot/index.md'
     - 'Cannot Connect?': 'troubleshoot/connection_troubles.md'
