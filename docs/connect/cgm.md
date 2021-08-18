@@ -1,10 +1,14 @@
 # Connect to a CGM as a Master Device
 
+<img src="../../img/Bluetooth.png" style="zoom:75%;" />
+
 In this page, we will go through the method of connecting a CGM system to xDrip4iOS so that this receives real-time CGM data from your sensor.
 
 Firstly, make sure you have [correctly set](index.md) xDrip4iOS as a Master device and you have chosen the units that your BG should be displayed in.
 
 **Do not** try and connect to your CGM transmitter from the Bluetooth menu on your iPhone. You must **only** connect from within the xDrip4iOS app.
+
+<img src="../iOS_BT.png" style="zoom:50%;" />
 
 Before continuing, please check the [compatibility tables](../index.md#compatible-sensors) to make sure that your CGM system is compatible.
 <br />
@@ -29,23 +33,47 @@ To avoid problems with the LibreLink app "stealing" the bluetooth connection fro
 
 Go to your iPhone Settings and scroll down to LibreLink. Select the app and in the options, disable Bluetooth.
 
+<img src="../LL.png" style="zoom:50%;" />
+
 **Connect to the Libre 2**
 
 Go to the **Bluetooth** tab and choose **CGM** as your **Device Type**, press **OK**.
 
 If you already have a previous CGM added, you will get a warning to say that you can only have one CGM device added at a time. Please delete the previous device and try again.
 
+<img src="../CGMDelete.png" style="zoom:58%;" />
+
 In the Transmitter Types, select **Libre 2** and click OK.
+
+<img src="../BluetoothAdd.png" style="zoom:50%;" />
+
+<img src="../SelectCGM.png" style="zoom:50%;" />
+
+<img src="../L2Direct.png" style="zoom:50%;" />
+
+<img src="../L2DirectScan.png" style="zoom:50%;" />
 
 You will get a message to Scan your sensor with the NFC antenna of your iPhone. You should scan the sensor as you would to start/read the sensor using the Libre app.
 
+<img src="../L2DirectReady.png" style="zoom:50%;" />
+
 If you get an error message, please repeat adding the Libre 2 and scan again.
 
-Once your sensor has been scanned successfully, you will see a message asking you to keep xDrip4iOS open whilst the bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and walk away.
+<img src="../L2DirectComplete.png" style="zoom:50%;" />
+
+Once your sensor has been scanned successfully, you will see a message asking you to keep xDrip4iOS open whilst the Bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and walk away.
+
+<img src="../L2DirectRead.png" style="zoom:50%;" />
 
 When xDrip4iOS finds your sensor, you will get a message saying the the sensor has been connected correctly. Click **OK**.
 
+<img src="../L2DirectConnected.png" style="zoom:56%;" />
+
+<img src="../L2DirectConnectedOk.png" style="zoom:56%;" />
+
 You can now choose if you want to use the **Libre** algorithm or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+
+<img src="../LibreAlgo.png" style="zoom:56%;" />
 
 Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings from your sensor.
 
@@ -72,13 +100,19 @@ If **yes**, then let's continue.
 
 To to the **Bluetooth** tab and click the **+** button to add a new Device Type.
 
+<img src="../BluetoothAdd.png" style="zoom:50%;" />
+
 Select **CGM** and then chose your transmitter type from the list.
+
+<img src="../SelectCGM.png" style="zoom:50%;" />
 
 You will get a message asking you to keep xDrip4iOS open whilst the bluetooth connection is made with your transmitter. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and walk away. Do it now.
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
 You can now choose if you want to use the **Libre** algorithm or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+
+<img src="../LibreAlgo.png" style="zoom:56%;" />
 
 Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings from your sensor.
 
