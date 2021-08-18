@@ -1,6 +1,6 @@
 # Connect a Data Source
 
-<img src="../../img/Settings.png" style="zoom:75%;" />
+<img src="../img/Settings.png" style="zoom:75%;" />
 
 </br>
 
