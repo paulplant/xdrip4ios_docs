@@ -61,9 +61,9 @@ If you get an error message, please repeat adding the Libre 2 and scan again.
 
 <img src="../L2DirectComplete.png" style="zoom:50%;" />
 
-Once your sensor has been scanned successfully, you will see a message asking you to keep xDrip4iOS open whilst the Bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and walk away.
+Once your sensor has been scanned successfully, you will see a message asking you to keep xDrip4iOS open whilst the Bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and keep it close to you.
 
-<img src="../L2DirectRead.png" style="zoom:50%;" />
+<img src="../Scanning.png" style="zoom:50%;" />
 
 When xDrip4iOS finds your sensor, you will get a message saying the the sensor has been connected correctly. Click **OK**.
 
@@ -106,7 +106,9 @@ Select **CGM** and then chose your transmitter type from the list.
 
 <img src="../SelectCGM.png" style="zoom:50%;" />
 
-You will get a message asking you to keep xDrip4iOS open whilst the bluetooth connection is made with your transmitter. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and walk away. Do it now.
+You will get a message asking you to keep xDrip4iOS open whilst the bluetooth connection is made with your transmitter. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and keep it close to you. Do it now.
+
+<img src="../Scanning.png" style="zoom:50%;" />
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
@@ -129,27 +131,45 @@ ___
 !!!info "Compatibility"
     This method is valid for all Dexcom G4/G5 systems and also G6 up until "Firefly" transmitters. See [here](../index.md#dexcom) for more information.
 
-
 !!!info "Dexcom G4"
     To connect to a Dexcom G4 transmitter, a xDrip Wireless Bridge (Wixel) is needed. More information is available [here](http://www.nightscout.info/wiki/welcome/nightscout-with-xdrip-wireless-bridge)
 
 To to the **Bluetooth** tab and click the **+** button to add a new Device Type.
 
+<img src="../BluetoothAdd.png" style="zoom:50%;" />
+
 Select **CGM** and then chose your Dexcom system (G4/G5/G6) from the list.
+
+<img src="../SelectCGM.png" style="zoom:50%;" />
 
 You will be prompted to input your **Transmitter ID** (for example: *80H9W4*).
 
-Once you have entered your Transmitter ID, you will see a message asking you to keep xDrip4iOS open whilst the transmitter is found and a bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and walk away.
+<img src="../DexSN.png" style="zoom:50%;" />
+
+Once you have entered your Transmitter ID, you will see a message asking you to keep xDrip4iOS open whilst the transmitter is found and a bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and stay close to it.
+
+<img src="../Scanning.png" style="zoom:50%;" />
+
+<img src="../DexScan.png" style="zoom:50%;" />
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
 ### Dexcom Share Upload
 
-You can configure xDrip4iOS to upload your sensor data to your **Dexcom Share** account. This way, your healthcare team can still access your data and it will be available to view inside  **Clarity** for reporting.
+You can configure xDrip4iOS to upload your sensor data to your **Dexcom Share** account.
+
+!!!info "Dexcom Share"
+    You must have an invitation sent (even to yourself) by the Dexcom app to enable sharing. You can then use xDrip4iOS to share your data with any follower app (official and third party).
+
+This will not upload your data inside **Clarity** as only the Dexcom app can do this.
 
 In the Settings Menu, enable **Upload to Dexcom Share**, enter you account/user name and password.
 
 If you are inside the US, then also select the **Use Dexcom US Servers** option. If you are anywhere else (Canada, Europe etc, **do not** select this option)
+
+<img src="../DexShare.png" style="zoom:50%;" />
+
+</br>
 
 ___
 ## Nightscout Upload

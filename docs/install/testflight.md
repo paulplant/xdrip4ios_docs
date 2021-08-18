@@ -74,5 +74,11 @@ If you are having problems with the latest version, then you can always try and 
 
 To do this, open Testflight, click on **Previous Builds** and **Install** the one that you know was working. 
 
+<img src="../TestFlight08.png" style="zoom:50%;" />
+
+<img src="../TestFlight09.png" style="zoom:50%;" />
+
+<img src="../TestFlight10.png" style="zoom:50%;" />
+
 If you have to do this, make sure you [let us know about the problem](../troubleshoot/reporting_issues.md)!
 
