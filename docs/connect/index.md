@@ -20,7 +20,7 @@ Put simply, a **Master** is usually used by the actual person who is wearing the
 
 Once we've decided whether we want to use xDrip4iOS as a **Master** or a **Follower** device, we need to click on the Settings tab and chose the mode we want. Click on the option if you need to change it between the two modes.
 
-<img src="MasterFollower.png" style="zoom:50%;" />
+<img src="Master.png" style="zoom:50%;" />
 
 </br>
 

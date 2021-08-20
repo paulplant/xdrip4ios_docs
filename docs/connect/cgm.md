@@ -161,13 +161,15 @@ You can configure xDrip4iOS to upload your sensor data to your **Dexcom Share** 
 !!!info "Dexcom Share"
     You must have an invitation sent (even to yourself) by the Dexcom app to enable sharing. You can then use xDrip4iOS to share your data with any follower app (official and third party).
 
-This will not upload your data inside **Clarity** as only the Dexcom app can do this.
-
 In the Settings Menu, enable **Upload to Dexcom Share**, enter you account/user name and password.
+
+<img src="../../img/Settings.png" style="zoom:50%;" />
+
+<img src="../DexShare.png" style="zoom:50%;" />
 
 If you are inside the US, then also select the **Use Dexcom US Servers** option. If you are anywhere else (Canada, Europe etc, **do not** select this option)
 
-<img src="../DexShare.png" style="zoom:50%;" />
+This will not upload your data inside **Clarity** as only the Dexcom app can do this.
 
 </br>
 
@@ -190,6 +192,10 @@ Please see the [main Nightscout documentation site](https://nightscout.github.io
 Further help and support can be found in the CGM In The Cloud Facebook group [here](https://www.facebook.com/groups/cgminthecloud/)
 
 In order to connect xDrip4iOS to Nightscout and upload your CGM data, in the Settings Menu, select **Enable Nightscout**.
+
+<img src="../../img/Settings.png" style="zoom:50%;" />
+
+<img src="../Nightscout.png" style="zoom:50%;" />
 
 You should enter your Nightscout **URL** as per the service you are using.
 
