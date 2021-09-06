@@ -61,7 +61,7 @@ ___
 
 xDrip4iOS allows us to show the main graph in two ways:
 
-### Dynamic y-axis
+### Dynamic y axis
 
 This option (used by default) will use our objective values to define the values shown on the vertical axis. It will also show guidelines across the graph so that we can easily see how close we are to each limit.
 

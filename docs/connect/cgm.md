@@ -87,7 +87,7 @@ ___
 ### Libre 1/2 with a Transmitter
 
 !!!info "Compatibility"
-    This method is only valid for the European Libre 1 or Libre 2 sensors with a [compatible transmitter](../index.md#compatible-sensors) such as MiaoMiao, Bubble, Droplet...
+    This method is only valid for the Libre 1 or European Libre 2 sensors with a [compatible transmitter](../index.md#compatible-sensors) such as MiaoMiao, Bubble, Droplet...
 
 
 Firstly make sure that your Libre sensor is started and working. If you scan the sensor with the LibreLink app, **can you see the values/graph**?
@@ -202,9 +202,8 @@ You should enter your Nightscout **URL** as per the service you are using.
 Examples (change *mynightscout* and *12345* as necessary)
 
 - **Heroku/Mongo**: ```https://mynightscout.herokuapp.com```
-- **ns.10be.de** *(1)*: ```https://mynightscout.10be.de```  Port: ```12345```
-- **T1Pal**: ```https://mynightscout.t1pal.com```
-
+- **ns.10be.de** *(1)*: ```https://mynightscout.10be.de```  Port: ```12345``` (*Note: you'll find your URL, port and API secret in the* **Server** *page*)
+- **T1Pal**: ```https://mynightscout.t1pal.com``` (*Note: you'll find your Uploader Url and Api Secret in [the Uploaders page](https://www.t1pal.com/account/sites/my#Uploaders)*)
 
 
 

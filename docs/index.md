@@ -75,10 +75,11 @@ xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/
 </br> </br> 
 
 ### Dexcom 
-**Dexcom G4/G5**
+**Dexcom G4** *(1)* **/ G5**
 
 - **<span style="color:green">Fully compatible</span>**
-</br> 
+
+  *(1)* With a bridge/Wixel device.</br> 
 
 **Dexcom G6**
 
