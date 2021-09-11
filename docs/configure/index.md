@@ -10,26 +10,24 @@ ___
 
 You can enable xDrip4iOS to show a notification on your phone every 5 minutes. This will appear as per the Notification settings for xDrip4iOS in your iPhone settings. You can enable banner notifications and chose if it will show on the lock-screen or not.
 
-<img src="SettingsNotification.png" style="zoom:50%;" />
+<img src="img/SettingsNotification.png" style="zoom:50%;" />
 
-<img src="Notification.png" style="zoom:50%;" />
+<img src="img/Notification.png" style="zoom:50%;" />
 
 You can also enable the App Badge which will should your current BG value on the app icon.
 
-<img src="SettingsNotifBadge.png" style="zoom:50%;" />
+<img src="img/SettingsNotifBadge.png" style="zoom:50%;" />
 
-<img src="Badge.png" style="zoom:54%;" />
+<img src="img/Badge.png" style="zoom:54%;" />
 
 !!!info "Decimals"
     When using mmol/l the App Badge will display decimals only if Show BG in Notifications is enabled.
 
-<img src="SettingsBadge.png" style="zoom:50%;" />
+<img src="img/SettingsBadge.png" style="zoom:50%;" />
 
 If you disable Notifications you can use multiply by 10 to show the full value (you'll need to mentally add the decimal point. 94 means 9.4 mmol/l).
 
-<img src="SettingsBadge10.png" style="zoom:50%;" />
-
-</br>
+<img src="img/SettingsBadge10.png" style="zoom:50%;" />
 
 ___
 ## Objective Values
@@ -52,9 +50,8 @@ When our glucose values are below our Low value or above our High value, but sti
 
 When our glucose values are above or below our "Urgent" values, then we consider them to need urgent attention and we will see them in <span style="color:red">**red**</span>. We set these limits using the ``Urgent Low Value`` and ``Urgent High Value`` We should take evaluate the situation and decide if we must take action (eat glucose or take insulin).
 
-<img src="Values.png" style="zoom:50%;" />
+<img src="img/Values.png" style="zoom:50%;" />
 
-</br>
 
 ___
 ## Graph Options
@@ -63,9 +60,9 @@ xDrip4iOS allows us to show the main graph in two ways:
 
 ### Dynamic y axis
 
-This option (used by default) will use our objective values to define the values shown on the vertical axis. It will also show guidelines across the graph so that we can easily see how close we are to each limit.
+This option (used by default) will use our **objective values** (see above) to define the values shown on the vertical axis. It will also show guidelines across the graph so that we can easily see how close we are to each limit.
 
-<img src="yDynamic.png" style="zoom:50%;" />
+<img src="img/yDynamic.png" style="zoom:50%;" />
 
 The graph will automatically scale if our blood glucose value is above our Urgent High value.
 
@@ -73,6 +70,6 @@ The graph will automatically scale if our blood glucose value is above our Urgen
 
 By deselecting the dynamic graph option, xDrip4iOS will just show a default grid system.
 
-<img src="yStatic.png" style="zoom:50%;" />
+<img src="img/yStatic.png" style="zoom:50%;" />
 
 Again, the graph will scale as needed.

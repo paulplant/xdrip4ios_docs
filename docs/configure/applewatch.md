@@ -5,20 +5,20 @@
 
 Into your iPhone calendar create a new calendar and call it xDrip.
 
-<img src="../Calendar1.png" style="zoom:50%;" />
+<img src="../img/Calendar1.png" style="zoom:50%;" />
 
-<img src="../Calendar2.png" style="zoom:50%;" />
+<img src="../img/Calendar2.png" style="zoom:50%;" />
 
-<img src="../Calendar3.png" style="zoom:50%;" />
+<img src="../img/Calendar3.png" style="zoom:50%;" />
 
 In xDrip4iOS settings create an event in calendar to allow sync’ing with your Apple Watch. Authorize xDrip.
 
-<img src="../AppleWatch1.png" style="zoom:50%;" />
+<img src="../img/AppleWatch1.png" style="zoom:50%;" />
 
 Select the xDrip calendar.
 
-<img src="../AppleWatch2.png" style="zoom:50%;" />
+<img src="../img/AppleWatch2.png" style="zoom:50%;" />
 
 You can then customize the indications.
 
-<img src="../AppleWatch3.png" style="zoom:50%;" />
+<img src="../img/AppleWatch3.png" style="zoom:50%;" />

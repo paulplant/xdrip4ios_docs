@@ -22,13 +22,11 @@ pages:
 - Configure/Using:
     - 'General': 'configure/index.md'
     - 'Alarms': 'configure/alarms.md'
-    - 'Algorithm': 'configure/algorithm.md'
-    - 'Calibration': 'configure/calibration.md'
-    - 'Statistics': 'configure/statistics.md'
+    - 'Calibration': 'configure/calibrate.md'
+#    - 'Statistics': 'configure/statistics.md'
     - 'Apple Watch': 'configure/applewatch.md'
     - 'Other Smartwatches': 'configure/smartwatches.md'
 - Advanced:
-    - 'Calibration Best Practices': 'advanced/calibration_best_practices.md'
     - 'FreeAPS (Loop) Integration': 'advanced/freeaps.md'
     - 'FreeAPS X (OpenAPS) Integration': 'advanced/freeapsx.md'
 - Troubleshoot:

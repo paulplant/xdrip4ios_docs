@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="http://127.0.0.1:8000/configure/alarms/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Alarms - xDrip4iOS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/admonitions.css" rel="stylesheet" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Alarms";
+    var mkdocs_page_input_path = "configure/alarms.md";
+    var mkdocs_page_url = "/configure/alarms/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> xDrip4iOS</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../faq/">FAQ</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Install</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install/testflight/">Install from Testflight</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../install/build/">Build from Source</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Connect</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../connect/">Initial Configuration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../connect/cgm/">Connect to CGM as a Master</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../connect/follower/">Connect to Nightscout as a Follower</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../connect/devices/">Connect to M5Stack/M5StickC</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Configure/Using</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../">General</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Alarms</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#alarm-types">Alarm Types</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alarms">Alarms</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#volume-tests">Volume Tests</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../algorithm/">Algorithm</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../calibrate/">Calibration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../applewatch/">Apple Watch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../smartwatches/">Other Smartwatches</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../advanced/freeaps/">FreeAPS (Loop) Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../advanced/freeapsx/">FreeAPS X (OpenAPS) Integration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshoot</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshoot/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../troubleshoot/connection_troubles.md">Cannot Connect?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshoot/disconnections/">Disconnections?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../troubleshoot/reporting.md">How to Report Errors</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">xDrip4iOS</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Configure/Using &raquo;</li>
+        
+      
+    
+    <li>Alarms</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="setting-alarms">Setting Alarms<a class="headerlink" href="#setting-alarms" title="Permanent link">⌁</a></h1>
+<p><img src="../../img/Settings.png" style="zoom:75%;" /></p>
+<p>xDrip4iOS, the same as all other CGM apps, is able to alert you to certain events by sounding an alarm on your iPhone.</p>
+<p>Alarms can be configured to happen for different reasons, such as:</p>
+<ul>
+<li>your blood glucose is getting too low</li>
+<li>your blood glucose is dropping very quickly</li>
+<li>your blood glucose is getting high</li>
+<li>you need to put in your initial calibration</li>
+<li>you have stopped getting readings from your sensor</li>
+</ul>
+<p>We can also use alarms to function as <strong>reminders</strong> to remind us to:</p>
+<ul>
+<li>calibrate our sensor every <em>x</em> days</li>
+<li>stop and buy bread on the way home from work</li>
+<li>not really, but we're glad you're reading everything</li>
+</ul>
+<p>There are <strong>two steps</strong> to configure an alarm in xDrip4iOS.</p>
+<ol>
+<li>We define the <strong>Alarm Types</strong>. These are different types of alarms that we can use to alert us to different types of events.
+    <br /><br /></li>
+<li>We define the <strong>Alarms</strong> themselves. These trigger different types of alarm based upon certain events that happen or conditions that we decide.</li>
+</ol>
+<p><img src="../img/Alarm+Type.png" style="zoom:50%;" /></p>
+<div class="admonition info">
+<p class="admonition-title">Before we continue...</p>
+<p>Let's just quickly get the concept clear. Take a deep breath and repeat after me...</p>
+<ul>
+<li>An <strong>Alarm Type</strong> can be used for many different <strong>Alarms</strong>.<br /><br /></li>
+<li>Any <strong>Alarm</strong> can only use one <strong>Alarm Type</strong> at a time.</li>
+</ul>
+</div>
+<p></br></p>
+<hr />
+<h2 id="alarm-types">Alarm Types<a class="headerlink" href="#alarm-types" title="Permanent link">⌁</a></h2>
+<p>Here we will define the different types of alarm that we will hear. </p>
+<p><img src="../img/AlarmType.png" style="zoom:50%;" /></p>
+<p>If you go into Alarm Types, you will see that we there is a default Alarm Type set. We called it "Default"... because we're original and clever. You can modify this, or you can create your own Alarm Type.</p>
+<div class="admonition info">
+<p class="admonition-title">Suggestion</p>
+<p>You might find it easier to leave the default alarm disabled and create your own alarm type. Then you will use your custom alarm type only for the alarms you want to use. </p>
+</div>
+<p>If you want to add a new/custom Alarm Type, click the + button top right and configure it.</p>
+<p>We can set the following parameters for an Alarm Type:</p>
+<p><img src="../img/EditAlarmType.png" style="zoom:50%;" /></p>
+<table>
+<thead>
+<tr>
+<th align="left">Option &nbsp;&nbsp;&nbsp;</th>
+<th align="left">Description &nbsp;&nbsp;&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Enabled</strong></td>
+<td align="left">If enabled, any alarm assigned with this alarm type will alert us. If not enabled, the assigned alarm will not trigger</td>
+</tr>
+<tr>
+<td align="left"><strong>Name</strong></td>
+<td align="left">Enter a name here such as "Loud", "Urgent" or "Quiet". The name can be anything you chose</td>
+</tr>
+<tr>
+<td align="left"><strong>Vibrate</strong></td>
+<td align="left">If enabled, the alarm will vibrate the phone</td>
+</tr>
+<tr>
+<td align="left"><strong>Sound</strong></td>
+<td align="left">Choose the sound that you want to play when the alarm is triggered</td>
+</tr>
+<tr>
+<td align="left"><strong>Override Mute</strong></td>
+<td align="left">If enabled, the alarm will sound even if the phone is in "Silent Mode" (<strong><em>except for Missed Readings</em></strong>)</td>
+</tr>
+<tr>
+<td align="left"><strong>Snooze Via Notification</strong></td>
+<td align="left">If enabled, any notification will contain the option to "snooze" the alarm during <em>x</em> minutes</td>
+</tr>
+<tr>
+<td align="left"><strong>Default Snooze Time</strong></td>
+<td align="left">Once an alarm is snoozed, how many minutes should it wait before alarming again?</td>
+</tr>
+</tbody>
+</table>
+<p>Once you've finished editing your Alarm Type, make sure you hit <strong>Done</strong> in the top-right corner. If you don't, you'll lose your changes.</p>
+<p>Eventually, you will have different alarm types, matching your needs in terms of sounds and vibrations.
+Having several types will help you selectively disable some of them if necessary.</p>
+<p><img src="../img/AlarmTypes.png" style="zoom:50%;" /></p>
+<p></br></p>
+<hr />
+<h2 id="alarms">Alarms<a class="headerlink" href="#alarms" title="Permanent link">⌁</a></h2>
+<p>Now that we have an Alarm Type configured, we can configure the individual Alarms.</p>
+<p><img src="../img/EditAlarm.png" style="zoom:50%;" /></p>
+<p>An alarm will be triggered when the something meets a defined condition. For example you could define an alarm to be triggered:</p>
+<ul>
+<li>
+<p>"Sound an <strong>Low Alarm</strong> whenever my blood glucose drops <strong>below 60mg/dl</strong>"</p>
+</li>
+<li>
+<p>"Sound a <strong>High Alarm</strong> if my blood glucose goes <strong>over 250mg/dl</strong>"</p>
+</li>
+<li>
+<p>"Sound a <strong>Low Alarm</strong> When my blood glucose drops <strong>below 80mg/dl</strong> during the night"</p>
+</li>
+<li>
+<p>"Sound an alarm if xDrip4iOS has been <strong>Missing Readings</strong> from my sensor in the last <strong>30 minutes</strong>"</p>
+</li>
+<li>
+<p>"Sound an alarm <strong>72 hours</strong> after I last calibrated my sensor to <strong>remind me to calibrate</strong> again"</p>
+</li>
+</ul>
+<p>In the above examples, you will see two things. The <strong>Alarms</strong> that are available and the <strong>conditions</strong> that we can set for them to be triggered.</p>
+<p>Level alarms will trigger above (high) or below (low) a certain blood glucose level.</p>
+<p><img src="../img/LevelAlarm.png" style="zoom:50%;" /></p>
+<p>Rise and drop alarms will trigger if blood glucose change over the last 2 readings (or 4 minutes for Libre 2 direct) is larger than the level you've setup.</p>
+<p><img src="../img/DeltaAlarm.png" style="zoom:50%;" /></p>
+<p>Missed readings will trigger after the defined time without receiving any blood glucose data.</p>
+<p><img src="../img/MissReadAlarm.png" style="zoom:50%;" /></p>
+<p>Calibrations needed alarm will trigger after the defined amount of hours since last calibration was entered in xDrip4iOS.</p>
+<p><img src="../img/CalibAlarm.png" style="zoom:50%;" /></p>
+<p>Battery alarm will trigger when the battery falls below the defined percentage.</p>
+<p><img src="../img/BatteryAlarm.png" style="zoom:50%;" /></p>
+<p></br></p>
+<p>Each alarm will use one of the alarm types you created, select the one you'd like to be used for this alarm event:</p>
+<p><img src="../img/SelectAlarmType.png" style="zoom:50%;" /></p>
+<p></br></p>
+<p>You can also change the alarm type and threshold for certain moments of the day, for this you need to add alarms like in this example:</p>
+<p>Say you'd like to have your Low Alarm to trigger only at night time (22:00 to 7:00). Select your low alarm and add an alarm with the + icon top right.</p>
+<p><img src="../img/AlarmTime1.png" style="zoom:50%;" /></p>
+<p>On the new Low Alarm, change Apply from to 7:00 and Ok.</p>
+<p><img src="../img/AlarmTime2.png" style="zoom:50%;" /></p>
+<p>Set the Alarm Type and Done.
+You now have two different Low Alarms: Loud from 00:00 to 7:00 and quiet from 7:00 to 00:00.</p>
+<p><img src="../AlarmTime3.png" style="zoom:50%;" /></p>
+<p>Now select the second alarm (starting at 7:00) and repeat the sequence with a new alarm starting at 22:00, alarm type Loud. Save.
+You now have the Low Alarm trigger with the alarm type Loud from 22:00 to 7:00 and the rest of the day with Quiet.</p>
+<p><img src="../img/AlarmTime4.png" style="zoom:50%;" /></p>
+<p>You could also have modified the threshold value for different moments of the day.</p>
+<hr />
+<h2 id="volume-tests">Volume Tests<a class="headerlink" href="#volume-tests" title="Permanent link">⌁</a></h2>
+<p>They alarm will sound with the volume that your iPhone is set to.</p>
+<p>This could mean that you have the volume turned right down and would then not hear anything.</p>
+<p>In order to be able to quickly test what volume your alarms will sound at (before going to bed for example), you can click the Volume Test buttons. A sample Alarm sound will play and you can adjust the volume as required using the volume keys on the side of your iPhone. Then just click OK to stop the alarm.</p>
+<p><img src="../img/TestOvrMuteOff.png" style="zoom:60%;" /></p>
+<p>If you have alarms that use the Override Mute function, then when silent mode is activated (the small switch above the volume keys), there will be a different volume level used. To test/set this level, click the Volume Test (Override Mute) button, set the level and click OK.</p>
+<p><img src="../img/TestOvrMuteOn.png" style="zoom:60%;" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../algorithm/" class="btn btn-neutral float-right" title="Algorithm">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral" title="General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../algorithm/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+<script src="/js/livereload.js"></script><script>livereload(1250351, 1250682);</script></body>
+</html>
