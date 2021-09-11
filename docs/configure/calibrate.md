@@ -6,15 +6,17 @@ It's always recommended to take a proper finger prick test, if you have any doub
 
 ## What does "Calibration" mean?
 
-Calibration means Xdrip4iOS functionality with which user can make the blood glucose (BG) readings provided by the sensor to become more accurate before they are shown in the app.
+Calibration means a functionality in Xdrip4iOS with which user can make the blood glucose (BG) readings sent by the sensor to become more accurate before they are shown in the app to the user.
 
 ___
 
 ## Why to Calibrate?
 
-BG readings provided by your sensor are so called "raw" values and the accuracy of these raw values depend on many things. Typical variable is the time of how long the sensor has been attached to your skin; sensors are typically less accurate "right out of the box" and also 1-3 days before they expire. This is natural behaviour of sensors. Also even sensors themselves do vary: sometimes you get an accurate one which behaves nicely the whole usage period and throughout the BG range, when the other time the sensor is all the time all over the place and might even stop working before the official usage period end.
+BG readings sent by your sensor are so called "raw" values and the accuracy of these raw values depend on many things. Typical variable that has impact, is the time of how long the sensor has been attached to your skin; sensors are typically less accurate "right out of the box" and also 1-3 days before they expire. This is natural behaviour of sensors. Also even sensors themselves do vary: sometimes you get an accurate one which behaves nicely the whole usage period and throughout the BG range, when the other time the sensor is all the time all over the place and might even stop working before the official usage period end.
 
 If you find that you are not happy with the (non-calibrated) accuracy of your current sensor, the calibration methods provided by Xdrip4iOS help you to mitigate the above mentioned variables to make the BG readings to be more accurate.
+
+NOTE: No calibration can correct readings provided by a faulty sensor. If the sensor is providing erratic and highly fluctuating values, it is impossible for any application to correct these and show accurate readings to the user.
 
 ___
 
@@ -22,17 +24,17 @@ ___
 
 Xdrip4iOS application offers three different ways how the app interprets the raw BG values provided by the sensor. Each Xdrip4iOS user needs to consider that what is the best method for him/her to use.
 
-1. Use Libre algorhythm
+1. Use Libre algorithm
 2. Single-point calibration
 3. Multi-point calibration
 
-### Libre algorhythm
+### Libre algorithm
 
 WHEN TO USE THIS: Choose this method, if you have just started to use Xdrip4iOS and/or you are not (yet) familiar enough with the concept of calibration that you would like to try it out and/or you just want a simple setup and you are ok with the inaccuracies that come from this method. 
 
-Libre algorhythm is not an actual calibration method at all, but more of a basic setting in the app for those users, who don't want to spend time on thinking when or how to calibrate. For this method the app has a specific built-in algorhythm that applies a correction to the BG reading provided by the sensor and then the corrected BG reading is shown to the user. The user is not able to impact to the correction which is done by the algorhythm.
+Libre algorithm is not an actual calibration method at all, but more of a basic setting in the app for those users, who don't want to spend time on thinking when or how to calibrate. For this method the app has a specific built-in algorithm that applies a correction to the BG reading provided by the sensor and then the corrected BG reading is shown to the user. The user is not able to impact to the correction which is done by the algorithm.
 
-NOTE: Even if Xdrip4iOS says that it uses *Libre* algorhythm, there most likely are differences between the readings shown by LibreLink app and readings shown by Xdrip4iOS.
+NOTE: Even if Xdrip4iOS says that it uses *Libre* algorithm, there most likely are differences between the readings shown by LibreLink app and readings shown by Xdrip4iOS.
 
 NOTE #2: Please expect that there can be even relatively large differences between Xdrip4iOS and your actual blood glucose reading.
 
@@ -48,14 +50,14 @@ WHEN TO USE THIS: If you want the most accurate BG readings from the app and you
 
 Multi-point calibration means a way of calibration, where user can calibrate in different areas of the BG range. This means that the calibration curve can take into account the differences in the sensor raw value accuracy at low-end of BG range and in the high-end of BG range. The first calibration adjusts only the intercept of the calibration curve (please read below "What does Calibration do?") but the following calibrations after this adjust both the slope and the intercept. 
 
-In *theory* the more calibrations are added the more accurate the calibration becomes. However, in practice even just two good calibrations (one on the low-end of BG range and the other on the high-end) make the calibration very accurate.
+In *theory* the more calibrations are added the more accurate the calibration becomes. However, in practice even just two good calibrations (one on the low-end of BG range and the other on the high-end) make the calibration very accurate. This means that e.g. regular twice-a-day calibrations are not needed and actually increase the possibility that the user eventually applies a faulty calibration, which makes the whole calibration graph go bad.
 
 ___
 
 
 ## What does Calibration do?
 
-As described above, calibration is a way to reduce the inaccuracies that are coming from the sensor that you use. In practise the calibration is stored as a calibration curve in the app. This curve is used to apply a correction to the value provided by the sensor. This graph is not visible in the app, but can be described as a combination of slope and intercept.:
+As described above, calibration is a way to reduce the inaccuracies that are coming from the sensor that you use. In practise the calibration is stored as a calibration curve in the app. This curve is used to apply a correction to the value provided by the sensor. This graph is not visible in the app, but can be described as a combination of slope and intercept - it makes it easier to understand these concepts, if you remember the lessons about 1st degree equations from the time you were in school.:
 
 ### Slope
 Slope describes the steepness of the calibration curve. Slope (in this context of calibration!) can be only positive and is typically something between 0.7-1.3. Slope is a multiplier that is applied to the raw value of the sensor throughout the BG range.
@@ -67,47 +69,48 @@ EXAMPLE #1:
 Slope: 1.0
 Intercept: 0.0
 
-= No calibration. Raw value is shown as-is in the app: if sensor gives 5.0 mmol reading, the app shows 5.0 mmol reading.
+= No calibration. Raw value is shown as-is in the app: if sensor gives 5.0 mmol/l reading, the app shows 5.0 mmol/l reading.
 
 EXAMPLE #2:
 Slope: 1.0
 Intercept: 0.3
 
-= Typical example of single-point calibration, where the calibration applies a small, fixed correction over the whole BG range. Remember that intercept can also be negative. In practice 0,3 mmol is added (deducted, if negative intercept) to any sensor raw value: if sensor gives a raw value of 5.0 mmol, the app shows 5.3 mmol, if the sensor gives a raw value of 9.3 mmol, the app shows 9.6 mmol.
+= Typical example of single-point calibration, where the calibration applies a small, fixed correction over the whole BG range. Remember that intercept can also be negative. In practice 0,3 mmol/l is added (deducted, if negative intercept) to any sensor raw value: if sensor gives a raw value of 5.0 mmol/l, the app shows 5.3 mmol/l, if the sensor gives a raw value of 9.3 mmol/l, the app shows 9.6 mmol/l.
 
 EXAMPLE #3:
 Slope: 1.2
 Intercept: 0.0
 
-= Example of a calibration, where only the slope of the calibration is adjusted. In practice this type of a calibration means that throughout the BG range, a multiplier of 1.2 is applied to the raw value: if sensor gives a raw value of 5.0 mmol, the app shows 6.0 mmol (5.0 x 1.2), if the sensor gives a raw value of 9.3 mmol, the app shows 11.2 mmol (9.3 x 1.2).
+= Example of a calibration, where only the slope of the calibration is adjusted. In practice this type of a calibration means that throughout the BG range, a multiplier of 1.2 is applied to the raw value: if sensor gives a raw value of 5.0 mmol/l, the app shows 6.0 mmol/l (5.0 x 1.2), if the sensor gives a raw value of 9.3 mmol/l, the app shows 11.2 mmol/l (9.3 x 1.2).
 
 EXAMPLE #4:
 Slope: 1.2
 Intercept: 0.3
 
-= Typical example of multi-point calibration after the 2nd (or further) calibration value has been applied. This applies both add/deduct as per the intercept and also a multiplier as per the slope: if sensor gives a raw value of 5.0 mmol, the app shows 6.3 mmol (5.0 x 1.2 + 0.3), if the sensor gives a raw value of 9.3 mmol, the app shows 11.5 mmol (9.3 x 1.2 + 0.3).
+= Typical example of multi-point calibration after the 2nd (or further) calibration value has been applied. This applies both add/deduct as per the intercept and also a multiplier as per the slope: if sensor gives a raw value of 5.0 mmol/l, the app shows 6.3 mmol/l (5.0 x 1.2 + 0.3), if the sensor gives a raw value of 9.3 mmol/l, the app shows 11.5 mmol/l (9.3 x 1.2 + 0.3).
 
 ___
 
 
 ## Calibration Best Practices
 
-* While a finger prick gives you an accurate BG reading straight from your blood at that time, a sensor attached to your skin measures and estimates BG readings from interstitial fluid in your skin. When your actual BG fluctuates, these changes appear in interstitial fluid only after a delay. This delay can be anything between 5-20 mins. This means that your BG must have been steady when you take a finger prick and must continue remaining steady in the app after you have applied a calibration. Calibration makes the BG reading typically to jump up or down, but the line should remain horizontal after this. 
+* Calibrate only when your BG is steady. While a finger prick gives you an accurate BG reading straight from your blood at that time, a sensor attached to your skin measures and estimates BG readings from interstitial fluid under your skin. When your actual BG fluctuates, these changes appear in interstitial fluid only after a delay. This delay can be anything between 5-20 mins. This means that your BG must have been steady when you take a finger prick and must continue remaining steady in the app after you have applied a calibration. Calibration makes the BG reading typically to jump up or down, but the line should remain horizontal after this. 
    * You need to understand that the finger prick reading you see in BG reader, is shown in Xdrip4iOS only after the above mentioned delay. If you calibrate when your BG is steady, you know that you are giving the app a chance to calculate the best possible calibration correction. If you calibrate, when BG is not steady, you are shooting a moving target.
    * Being steady does not mean only that your actual BG is steady but that also the reading in the app is steady. Probably everyone who wears a sensor and has gone to swimming, in sauna, out in the cold, layed on a sofa pressure on sensor etc. etc. have seen that the sensor reading might suddenly rise or fall. If you calibrate when this happens, you can be certain that the applied calibration is bad and you get very inaccurate BG readings from the app.
    * Over time, you might learn to make calibrations also when your BG is not 100 % steady, e.g. *slowly* coming down. This is however not recommended for newbies due to a high probability of making an error.
 * Calibrate only when you are in range. There are two reasons to this: 
-   * 1) you should not be too interested if you are 14 or 16 mmol or if you are 2.9 or 3.1 mmol. Either or, you know that you have a hyper or a hypo and you need to take actions. At this time the BG reading in the app and its accuracy does not matter *that* much. Hence, if you can get the in-range accuracy to be good, 
-   * 2)Sensors themselves are the most accurate in range area and inaccuracies increase when outside. As we know, we want as accurate readings as possible, when calibrating, so you don't want to apply calibrations on top of inaccurate sensor readings.
-   * Of course, if the app says 3.0 mmol but your actual BG (as per a finger prick) says 4.0 (and your BG is steady!), you can calibrate. No T1D wants to hear low alarms blazing, when they are not actually hypo'ing.
-* When taking a finger prick:
-   * Use as accurate BG reader as possible
-   * Wash your hands before you take the reading
-   * Don't squeeze your fingertip to get a blood drop out
-* You might screw an earlier nice calibration with just only one bad new calibration value
-* When it comes to calibration, less is often more. You are not supposed to calibrate each and every day. If you feel like it and your BG is steady, you can do it, but it's completely fine 
-* It's more critical to be accurate in the lower-end of the scale than on the high side. So prioritize the accuracy of the low-end calibrations. A good practice is to change from old sensor to a new one, when your BG is at the low-end and steady. That way you can apply right away a good low-end calibration and be certain that at least the low alarms go off at the right time.
+   * First reason you should not be too interested if you are 14 or 16 mmol/l or if you are 2.9 or 3.1 mmol/l. Either or, you know that you have a hyper or a hypo and you need to take actions. At this time the BG reading in the app and its accuracy does not matter *that* much. Hence, if you can get the in-range accuracy to be good, 
+   * Second sensors themselves are the most accurate in range area and inaccuracies increase when outside. As we know, we want as accurate readings as possible, when calibrating, so you don't want to apply calibrations on top of inaccurate sensor readings.
+   * Of course, if the app says 3.0 mmol/l but your actual BG (as per a finger prick) says 4.0 (*and* your BG is steady!), you can calibrate. No T1D wants to hear low alarms blazing, when they are not actually hypo'ing.
+* Ensure you minimize the margin of error, when taking a finger prick:
+   * Use as accurate BG reader as possible. If you know that your sensor is inaccurate, consider updating it to a good one.
+   * Use strips that have not expired. While it's *possible* to use expired strips and get accurate readings with them as well, do you want to take the chance?
+   * Wash your hands before you take the reading. You might have some residues in your fingers, which impact the measurement - wash them off first.
+   * Don't squeeze your fingertip to get a blood drop out.
+* You might screw an earlier nice calibration with just only one bad new calibration value. So don't calibrate for the sake of the calibration itself. When it comes to calibration, less is often more. You are not supposed to calibrate each and every day. If you feel like it and your BG is steady, you can do it, but it's completely fine to calibrate even just 3-4 times during the lifespan of a sensor. Make rather one good and accurate calibration than five sketchy ones.
 * If you calibrate during the 1st day of a sensor, that same calibration is most likely not accurate on the 10th day. It's good practice to calibrate again, when you see from the app that your BG is steady.
+* It's more critical to be accurate in the lower-end of the scale than on the high side. So prioritize the accuracy of the low-end calibrations. A good practice is to change from old sensor to a new one, when your BG is at the low-end and steady. That way you can apply right away a good low-end calibration and be certain that at least the low alarms go off at the right time.
+
 
 ___
 
@@ -118,11 +121,11 @@ Alright, if you've read these instructions this far, you are ready for calibrati
 1. Select the calibration method you want to use: either "Single-point calibration" or "Multi-point calibration".
 2. On the main screen of the app, click "Calibrate"
    * If you have just connected a new sensor, the app does not allow you to calibrate right away. You need to wait until the app gets at least two BG readings from the sensor, before a calibration can be applied
-3. A pop-up opens, which asks you to enter a calibration value.
+3. A pop-up opens, which asks you to enter a calibration value. Here you enter the value from your BG reader after a finger prick.
 
-DONE! After this, the app starts to apply a correction to all the BG readings coming from the sensor. If you have a Nightscout installation
+DONE! After this, the app calculates the calibration curve as per the provided calibration value and starts to apply a correction to all the BG readings coming from the sensor. Remember to monitor the readings in the app after a calibration; if they start to go up or down within 15-20 mins, there is a chance that your BG was not actually steady at the moment of the calibration, i.e. your actual BG had already started to change, but because this change was not yet visible in the app, the calibration was not accurate. Practice makes perfect and over time you might learn to do a relatively accurate calibration, even when your BG is going *slowly* up or down, but the ground rule is: BG steady and in range. 
 
-NOTE: If you notice that the calibration that you applied was bad (for whatever reason) and made the BG readings very inaccurate, you can reset all the calibrations by stopping and starting the sensor. Unfortunately it is not possible to remove individual calibration values
+NOTE: If you notice that the calibration that you applied was bad (for whatever reason) and made the BG readings inaccurate, you can reset all the calibrations by stopping and starting the sensor. Unfortunately it is not possible to remove individual calibration values.
 
 NOTE #2: If you change the calibration method, it resets all the previous calibrations.
 
