@@ -4,6 +4,8 @@
 
 **xDrip4iOS** (also known as **"xDrip for iOS"** or **"xdripswift"**) is an open-source application to display real time blood glucose data.
 
+![](.\img\xDrip4iOS_env.png)
+
 It is able to connect as a **Master** device to various types of Continuous Glucose Monitor systems and display their values on the screen. This is the main way that most people (usually patients with Type 1 Diabetes) will use the app.
 
 It is also able to act as a **Follower** device and pull remote CGM data from [Nightscout](https://nightscout.github.io/). This is a great way for parents and care-givers to be able to remotely monitor loved ones and patients.
@@ -50,11 +52,11 @@ xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/
 
 </br>
 
-**Libre 2 *(European 14 day)***
+**Libre 1 *(US 14 days)* and 2 *(European 14 day)***
 
 | Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :------------------------------------ | :---------------------------------- | :----------------------------- |
-| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:green">Yes</span>** |
+| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:green">Yes</span>** *(2)* |
 | MiaoMiao 1                                          | >= 39                           | **<span style="color:green">Yes</span>** *(1)*             |
 | MiaoMiao 2                                          | >= 7                             | **<span style="color:green">Yes</span>** *(1)*          |
 | Bubble                                              | All                              | **<span style="color:green">Yes</span>**                        |
@@ -62,19 +64,22 @@ xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/
 | GNSentry                                            | -                                | **<span style="color:red">No</span>**                             |
 
 </br> 
- *(1)* The MiaoMiao firmware can be upgraded, if needed, using Tomato App </br>
+ *(1)* The MiaoMiao firmware can be upgraded, if needed, using Tomato App
+
+ *(2)* Only Libre 2 Europe</br>
 </br>
 
-**Libre 1/2 US, Libre Pro**
+**Libre 2 US/CA/AUS, Libre Pro, Libre H**
 
 - **<span style="color:red">Not compatible</span>**
 </br> </br> 
 
 ### Dexcom 
-**Dexcom G4/G5**
+**Dexcom G4** *(1)* **/ G5**
 
 - **<span style="color:green">Fully compatible</span>**
-</br> 
+
+  *(1)* With a bridge/Wixel device.</br> 
 
 **Dexcom G6**
 
@@ -97,9 +102,9 @@ You can also find all source code, technical information and register issues in 
 ___
 ## Development History
 
-This project was started back in 2017 by **Johan Degraeve**. His idea was to port the original xDrip algorithm to iOS.
+This project was started back in 2017 by **Johan Degraeve**. His idea was to port the original [xDrip](http://stephenblackwasalreadytaken.github.io/xDrip/) algorithm to iOS.
 
-The original project he created was called **xdripiosreader**. This was later re-written in 2019 into native swift code and renamed to **xdripswift**.
+The original project he created was called **[xdripiosreader](https://github.com/JohanDegraeve/iosxdripreader)**. This was later re-written in 2019 into native swift code and renamed to **xdripswift**.
 
 In 2020, the user interface was overhauled, more features were added and the user-facing project was renamed to **xDrip4iOS**.
 
@@ -108,4 +113,4 @@ ___
 
 You'll find the Github source repository for this documentation [here](https://github.com/paulplant/xdrip4ios_docs). Please don't hesitate to improve or correct anything you see and create a pull request!
 
-You're also welcome to contribute or report any documentationerror, unclear explanation, typo, broken link etc by going to Github and opening an [issue](https://github.com/paulplant/xdrip4ios_docs/issues).
+You're also welcome to contribute or report any documentation error, unclear explanation, typo, broken link etc by going to Github and opening an [issue](https://github.com/paulplant/xdrip4ios_docs/issues).
