@@ -13,7 +13,7 @@ The second option is more complex and needs a Mac and some knowledge/experience,
 
 Anybody who is using xDrip4iOS for looping should always build from source.
 </br>
-
+___
 ## 1. Install Testflight
 
 Please go to the App Store on your iPhone and search for "testflight". You should find the following app available. Click **Get** to install the app (you may be asked to confirm your Apple ID password).
@@ -41,6 +41,19 @@ TestFlight will open and you will see the xDrip4iOS icon. Click the Install butt
 Now you're all done, you can start to [connect](../connect/index.md) xDrip4iOS to your CGM source.
 </br>
 
+## 4. Configure Testflight Updates
+
+**Enable Notifications**
+
+Please make sure that you enable notifications for Testflight. This will let you know whenever a new version is pushed so that you can update. When an update is available the **Open** button will change to **Update**. Click it to update xDrip4iOS to the latest version. If it just shows **Open** then you are already on the latest available version.
+
+**Disable Automatic Updates**
+
+We recommened **disabling** automatic updates from within Testflight and selecting the option to manually update the application.
+
+If automatic updates is enabled, then it will usually happen during the night. In order to install the update, iOS will close the currently running instance of xDrip4iOS and you will then lose readings until you open the app again (or until the Missed Readings alarm is triggered and wakes you up!)
+</br>
+___
 ## Age Restrictions
 
 If you need to setup xDrip4iOS for an Apple ID registered to a child under 13, you must change the iPhone account to an adult's Apple ID (i.e. your own) in order to install Testflight and join the xDrip4iOS test.
