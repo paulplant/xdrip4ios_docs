@@ -111,8 +111,8 @@ ___
 
 * **Calibrate only when you are in range.** There are two reasons to this: <br />
   
-     * First reason you should not be too interested if you are 14 or 16 mmol/l or if you are 2,9 or 3,1 mmol/l. Either or, you know that you have a hyper or a hypo and you need to take actions. At this time the BG reading in the app and its accuracy does not matter *that* much. Hence, if you can get the in-range accuracy to be good, 
-     * Second sensors themselves are the most accurate in range area and inaccuracies increase when outside. As we know, we want as accurate readings as possible, when calibrating, so you don't want to apply calibrations on top of inaccurate sensor readings.
+     * First reason is that you should not be too interested if you are 14 or 16 mmol/l or if you are 2,9 or 3,1 mmol/l. Either or, you know that you have a hyper or a hypo and you need to take actions. At this time the BG reading in the app and its accuracy does not matter *that* much. I.e. aim to get the in-range accuracy to be good and settle for that out-of-range accuracy might be so-so.
+     * Second reason is that the sensors themselves are the most accurate in range area and their inaccuracies increase when BG is outside the normal range. As we know, we want as accurate readings as possible, when calibrating, so you don't want to apply calibrations on top of inaccurate sensor readings.
      * Of course, if the app says that you are out of range and shows 3,0 mmol/l but your actual BG (as per a finger prick) says 4,0 (*and* your BG is steady), you can calibrate. No T1D wants to hear low alarms blazing, when they are not actually hypo'ing.
 <br /><br />
   
