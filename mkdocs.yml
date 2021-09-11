@@ -19,16 +19,19 @@ pages:
     - 'Connect to CGM as a Master': 'connect/cgm.md'
     - 'Connect to Nightscout as a Follower': 'connect/follower.md'
     - 'Connect to M5Stack/M5StickC': 'connect/devices.md'
-- Configure/Use:
+- Configure/Using:
     - 'General': 'configure/index.md'
     - 'Alarms': 'configure/alarms.md'
-    - 'Calibration': 'configure/calibrate.md'
     - 'Algorithm': 'configure/algorithm.md'
+    - 'Calibration': 'configure/calibration.md'
+    - 'Statistics': 'configure/statistics.md'
     - 'Apple Watch': 'configure/applewatch.md'
     - 'Other Smartwatches': 'configure/smartwatches.md'
-    - 'FreeAPS (Loop) Integration': 'configure/freeaps.md'
-    - 'FreeAPS X (OpenAPS) Integration': 'configure/freeapsx.md'
-- Use and Troubleshoot:
+- Advanced:
+    - 'Calibration Best Practices': 'advanced/calibration_best_practices.md'
+    - 'FreeAPS (Loop) Integration': 'advanced/freeaps.md'
+    - 'FreeAPS X (OpenAPS) Integration': 'advanced/freeapsx.md'
+- Troubleshoot:
     - 'Troubleshooting': 'troubleshoot/index.md'
     - 'Cannot Connect?': 'troubleshoot/connection_troubles.md'
     - 'Disconnections?': 'troubleshoot/disconnections.md'
