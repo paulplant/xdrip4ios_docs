@@ -72,14 +72,14 @@ In practise the calibration is stored as a calibration curve in the app. This cu
 The **Slope** describes the steepness/angle of the calibration curve. Slope (in the context of calibration) can be only positive and is typically something between 0,7-1,3. Slope is a multiplier that is applied to the raw value of the sensor throughout the BG range. If there is no calibration, slope gets a value of 1,0.
 
 ### Intercept
-The **Intercept** describes a fixed correction that is added (when positive) or deducted (when negative) from the raw value. Typical values for intercept are -2,0.... +2,0 (in mmol/l). If there is no calibration, intercept gets a value of 0.
+The **Intercept** describes a fixed correction that is added (when positive) or deducted (when negative) from the raw value. Typical values for intercept are between -2,0.... +2,0 (in mmol/l). If there is no calibration, intercept gets a value of 0.
 
 
 
 !!!info "Example #1"
     **Slope** = 1,0 / **Intercept** = 0,0
     
-    **Result** = No calibration. Raw value is shown as-is in the app: if sensor gives 5,0 mmol/l reading, the app shows 5,0 mmol/l reading.
+    **Result** = No calibration. Raw value from sensor is shown as-is in the app: if sensor gives 5,0 mmol/l reading, the app shows 5,0 mmol/l reading.
 
 !!!info "Example #2"
     **Slope** = 1,0 / **Intercept** = 0,3
