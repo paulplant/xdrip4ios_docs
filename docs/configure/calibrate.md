@@ -41,10 +41,10 @@ Choose this method if you have just started to use xDrip4iOS and/or you are not 
 
 Libre algorithm is not an actual calibration method at all, but more of a default setting in the app for those users, who don't want to spend time on thinking when or how to calibrate. For this method the app has a specific built-in algorithm that applies a correction to the BG reading provided by the sensor and then the corrected BG reading is shown to the user. The user is not able to impact to the correction which is done by the algorithm.
 
-!!!info "Please note"
-    * Even if xDrip4iOS says that it uses *Libre* algorithm, there most likely are differences between the readings shown by LibreLink app and readings shown by xDrip4iOS.
+!!!info "Please note when using Libre algorithm!"
+    * Even if xDrip4iOS says that it uses the *Libre* algorithm, there will most likely be small differences between the readings shown by the LibreLink app and readings shown by xDrip4iOS.
     
-    * Please expect that there can be even relatively large differences between xDrip4iOS and your actual blood glucose reading.
+    * Please expect that due to the lack of calibration there could be relatively large differences between the reading shown in xDrip4iOS and your actual blood glucose reading.
 
 ### xDrip algorithm with single-point calibration
 
