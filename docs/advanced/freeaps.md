@@ -9,7 +9,7 @@ ___
 
 An APS works by reading blood glucose values, predicting/calculating the insulin requirement and automatically adjusting a user's insulin pump with the aim of keeping the user within their target blood glucose range.
 
-[FreeAPS](https://github.com/ivalkou/LoopWorkspace) is a fork of the [Loop](https://loopkit.github.io/loopdocs/) project developed and maintained by **Ivan Valkou**.
+[FreeAPS](https://github.com/loopnlearn/LoopWorkspace) is a fork of the [Loop](https://loopkit.github.io/loopdocs/) project. This fork was originally developed by **Ivan Valkou**. His repository was frozen last spring. To support the users of the FreeAPS fork, maintenance has been taken over by the Loop and Learn mentors. 
 
 !!!info "FreeAPS vs FreeAPS X??"
     This could get confusing, so pay attention:
@@ -17,13 +17,15 @@ An APS works by reading blood glucose values, predicting/calculating the insulin
        - Ivan's original **FreeAPS** project is based on **Loop** and is what we are discussing on this page<br /><br />
        - Ivan's newer **FreeAPS X** project is based on **OpenAPS**. It is a different system and is discussed [here](freeapsx.md)<br /><br />
   
-The main difference between Loop and FreeAPS is that FreeAPS is able to administer insulin delivery via micro-boluses instead of adjusting basal rates. Although Loop also now has an autobolus branch which is similar, FreeAPS is much more customizable and flexible.
+The main difference between Loop and FreeAPS is that FreeAPS has a different methodology than Loop (v2.2.6 or later) for delivering extra insulin via micro-boluses instead of adjusting basal rates. FreeAPS is much more customizable and flexible.
 
-It is important to note that the app developer has decided to halt all active development on FreeAPS in order to concentrate all efforts on his new FreeAPS X project. Collaborators are encouraged to participate with the maintenance of the fork.
+For FreeAPS, v2.2 (202) or later, support is included for xDrip4iOS built off the work of and in the collaboration with Aleksandar Obucina.
 
 Whereas Loop will only work with compatible Dexcom or Medtronic pump-connected sensors, FreeAPS also contains a Nightscout client which can be used to pull glucose data from the user's Nightscout site, or via apps (such as Spike) that have an internal http server that mimics a Nightscout server. 
 
 Pulling data from the cloud, or using http servers on iOS, are potentially unstable options for an APS (although they will generally work well most times).
+
+The next few sections of this page has information that is somewhat out of date.  To get a version of FreeAPS that brings in improvements found in Loop v2.2.6 and with xDrip4iOS support, use the [Loop and Learn build select script](https://www.loopandlearn.org/build-select/#use-script) and choose to build FreeAPS. Remember that xDrip4iOS must be [built from source](../install/build.md). 
 
 **Aleksandar Obucina** has created a fork of Ivan's FreeASP (Loop). This includes an [xdrip client](https://github.com/julian-groen/xdrip-client-swift) written in Swift by **Julien Groen**. This modified version of FreeAPS has xDrip4iOS as a CGM option and will pull glucose data directly offline from xDrip4iOS without needing to use any intermediate services.
 
