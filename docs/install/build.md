@@ -21,6 +21,12 @@ Ready? So then let's begin. Here are some of the things that you'll need before 
 - A compatible cable to connect your iPhone (Lightning port) to your Mac (USB-C or USB-A as needed)
   
 It is recommeneded to always use the latest versions of MacOS and Xcode. Your iPhone should ideally also be using the latest version of iOS.
+___
+### Apple Developer Account
+
+To be able to build and run xDrip4iOS without restrictions on your personal devices, you will ideally need an Apple Developer Account. This is a paid account (around 100 EUR/USD per year) which gives you full access to Apple development tools and documentation, together with the ability to self-sign your own apps (or submit them to Testflight or App Store if you wanted).
+
+More information at the [Apple Developer](https://developer.apple.com) website.
 
 ___
 ### Install the Cocoa Pods Framework to your Mac
