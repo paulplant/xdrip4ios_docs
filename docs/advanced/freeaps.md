@@ -25,9 +25,7 @@ Whereas Loop will only work with compatible Dexcom or Medtronic pump-connected s
 
 Pulling data from the cloud, or using http servers on iOS, are potentially unstable options for an APS (although they will generally work well most times). This makes it much safer and reliable to use offline CGM access using Dexcom G6 or xDrip4iOS (Dexcom G4/5/6 + Libre)
 
-It is necessary to clone, build and install Aleksandar's fork of FreeAPS and then do the same with the master branch of xDrip4iOS.
-
-Important: The Testflight version of xDrip4iOS **cannot** be used with FreeAPS.
+Important: The Testflight version of xDrip4iOS **cannot** be used with FreeAPS. You must build xDrip4iOS from source.
 ___
 ## How do I install FreeAPS (Loop)?
 
