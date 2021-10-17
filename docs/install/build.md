@@ -22,47 +22,51 @@ Ready? So then let's begin. Here are some of the things that you'll need before 
   
 It is recommeneded to always use the latest versions of MacOS and Xcode. Your iPhone should ideally also be using the latest version of iOS.
 
-!!!info "APPLE "M1" PROCESSOR?"
-If you are using a newer (2020-2021) Mac Mini, MacBook Air or MacBook Pro with the new M1 processor (aka *Apple Silicon*) please note that there will be some small changes needed in the below steps. They will be clearly marked.
-
-Please make sure you are running Terminal under Rosetta:
-
-- Right-click on Terminal in Finder
-- Click "Get Info"
-- Select "Open with Rosetta"
-
-Then run the following command to install ffi:
-
-    sudo gem install ffi
-
-After this, you should be able to install the Cocoapods framework to your Mac as normal:
-
-    sudo gem install cocoapods
-
-Then once you've cloned the project you can go into the project folder and install the local dependencies:
-
-    pod install
-
 ___
 ### Install the Cocoa Pods Framework to your Mac
 
 If this is the first time that you have built xDrip4iOS on your Mac, then you will need to install a set of frameworks called CocoaPods. If you have previously installed CocoaPods, you can skip this step.
 
-Enter the following command into Terminal. This must be done with admin rights, so we will use **sudo** (it will ask for your admin password):
+!!!info "APPLE "M1" PROCESSOR?"
+    In this step, the process will change slightly depending on the type of Mac you are using. You will be using either an Intel-based or M1-based Mac.
+
+    - The newer Mac Mini, MacBook Air or MacBook Pro (2020-2021) will generally have the new M1 processor (aka *Apple Silicon*)
+    - Most older Macs (<2020) will be running Intel processesors and will not need the following step to be carried out
+  
+    If you are one of these newer M1 Macs, then you **must perform** the following steps before trying to install the Cocoapods framework.
+    
+    Firslty, make sure you run Terminal using *Rosetta* (this is an Apple tool that allows you to *translate* older applications to run on the newer M1 architecture):
+
+    - Right-click on Terminal in Finder
+    - Click "Get Info"
+    - Select "Open with Rosetta"
+    - Clikc "OK"
+  
+    Then, open Terminal and run the following command to install **ffi**:
+
+    **sudo gem install ffi**
+
+    Once successfully installed, you should now be able to continue as per the Intel instructions below
+
+
+To install the Cocoapods framework to your Mac, please enter the following command:
 
     sudo gem install cocoapods
 
-This should install the dependencies onto your system and give you an OK message.
+Note the use of "**sudo**" here to elevate the permissions to allow installation at a system level. If asked for your password, use the admin password that you use to log into your Mac (this is generally just your user password).
 
+You should get an "OK" message confirming successfull installation. 
 
 
 ### Clone the xdripswift project
 
-You should go into your Documents folder (or wherever you prefer) and run the following command to clone the xDrip4iOS project:
+Good job for getting to here. Now it's time to grab a copy of the source code from Github and build the project.
+
+You should open Terminal, navigate into your Documents folder (or wherever you prefer) and run the following command to clone the xDrip4iOS project:
 
     git clone --branch=master --recurse-submodules https://github.com/JohanDegraeve/xdripswift
 
-This will create a new folder called xdripswift. Once completed we should navigate into this folder:
+This will create a new folder called xdripswift and it will copy all needed code into it. Once completed we should navigate into this folder:
 
     cd xdripswift
 
@@ -74,35 +78,53 @@ Earlier we installed the full Cocoa Pods framework onto your system. Now we will
 
 Again, you will see some activity and you should get an OK message.
 
-Open the WorkSpace file by typing:
+### Configure the Override File
 
-   xed .
+In order to make building as easy as possible, we have adopted the use of XCconfig files. Whilst this may seem unnecessary at first glance, it will make things much easier for future installs.
 
-### Set the Bundle Identifier
+Right click the following link and copy it to your xdripswift folder:
 
-Here you should create a unique Bundle Identifier for each target. The default value in the project is:
+[xDripConfigOverride.xcconfig](https://raw.githubusercontent.com/JohanDegraeve/xdripswift/0d485d1978bf90fb51b3a6cef8389f8daddb595d/xDripConfigOverride.xcconfig)
 
-net.johandegraeve.xdripswift<br />
-net.johandegraeve.xdripswift.xDrip4iOS-Widget
+Open this file in TextEdit or Xcode and you will see the following structure. You will need to edit the lines highlighted in <span style="color:blue">blue</span>.
 
-Obviously, this is already in use by Johan so we need to change them.
+___
+<span style="color:gray">MAIN_APP_DISPLAY_NAME = xDrip4iO5</span>
 
-You should change the part that says "**net.johndegraeve**" to something that nobody else is using. You can use anything you want such as:
+<span style="color:gray">// Put your team id here for signing<br /></span>
+<span style="color:blue">// XDRIP_DEVELOPMENT_TEAM =</span>
 
-- **com.ilovetheweekend**.xdripswift
-- **com.ilovetheweekend**.xdripswift.xDrip4iOS-Widget
-<br /><br />
+<span style="color:gray">// Change to support running multiple apps simultaneously.<br /></span>
+<span style="color:blue">// MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
+___
 
-- **net.keithrichards**.xdripswift
-- **net.keithrichards**.xdripswift.xDrip4iOS-Widget
-<br /><br />
+You should remove the "//" characters to uncomment these lines and in XDRIP_DEVELOPMENT_TEAM add your Development Team Identifier to this line. If you don't know your iOS Developer Idenfifier, you can always use something else. Examples:
 
-- **com.anything-i-want**.xdripswift
-- **com.anything-i-want**.xdripswift.xDrip4iOS-Widget
+<span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">95C72J2362</span>
 
-Just invent something and try it. If somebody else is already using this identifier, then you'll get an error and can just chose another one.
+<span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">iloveinsulin</span>
 
-Now you should sign both targets with your Development Team, connect your iPhone to your Mac, select your device and hit **Build** ("Play")
+Finally, just uncomment the MAIN_APP_BUNDLE_IDENTIFIER line. No need to edit anything else. Your file should now look like this:
 
+___
+<span style="color:gray">MAIN_APP_DISPLAY_NAME = xDrip4iO5</span>
 
+<span style="color:gray">// Put your team id here for signing<br /></span>
+<span style="color:green">XDRIP_DEVELOPMENT_TEAM = 95C77J2362</span><span style="color:blue"> *<--- here you put your unique ID*</span>
+
+<span style="color:gray">// Change to support running multiple apps simultaneously.<br /></span>
+<span style="color:green">MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
+___
+
+### Build the Project
+
+Now we're going to open the Workspace file. Go back to terminal and run the following command (again, inside your xdripswift folder).
+
+    xed .
+
+Open the xdrip file on the left of the screen and you should see that your Bundle Identifier has been correctly configured with the values you used in the previous step.
+
+Now you'll need to "sign" the targets. Go to each one (xdrip + xDrip4iOS Widget Extension) and select your "Team" in the drop down Signing option.
+
+Repeat this for each target, connect your iPhone to your Mac, select your device at the top of the screen (don't select a simulator!) and hit **Build** ("Play")
 </br>
