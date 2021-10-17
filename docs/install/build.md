@@ -23,9 +23,26 @@ Ready? So then let's begin. Here are some of the things that you'll need before 
 It is recommeneded to always use the latest versions of MacOS and Xcode. Your iPhone should ideally also be using the latest version of iOS.
 
 !!!info "APPLE "M1" PROCESSOR?"
-    If you are using a newer (2020-2021) Mac Mini, MacBook Air or MacBook Pro with the new M1 processor (aka *Apple Silicon*) please note that there will be some small changes needed in the below steps. They will be clearly marked.
+If you are using a newer (2020-2021) Mac Mini, MacBook Air or MacBook Pro with the new M1 processor (aka *Apple Silicon*) please note that there will be some small changes needed in the below steps. They will be clearly marked.
 
-    The first thing to note is that you should use 
+Please make sure you are running Terminal under Rosetta:
+
+- Right-click on Terminal in Finder
+- Click "Get Info"
+- Select "Open with Rosetta"
+
+Then run the following command to install ffi:
+
+    sudo gem install ffi
+
+After this, you should be able to install the Cocoapods framework to your Mac as normal:
+
+    sudo gem install cocoapods
+
+Then once you've cloned the project you can go into the project folder and install the local dependencies:
+
+    pod install
+
 ___
 ### Install the Cocoa Pods Framework to your Mac
 
