@@ -33,4 +33,5 @@ pages:
     - 'Troubleshooting': 'troubleshoot/index.md'
     - 'Cannot Connect?': 'troubleshoot/connection_troubles.md'
     - 'Disconnections?': 'troubleshoot/disconnections.md'
+    - 'Testing': 'install/personal_testflight.md'
     - 'How to Report Errors': 'troubleshoot/reporting.md'
