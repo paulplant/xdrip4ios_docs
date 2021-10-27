@@ -112,11 +112,17 @@ Fill in the First name, Last name and email address (this **must** be their Appl
 
 <img src="../img/Picture13.png" style="zoom:50%;" />
 
-The recipient (in this example,  recipientemailaddress@domain.com), will receive an invitation email.
+### Ask the User to Accept The Invitation
+
+The recipient (in this example, *recipientemailaddress@domain.com*), will receive an invitation email from Apple.
 
 Ask him or her to check his or her email and to accept the invite.
 
 <img src="../img/Picture14.png" style="zoom:50%;" />
+
+This will open App Store Connect web page (not the app) in a browser window for them. They should confirm that they agree to test your app.
+
+### Add User to your App
 
 Now go back to [App Store Connect](https://appstoreconnect.apple.com), and select **My Apps**
 
@@ -130,9 +136,13 @@ Click **+** to add a tester
 
 <img src="../img/Picture16.png" style="zoom:50%;" />
 
-Select the newly added tester.
+Select the newly added tester from the previous step.
 
-The new tester should now install the **TestFlight** app (available in the regular App Store) on their device and sign in with their Apple ID. When they open the TestFlight app, they should be able to see your release of xDrip4iOS and install it on their device.
+### Install from Testflight
+
+The new tester should now install the **TestFlight** app if they don't already have it (it's available in the regular App Store) on their device and sign in with their Apple ID.
+
+ When they open the TestFlight app, they should be able to see your release of xDrip4iOS and install it on their device.
 ___
 ## Updates
 
