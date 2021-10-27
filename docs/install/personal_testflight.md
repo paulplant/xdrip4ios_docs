@@ -32,21 +32,25 @@ We don't like rules. In the same way as this is a fully open-source project wher
 - Remember that your build will expire after 90 days so please read again the last point to ensure it doesn't ;)
 - Please don't upload an initial copy and then close the test or not bother to do anything again. Don't accept people into your test if you're going to get tired and kick them out after one month. Remember that lots of the people you are helping are looking after children with T1D and are counting on your support to be able to keep using the app.
 
-Yes, we know... the last three points are basically the same but they're **very important**. We can resume even further what we would ask you to commit to doing if you chose to followœ this path:
+Yes, we know... the last three points are basically the same but they're **very important**. We can resume even further what we would ask you to commit to doing if you chose to follow this path:
 
 ***"Keep your build as up-to-date as possible and don't charge anybody anything for your help. The end."***
 ___
 ## Detailed Steps
 
-First you need to build the app in Xcode, from now one, we're going to assume you've already dont that. Once it is able to build correctly and without any compiler errors, then we can archive the project (this means converting it into a single file containing all of the required data), upload it to App Store Connect and then configure your users to allow them access to install and use the app.
+First you need to open the Workspace, configure the basic build settings and sign the targets in Xcode, from now on, we're going to assume you already know how to do that and have already done it. Once it is able to build correctly and without any compiler errors, then we can archive the project (this means converting it into a single file containing all of the required data), upload it to App Store Connect and then configure your users to allow them access to install and use the app.
 
 Ready? So let's begin...
 
 ### Archive the Project
 
-Once you've build the app successfully in Xcode, select **Archive**
+The first thing to do is to set up Xcode for archiving. Unlike building, where we need to select our specific device (or a chosen simulator if we are developing/testing), the archiving process produces a generic file, not tied to any one type of device. To do this, we need to select **Any iOS Device (arm64)** from the dropdown menu.
 
-<img src="../img/Picture1.png" />
+<img src="../img/anyiOSDevice.png" />
+
+Next we should go to the top menu and chose **Archive**
+
+<img src="../img/ProductArchive.png" />
 
 The archiving process can take a few minutes.
 
@@ -90,7 +94,7 @@ You should see this screen when uploading is finished *(this example screenshot 
 
 ### Adding Users
 
-Now we have the archive successfully uploaded to App Store Connect you'll need to wait for a short time whilst the process the file. You'll get an e-mail when processing is completed (it usually takes around 10 minutes).
+Now we have successfully uploaded the archive file to App Store Connect. You'll need to wait for a short time whilst the file is processed. You'll get an e-mail when processing is completed (it usually takes around 10 minutes).
 
 Log into [App Store Connect](https://appstoreconnect.apple.com/login)
 
@@ -128,10 +132,10 @@ Click **+** to add a tester
 
 Select the newly added tester.
 
-The new tester should now install the **TestFlight** app (available in the regular App Store) on their device and sign in with their Apple ID. When they open TestFlight app, they should be able to see your release of xDrip4iOS and install it on their device.
+The new tester should now install the **TestFlight** app (available in the regular App Store) on their device and sign in with their Apple ID. When they open the TestFlight app, they should be able to see your release of xDrip4iOS and install it on their device.
 ___
 ## Updates
 
-Whenever there is an update available to the main branch, please update your local repository and follow these instructions again to archive, upload your release.
+Whenever there is an update available to the main branch, please update your local repository and follow these instructions again to archive and upload your release.
 
 Your tester(s) should be informed by a notifiation that a new version is available and it will prompt them to update the app.
