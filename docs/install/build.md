@@ -104,9 +104,19 @@ ___
 <span style="color:blue">// MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
 ___
 
-You should remove the "//" characters to uncomment these lines and in XDRIP_DEVELOPMENT_TEAM add your Development Team Identifier to this line. If you don't know your iOS Developer Idenfifier, you can always use something else. Examples:
+You should remove the "//" characters to uncomment these lines and in XDRIP_DEVELOPMENT_TEAM add your Development Team Identifier to this line.
+
+If you **have** a paid Developer account, then you will probably already know this identifier. If not, then you can log into the Apple Developer Portal and look at the Membership section](https://developer.apple.com/account/#!/membership). You can find your ID here:
+
+<img src="../install/img/developerid.png" />
+
+Put this ID (your ID, not the example shown below) here:
 
 <span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">95C72J2362</span>
+
+If you **don't** have a paid Developer account then you can always use something else. Examples:
+
+<span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">johnsmith</span>
 
 <span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">iloveinsulin</span>
 

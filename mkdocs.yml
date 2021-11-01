@@ -14,6 +14,7 @@ pages:
 - Install: 
     - 'Install from Testflight': 'install/testflight.md'
     - 'Build from Source': 'install/build.md'
+    - 'How do I become a Releaser?': 'install/personal_testflight.md'
 - Connect:
     - 'Initial Configuration': 'connect/index.md'
     - 'Connect to CGM as a Master': 'connect/cgm.md'
@@ -33,5 +34,4 @@ pages:
     - 'Troubleshooting': 'troubleshoot/index.md'
     - 'Cannot Connect?': 'troubleshoot/connection_troubles.md'
     - 'Disconnections?': 'troubleshoot/disconnections.md'
-    - 'Testing': 'install/personal_testflight.md'
     - 'How to Report Errors': 'troubleshoot/reporting.md'
