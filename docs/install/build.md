@@ -108,7 +108,7 @@ You should remove the "//" characters to uncomment these lines and in XDRIP_DEVE
 
 If you **have** a paid Developer account, then you will probably already know this identifier. If not, then you can log into the Apple Developer Portal and look at the Membership section](https://developer.apple.com/account/#!/membership). You can find your ID here:
 
-<img src="../install/img/developerid.png" />
+<img src="../img/developerid.png" />
 
 Put this ID (your ID, not the example shown below) here:
 
