@@ -102,13 +102,15 @@ Select **Users and Access**
 
 <img src="../img/Picture11.png" style="zoom:50%;" />
 
-Select **Customer Support** as the user type that we're going to add
+We must select the type of **role** that we want to assign to the new user. It isn't too important as our only aim is to give them access to test the app. As an example we will select **Customer Support** as the user type that we're going to add.
 
 <img src="../img/Picture12.png" style="zoom:50%;" />
 
+Please note that there is a limit (around 50) to how many users we can add with each role type. As an example, we would add the first 40 users as **Customer Service**, 40 more as **Marketing**, then the last 20 as **Finance** etc.
+
 Click the "**+**" symbol to add a new user
 
-Fill in the First name, Last name and email address (this **must** be their Apple ID) of the new tester you want to add and click **Invite**. (you will see that 'Customer Support' is pre-selected for us).
+Fill in the First name, Last name and email address (this **must** be their Apple ID) of the new tester you want to add and click **Invite**. 
 
 <img src="../img/Picture13.png" style="zoom:50%;" />
 
@@ -142,10 +144,19 @@ Select the newly added tester from the previous step.
 
 The new tester should now install the **TestFlight** app if they don't already have it (it's available in the regular App Store) on their device and sign in with their Apple ID.
 
- When they open the TestFlight app, they should be able to see your release of xDrip4iOS and install it on their device.
+ When they open the TestFlight app, they should be able to see your release of xDrip4iOS and install it on their device. **Please note that it might take 10-15 minutes for the app to appear in their Testflight. Ask them to be patient**.
 ___
-## Updates
+## How do I update my release?
 
 Whenever there is an update available to the main branch, please update your local repository and follow these instructions again to archive and upload your release.
 
-Your tester(s) should be informed by a notifiation that a new version is available and it will prompt them to update the app.
+Your tester(s) should be informed by a notifiation that a new version is available and it will prompt them to update the app
+
+The process to update a Testflight build is very simple and consists of two operations:
+
+1. Update your local code following the update instructions on the build page.
+2. Upload your updated build to Testflight following the instructions above.
+
+That's it. It really is that simple. Once you do this, as you have kept all previous signing and build settings, the new build will automatically be offered to your personal Testflight users and will directly replace the old app (keeping all settings and data) when they update.
+
+If you do not follow the update instructions and try to manually "hack" things to make them work, you could end up creating a duplicate app.
