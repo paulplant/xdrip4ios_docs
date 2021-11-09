@@ -68,9 +68,17 @@ In the next screen, **Upload** is selected by default, select **Next**
 
 <img src="../img/Picture4.png" />
 
-In the next screen, set the primary language to **English** and click **Next** (remark: you will have your own SKU, don't change it)
+In the next screen, you should give your app a "new" name for Testflight. Please keep the name **exactly** as it is and just add "**_**" followed by your initials. Again, please **do not modify** the actual app name, format or case. Just add your initials to the end.
+
+For example. If your name was James Hetfield, your app name should be **xDrip4iOS_JH**
+
+If you name was Paul McCartney, your app name should be **xDrip4iOS_PC**
+
+Now, set the primary language to **English** and click **Next** (note: you will have your own unique SKU - **don't change it!**)
 
 <img src="../img/Picture5.png" />
+
+If you still get an error because there is another xDrip4iOS_JH, then just put _JH1.
 
 In the next screen, click **Next**
 
