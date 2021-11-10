@@ -146,7 +146,18 @@ Click **+** to add a tester
 
 <img src="../img/Picture16.png" style="zoom:50%;" />
 
-Select the newly added tester from the previous step.
+Select the newly added tester from the previous step and you're all done
+
+!!!warning "Do NOT add External Testers"
+    In the Testflight tab of App Store Connect you will see two ways to add testers:
+
+    - App Store Connect Users
+    - External Testers
+
+<img src="../img/appstoreusers.png" />
+
+You must **only** use App Store Connect Users to privately add your users (max 100 users). **Do not add any External Testers**. This is what you would need to do for a 10,000 user public test and will submit a review of your app by the Apple Review board.
+
 
 ### Install from Testflight
 

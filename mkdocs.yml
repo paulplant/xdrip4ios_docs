@@ -14,7 +14,7 @@ pages:
 - Install: 
     - 'Install from Testflight': 'install/testflight.md'
     - 'Build from Source': 'install/build.md'
-    - 'How do I become a Releaser?': 'install/personal_testflight.md'
+    - 'How Do I Release?': 'install/personal_testflight.md'
 - Connect:
     - 'Initial Configuration': 'connect/index.md'
     - 'Connect to CGM as a Master': 'connect/cgm.md'
