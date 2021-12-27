@@ -77,21 +77,19 @@ xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/
 ### Dexcom 
 **Dexcom G4** *(1)* **/ G5**
 
-- **<span style="color:green">Fully compatible</span>** with a bridge/Wixel device and using raw data mode.</br> 
+- **<span style="color:green">Fully compatible</span>**
 
-**Dexcom G5**
+  *(1)* With a bridge/Wixel device.</br> 
 
-- **<span style="color:green">Fully compatible</span>** using raw mode.
-   
-**Dexcom G6 **
+**Dexcom G6**
 
-- **<span style="color:green">Fully compatible</span>** using either raw data or native modes (see below).
+| Transmitter Serial Number &nbsp;&nbsp;&nbsp;        | Firmware/ Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
+| :-------------------------------------------------- | :----------------------------------- | :----------------------------- |
+| 80xxxx                                              | All                                  | **<span style="color:green">Yes</span>**                        |
+| 81**x**xxx (3rd digit is usually a **number**)      | <= x.x.x.25                          | **<span style="color:green">Yes</span>**                        |
+| 81**x**xxx (3rd digit is usually a **letter**)      | \>= x.x.x.27                         | **<span style="color:red">No</span>**                              |
+| 8Gxxxx, 8Hxxxx, 8Jxxxx ... etc *("Firefly")* &nbsp; | -                                    | **<span style="color:red">No</span>**                             |
 
-Older 80xxxx/81xxxx G6 transmitters can work in **raw mode** with the possibility of processing all data using the xDrip algorithm and manual calibration. Sensor session limits do not apply in this mode.
-
-Newer G6 "Firefly" transmitters (>8Gxxxx) will only work in **native mode** using the algorithm inside the transmitter. This means that xDrip4iOS will be limited to the factory 10 day sensor sessions and is also able to start/stop sensor sessions as well as calibrating.
-
-If you need to use the official Dexcom app to upload data to Dexcom Share or Clarity, you can set xDrip4iOS to "Follow Dexcom App" mode. In this mode, the main connection between the transmitter and your iPhone is handled by the Dexcom app. xDrip4iOS will simply receive a copy of the transmitted data. This allows you to use xDrip4iOS for all features (alarms, graphs, statistics, Nightscout, Watch app etc) without needing to stop using the official app.
 </br>
 ___
 ## Where Can I Get Help?

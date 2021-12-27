@@ -88,7 +88,7 @@ Again, you will see some activity and you should get an OK message.
 
 In order to make building as easy as possible, we have adopted the use of XCconfig files. Whilst this may seem unnecessary at first glance, it will make things much easier for future installs.
 
-Right click the following link and copy it to your xdripswift folder:
+Right click the following link, chose the "**Save Link As...**" or "**Download Linked File As...**" option and save the file to your xdripswift folder:
 
 [xDripConfigOverride.xcconfig](https://raw.githubusercontent.com/JohanDegraeve/xdripswift/0d485d1978bf90fb51b3a6cef8389f8daddb595d/xDripConfigOverride.xcconfig)
 
@@ -133,6 +133,8 @@ ___
 
 <span style="color:gray">// Change to support running multiple apps simultaneously.<br /></span>
 <span style="color:green">MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
+
+Make sure you save/close the file and exit out of the editor/Xcode before continuing.
 
 ___
 ### Build the Project
@@ -197,3 +199,26 @@ Now we're going to open the Workspace file as before. Go back to Terminal and ru
     xed .
 
 Now continue with the steps as before in order to build xDrip4iOS.
+
+___
+## Update Problems?
+
+Xcode can sometimes make this tricky when it comes to simply describing a series of timestamped text edits to code files (which is the basic idea behind source-code control - in this case we use Github). 
+
+The main **xdrip.xcodeproj** and **project.pbxproj** files can easily get out of sync when big changes are made to the project structure and build settings and this makes it difficult to re-apply your previous changes. The update to 4.8.0 included very big changes with the addition of the Apple Watch app and new build variables/settings aimed to make things easier for newer builders.
+
+When this happens, it is possible that you will get a merge error in Terminal. If this happens, you must fix it before trying to open the Workspace file and build.
+
+    CONFLICT (content): Merge conflict in xdrip.xcodeproj/project.pbxproj
+
+If you see the above error, the easiest way is to simply start all over again. If you already built once, then it will take you just a few minutes.
+
+Please follow these steps:
+
+1. Using Finder, browse to your xdripswift folder and **copy your modified xDripConfigOverride file to the Desktop** or wherever you want.
+2. **Delete** your xdripswift folder completely.
+3. Go back to the Build instructions and start the whole process again to **clone** a new/updated copy of the master branch. 
+4. Run "**install pod**" again from Terminal inside your new xdripswift folder.
+5. This time, copy in your previously modified xDripConfigOverride file before simply opening the workspace with "**xed .**" as before.
+
+Assuming that you really did follow the build instructions correctly the first time and didn't edit anything else, then you should be able to immediately just build the new version with no problems.

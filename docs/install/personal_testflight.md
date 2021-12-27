@@ -173,32 +173,10 @@ Your tester(s) should be informed by a notifiation that a new version is availab
 
 The process to update a Testflight build is very simple and consists of two operations:
 
-1. Update your local code following the update instructions on the build page.
+1. Update your local code following the [update instructions on the build page](../build/#how-do-i-update).
 2. Upload your updated build to Testflight following the instructions above.
 
 That's it. It really is that simple. Once you do this, as you have kept all previous signing and build settings, the new build will automatically be offered to your personal Testflight users and will directly replace the old app (keeping all settings and data) when they update.
 
 If you do not follow the update instructions and try to manually "hack" things to make them work, you could end up creating a duplicate app.
-___
-## Update Problems?
-
-Xcode can sometimes make this tricky when it comes to simply describing a series of timestamped text edits to code files (which is the basic idea behind source-code control - in this case we use Github). 
-
-The main **xdrip.xcodeproj** and **project.pbxproj** files can easily get out of sync when big changes are made to the project structure and build settings and this makes it difficult to re-apply your previous changes. The update to 4.8.0 included very big changes with the addition of the Apple Watch app and new build variables/settings aimed to make things easier for newer builders.
-
-When this happens, it is possible that you will get a merge error in Terminal. If this happens, you must fix it before trying to open the Workspace file and build.
-
-    CONFLICT (content): Merge conflict in xdrip.xcodeproj/project.pbxproj
-
-If you see the above error, the easiest way is to simply start all over again. If you already built once, then it will take you just a few minutes.
-
-Please follow these steps:
-
-1. Using Finder, browse to your xdripswift folder and **copy your modified xDripConfigOverride file to the Desktop** or wherever you want.
-2. **Delete** your xdripswift folder completely.
-3. Go back to the Build instructions and start the whole process again to **clone** a new/updated copy of the master branch. 
-4. Run "**install pod**" again from Terminal inside your new xdripswift folder.
-5. This time, copy in your previously modified xDripConfigOverride file before simply opening the workspace with "**xed .**" as before.
-
-Assuming that you really did follow the build instructions correctly the first time and didn't edit anything else, then you should be able to immediately just build the new version with no problems.
 
