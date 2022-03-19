@@ -140,6 +140,8 @@ Make sure the app **xDrip4iOS** is selected and click on the **TestFlight** tab 
 
 <img src="../img/Picture15.png" style="zoom:50%;" />
 
+Click the blue plus ("**+**") symbol next to **Internal Testing** to add a new group.  You can name it however you like, for example 'App Store Connect Users'.  Click 'Create'.
+
 Click Internal Testing -> **App Store Connect Users**
 
 Click **+** to add a tester
