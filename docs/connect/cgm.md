@@ -169,7 +169,9 @@ In the Settings Menu, enable **Upload to Dexcom Share**, enter you account/user 
 
 If you are inside the US, then also select the **Use Dexcom US Servers** option. If you are anywhere else (Canada, Europe etc, **do not** select this option)
 
-This will not upload your data inside **Clarity** as only the Dexcom app can do this.
+Finally, enter a Dexcom receiver serial number. This is required for this method of uploading CGM data to Dexcom Share servers. The receiver does not need to be in use or paired with any transmitter.
+
+This will not upload your data inside **Clarity**, as only the Dexcom app can do this.
 
 </br>
 
