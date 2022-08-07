@@ -3,6 +3,7 @@
 !!!warning "Disclaimer"
     No matter which calibration method you decide to use and/or how good you are in calibrating, there are many reasons and factors why xDrip4iOS can show values that differ greatly from your actual blood glucose. Due to this, use careful consideration if you are about to apply a correction bolus because the app says that you have a high blood glucose OR before you decide to take in some fast carbs, because the app is saying you have a hypo, but you don't feel like it at all. 
     
+
     It is always recommended to take a proper finger prick test if you have any doubts about the accuracy of the reading shown in the app.
 
 !!!info "Please note"
@@ -107,14 +108,14 @@ ___
      * You need to understand that the finger prick reading you see in BG reader, is shown in xDrip4iOS only after the above mentioned delay. If you calibrate when your BG is steady, you know that you are giving the app a chance to calculate the best possible calibration correction. If you calibrate, when BG is not steady, you are shooting a moving target.
      * Being steady does not mean only that your actual BG is steady but that also the reading in the app is steady. Probably everyone who wears a sensor and has gone to swimming, in sauna, out in the cold, layed on a sofa pressure on sensor etc. etc. have seen that the sensor reading might suddenly rise or fall. If you calibrate when this happens, you can be certain that the applied calibration is bad and you get very inaccurate BG readings from the app.
      * Over time, you might learn to make calibrations also when your BG is not 100 % steady, e.g. *slowly* coming down. This is however not recommended for newbies due to a high probability of making an error.
-<br /><br />
+  <br /><br />
 
 * **Calibrate only when you are in range.** There are two reasons to this: <br />
   
      * First reason is that you should not be too interested if you are 14 or 16 mmol/l or if you are 2,9 or 3,1 mmol/l. Either or, you know that you have a hyper or a hypo and you need to take actions. At this time the BG reading in the app and its accuracy does not matter *that* much. I.e. aim to get the in-range accuracy to be good and settle for that out-of-range accuracy might be so-so.
      * Second reason is that the sensors themselves are the most accurate in range area and their inaccuracies increase when BG is outside the normal range. As we know, we want as accurate readings as possible, when calibrating, so you don't want to apply calibrations on top of inaccurate sensor readings.
      * Of course, if the app says that you are out of range and shows 3,0 mmol/l but your actual BG (as per a finger prick) says 4,0 (*and* your BG is steady), you can calibrate. No T1D wants to hear low alarms blazing, when they are not actually hypo'ing.
-<br /><br />
+  <br /><br />
   
 * **Ensure you minimize the margin of error, when taking a finger prick**:<br />
   
@@ -122,7 +123,7 @@ ___
      * Use strips that have not expired. While it's *possible* to use expired strips and get accurate readings with them as well, do you want to take the chance?
      * Wash your hands before you take the reading. You might have some residues in your fingers, which impact the measurement - wash them off first.
      * Don't squeeze your fingertip to get a blood drop out.
-<br /><br />
+  <br /><br />
 
 * Everyone knows how wild the sensor readings might be during the first 12-24 hours after a new sensor has been installed. This happens because the area where you applied the sensor is not yet used to the small filament that is inside your skin and via which the sensor takes readings. These sudden changes make also calibration more difficult. You can mitigate these if you **attach a new sensor on your skin 12-24 hours *before* you actually take it in use**. That way your skin has time to get used to the sensor and the readings are much more calm, when you start the sensor.
 <br /><br />
@@ -139,10 +140,12 @@ ___
 
 ## How to calibrate in xDrip4iOS?
 
+<img src="../img/CalibrateIcon.png" style="zoom:50%;" />
+
 Alright, if you've read these instructions this far, you are ready for calibration. This section gives you instructions on how you will apply a new calibration in xDrip4iOS.
 
 1. Select the calibration method you want to use: either "Single-point calibration" or "Multi-point calibration". You can make this selection in "Bluetooth" tab in the app inside your transmitter.
-2. On the main screen of the app, click "Calibrate"
+2. On the main screen of the app, select "Calibrate"
    * If you have just connected a new sensor (or resetted the calibrations by stop->start sensor), the app does not allow you to calibrate right away. You need to wait until the app gets at least two BG readings from the sensor, before a calibration can be applied.
 3. A pop-up opens, which asks you to enter a calibration value. Here you enter the value from your BG reader after a finger prick.
 
