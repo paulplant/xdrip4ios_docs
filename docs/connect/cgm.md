@@ -39,7 +39,9 @@ Go to your iPhone Settings and scroll down to LibreLink. Select the app and in t
 
 Go to the **Bluetooth** tab and choose **CGM** as your **Device Type**, press **OK**.
 
-If you already have a previous CGM added, you will get a warning to say that you can only have one CGM device added at a time. Please delete the previous device and try again.
+If you already have a Libre 2 connected, add a second Libre 2 CGM device and continue reading. Once connected to the new one, you can delete the previous Libre 2 CGM.
+
+If you already have a previous CGM added (not a Libre 2), you will get a warning that says that you can only have one CGM device added at a time. Please delete the previous device and try again.
 
 <img src="../CGMDelete.png" style="zoom:58%;" />
 
@@ -71,13 +73,13 @@ When xDrip4iOS finds your sensor, you will get a message saying the the sensor h
 
 <img src="../L2DirectConnectedOk.png" style="zoom:56%;" />
 
-You can now choose if you want to use the **Libre** algorithm or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
 
-<img src="../LibreAlgo.png" style="zoom:56%;" />
+<img src="../LibreAlgo.png" style="zoom:50%;" />
 
 Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings from your sensor.
 
-- If you are using the **Libre algorithm**, you will then automatically start getting values.
+- If you are using the **Transmitter algorithm**, you will then automatically start getting values.
 <br /><br />
 
 - If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the calibration rules where possible.
@@ -112,13 +114,13 @@ You will get a message asking you to keep xDrip4iOS open whilst the bluetooth co
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
-You can now choose if you want to use the **Libre** algorithm or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
 
 <img src="../LibreAlgo.png" style="zoom:56%;" />
 
 Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings from your sensor.
 
-- If you are using the **Libre algorithm**, you will then automatically start getting values.
+- If you are using the **Transmitter algorithm**, you will then automatically start getting values.
 <br /><br />
 
 - If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the calibration rules where possible.
@@ -129,7 +131,7 @@ ___
 ## Dexcom 
 
 !!!info "Compatibility"
-    This method is valid for all Dexcom G4/G5 systems and also G6 up until "Firefly" transmitters. See [here](../index.md#dexcom) for more information.
+    This method is valid for all Dexcom G4/G5 and G6/ONE systems. See [here](../index.md#dexcom) for more information.
 
 !!!info "Dexcom G4"
     To connect to a Dexcom G4 transmitter, a xDrip Wireless Bridge (Wixel) is needed. More information is available [here](http://www.nightscout.info/wiki/welcome/nightscout-with-xdrip-wireless-bridge)
@@ -146,7 +148,7 @@ You will be prompted to input your **Transmitter ID** (for example: *80H9W4*).
 
 <img src="../DexSN.png" style="zoom:50%;" />
 
-Once you have entered your Transmitter ID, you will see a message asking you to keep xDrip4iOS open whilst the transmitter is found and a bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and stay close to it.
+Once you have entered your Transmitter ID, you will see a message asking you to keep xDrip4iOS open whilst the transmitter is found and a Bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and stay close to it.
 
 <img src="../Scanning.png" style="zoom:50%;" />
 
@@ -154,22 +156,25 @@ Once you have entered your Transmitter ID, you will see a message asking you to 
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
+If you're using a Dexcom 6 or ONE sensor, you will be prompted to enter the calibration code reported on the sensor box.
+
 ### Dexcom Share Upload
 
-You can configure xDrip4iOS to upload your sensor data to your **Dexcom Share** account.
+You can configure xDrip4iOS to upload your G5/G6 (not ONE) sensor data to your **Dexcom Share** account.
 
 !!!info "Dexcom Share"
     You must have an invitation sent (even to yourself) by the Dexcom app to enable sharing. You can then use xDrip4iOS to share your data with any follower app (official and third party).
 
 In the Settings Menu, enable **Upload to Dexcom Share**, enter you account/user name and password.
 
-<img src="../../img/Settings.png" style="zoom:50%;" />
+<img src="../../img/Settings.png" style="zoom:75%;" />
 
 <img src="../DexShare.png" style="zoom:50%;" />
 
 If you are inside the US, then also select the **Use Dexcom US Servers** option. If you are anywhere else (Canada, Europe etc, **do not** select this option)
 
-This will not upload your data inside **Clarity** as only the Dexcom app can do this.
+This will not upload your data inside **Clarity** as only the Dexcom app can do this.  
+This feature is not available with Dexcom ONE.
 
 </br>
 
@@ -193,7 +198,7 @@ Further help and support can be found in the CGM In The Cloud Facebook group [he
 
 In order to connect xDrip4iOS to Nightscout and upload your CGM data, in the Settings Menu, select **Enable Nightscout**.
 
-<img src="../../img/Settings.png" style="zoom:50%;" />
+<img src="../../img/Settings.png" style="zoom:75%;" />
 
 <img src="../Nightscout.png" style="zoom:50%;" />
 
