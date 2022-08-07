@@ -22,7 +22,7 @@ pages:
     - 'Connect to M5Stack/M5StickC': 'connect/devices.md'
 - Configure/Using:
     - 'Home Screen' : 'configure/homeview.md'
-    - 'General': 'configure/index.md'
+    - 'Settings': 'configure/index.md'
     - 'Alarms': 'configure/alarms.md'
     - 'Calibration': 'configure/calibrate.md'
     - 'Treatments': 'configure/treatments.md'

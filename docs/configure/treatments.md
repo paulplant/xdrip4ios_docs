@@ -4,7 +4,9 @@
 
 In this menu you can see the list of treatments and add also add them to xDrip4iOS.
 
-Touching a treatment allows you to modify it.
+Touching a treatment allows you to modify it.  
+To delete it swipe it to the left and touch Delete.  
+These will also be applied to Nightscout.
 
 <img src="../img/TreatmentsList.png" style="zoom:50%;" />
 
@@ -14,7 +16,7 @@ Add all the data, check the time you actually did the treatment then touch Done 
 
 <img src="../img/TreatmentNew.png" style="zoom:50%;" />
 
-Treatments will be sent to Nightscout.
+Treatments will be sent to and downloaded from Nightscout.
 
 You can [display](../../configure/#treatments) treatments on the home view.
 

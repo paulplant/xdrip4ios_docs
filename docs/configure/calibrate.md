@@ -30,21 +30,24 @@ ___
 
 ## Algorithms and calibration methods
 
+!!!info "G6 and ONE"
+    G6 and ONE do not use the xDrip4iOS calibration algorithms but send the calibration request directly to the transmitter the same way the Dexcom app would do. You cannot use xDrip algorithm with these sensors.
+
 xDrip4iOS application offers three different ways how the app interprets the raw SG values provided by the sensor. Each xDrip4iOS user needs to consider that what is the best method for *themselves* to use.
 
-1. Libre algorithm *(basic)*
+1. Libre Transmitter algorithm *(basic)*
 2. xDrip algorithm with single-point calibration *(recommended)*
 3. xDrip algorithm with multi-point calibration *(advanced use)*
 
-### Libre algorithm
+### Transmitter algorithm
 
 Choose this method if you have just started to use xDrip4iOS and/or you are not (yet) familiar enough with the concept of calibration that you would like to try it out and/or you just want a simple setup and you are ok with the inaccuracies that come from this method. 
 
-Libre algorithm is not an actual calibration method at all, but more of a default setting in the app for those users, who don't want to spend time on thinking when or how to calibrate. For this method the app has a specific built-in algorithm that applies a correction to the BG reading provided by the sensor and then the corrected BG reading is shown to the user. The user is not able to impact to the correction which is done by the algorithm.
+Transmitter algorithm is not an actual calibration method at all, but more of a default setting in the app for those users, who don't want to spend time on thinking when or how to calibrate. For this method the app has a specific built-in algorithm that applies a correction to the BG reading provided by the sensor and then the corrected BG reading is shown to the user. The user is not able to impact to the correction which is done by the algorithm.
 
-!!!info "Please note when using Libre algorithm!"
-    * Even if xDrip4iOS says that it uses the *Libre* algorithm, there will most likely be small differences between the readings shown by the LibreLink app and readings shown by xDrip4iOS.
-    
+!!!info "Please note when using Transmitter algorithm!"
+    * There will most likely be small differences between the readings shown by the LibreLink app and readings shown by xDrip4iOS.
+
     * Please expect that due to the lack of calibration there could be relatively large differences between the reading shown in xDrip4iOS and your actual blood glucose reading.
 
 ### xDrip algorithm with single-point calibration
@@ -142,6 +145,9 @@ ___
 
 <img src="../img/CalibrateIcon.png" style="zoom:50%;" />
 
+!!!info "G6 and ONE"
+    G6 and ONE do not use the xDrip4iOS calibration algorithms but send the calibration request directly to the transmitter the same way the Dexcom app would do. You cannot use xDrip algorithm with these sensors.
+
 Alright, if you've read these instructions this far, you are ready for calibration. This section gives you instructions on how you will apply a new calibration in xDrip4iOS.
 
 1. Select the calibration method you want to use: either "Single-point calibration" or "Multi-point calibration". You can make this selection in "Bluetooth" tab in the app inside your transmitter.
@@ -155,9 +161,14 @@ After this, the app calculates the calibration curve as per the provided calibra
 
 Remember to monitor the readings in the app after a calibration; if they start to go up or down within 15-20 mins, there is a chance that your BG was not actually steady at the moment of the calibration, i.e. your actual BG had already started to change, but because this change was not yet visible in the app, the calibration was not accurate. Practice makes perfect and over time you might learn to do a relatively accurate calibrations, even when your BG is going *slowly* up or down, but the ground rule is: BG steady and in range. 
 
-
 !!!info "Please note"
-    * If you notice that the calibration that you applied was bad (for whatever reason) and made the BG readings inaccurate, you can reset all the calibrations by stopping and starting the sensor. Unfortunately it is not possible to remove individual calibration values<br /><br />
+   * If you notice that the calibration that you applied was bad (for whatever reason) and made the BG readings inaccurate, you can reset all the calibrations by stopping and starting the sensor. Unfortunately it is not possible to remove individual calibration values
+
+!!!warning "G6 and ONE"  
+    Do NOT stop the sensor unless you physically want to remove it.  
+    Only use restart if you know what you're doing.
+
+<br /><br />
     * If you change the calibration method, it resets all the previous calibrations.
 
 ___

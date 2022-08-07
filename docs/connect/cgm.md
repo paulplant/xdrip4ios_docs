@@ -73,7 +73,7 @@ When xDrip4iOS finds your sensor, you will get a message saying the the sensor h
 
 <img src="../L2DirectConnectedOk.png" style="zoom:56%;" />
 
-You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
 
 <img src="../LibreAlgo.png" style="zoom:50%;" />
 
@@ -114,7 +114,7 @@ You will get a message asking you to keep xDrip4iOS open whilst the bluetooth co
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
-You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
 
 <img src="../LibreAlgo.png" style="zoom:56%;" />
 
@@ -156,7 +156,15 @@ Once you have entered your Transmitter ID, you will see a message asking you to 
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
-If you're using a Dexcom 6 or ONE sensor, you will be prompted to enter the calibration code reported on the sensor box.
+Once connected, you will always see its status as Scanning since it only communicates for a short period of time every 5 minutes.
+
+<img src="../DexStatus1.png" style="zoom:40%;" />
+
+If you're using a Dexcom 6 or ONE sensor, you will be prompted to enter the calibration code reported on the sensor box once warm-up is complete.
+
+Once the transmitter paired, you can enable Follow Dexcom-app and reinstall/re-enable the Dexcom app on your phone. Both xDrip4iOS and the Dexcom app will be connected to the sensor. This allows you to use the best of both (Clarity uploads and xDrip4iOS unique features).
+
+<img src="../DexStatus2.png" style="zoom:40%;" />
 
 ### Dexcom Share Upload
 
