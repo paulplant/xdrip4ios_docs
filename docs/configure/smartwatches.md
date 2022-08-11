@@ -4,13 +4,18 @@ xDrip4iOS can be used with several other types of popular smartwatches although 
 
 ## Fitbit
 
-- Ionic, Versa 1/2/3
+[Nightscout](https://nightscout.github.io/nightscout/new_user/) required.
+
+- Ionic, Sense, Versa 1/2/3 and Lite
 - Glucose value, graphs and Nightscout careportal integration
 - Internet connection and Nightscout needed
 
-**Instructions pending**
+Once you have your BG data in Nightscout use a watchface like [these](https://nightscout.github.io/nightscout/wearable/#fitbit).
+
 ___
 ## Garmin
+
+[Nightscout](https://nightscout.github.io/nightscout/new_user/) required.
 
 - Forerunner or Fenix watches (Glucose Values, graphs)
 - Garmin Edge cycle computers (Glucose Values)
@@ -33,6 +38,7 @@ ___
 - Uses iPhone notifications (offline)
 
 **Instructions pending**
+
 ___
 ## Amazfit
 
@@ -41,9 +47,5 @@ ___
 - Uses iPhone notifications (offline)
 
 **Instructions pending**
-
-
-
-
 
 </br>

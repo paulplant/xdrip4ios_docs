@@ -23,6 +23,6 @@ You can [display](../../configure/#treatments) treatments on the home view.
 <img src="../img/TreatmentsView.png" style="zoom:50%;" />
 
 Carbs show as an orange circle, grams written above.  
-Insulin is the blue triangle at the bottom, units are displayed if above the micro-bolus threshold.  
+Insulin is the blue triangle at the bottom, units are displayed if above the [micro-bolus threshold](../../configure/#treatments).  
 Micro bolus visualization can be disabled.  
 BG checks display as a red dot.

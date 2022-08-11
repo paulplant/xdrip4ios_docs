@@ -29,7 +29,7 @@ If **yes**, then let's continue.
 
 **Disable LibreLink Bluetooth Permission**
 
-To avoid problems with the LibreLink app "stealing" the bluetooth connection from xDrip4iOS, we need to ensure that the LibreLink app has it's bluetooth permissions disabled.
+To avoid problems with the LibreLink app "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that the LibreLink app has it's Bluetooth permissions disabled.
 
 Go to your iPhone Settings and scroll down to LibreLink. Select the app and in the options, disable Bluetooth.
 
@@ -41,7 +41,7 @@ Go to the **Bluetooth** tab and choose **CGM** as your **Device Type**, press **
 
 If you already have a Libre 2 connected, add a second Libre 2 CGM device and continue reading. Once connected to the new one, you can delete the previous Libre 2 CGM.
 
-If you already have a previous CGM added (not a Libre 2), you will get a warning that says that you can only have one CGM device added at a time. Please delete the previous device and try again.
+If you already have a previous CGM added (and it is not a Libre 2), you will get a warning that says that you can only have one CGM device added at a time. Please delete the previous device and try again (only if it is not a Libre 2).
 
 <img src="../CGMDelete.png" style="zoom:58%;" />
 
@@ -83,13 +83,22 @@ Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings fro
 <br /><br />
 
 - If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the calibration rules where possible.
-<br />
+  <br />
+
+If you just changed sensor and you have data from the new one, you can **now** delete the old Libre 2 sensor from the CGM list.
+
 ___
 
 ### Libre 1/2 with a Transmitter
 
 !!!info "Compatibility"
     This method is only valid for the Libre 1 or European Libre 2 sensors with a [compatible transmitter](../index.md#compatible-sensors) such as MiaoMiao, Bubble, Droplet...
+
+**Disable other apps connected to the transmitter Bluetooth Permission**
+
+To avoid problems with other apps (Tomato, Diabox, zDrip, ...) "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that they have their Bluetooth permissions disabled.
+
+Go to your iPhone Settings and scroll down the app. Select it and in the options, disable Bluetooth.
 
 
 Firstly make sure that your Libre sensor is started and working. If you scan the sensor with the LibreLink app, **can you see the values/graph**?
@@ -136,6 +145,14 @@ ___
 !!!info "Dexcom G4"
     To connect to a Dexcom G4 transmitter, a xDrip Wireless Bridge (Wixel) is needed. More information is available [here](http://www.nightscout.info/wiki/welcome/nightscout-with-xdrip-wireless-bridge)
 
+**Disable the Dexcom app connected to the transmitter Bluetooth Permission**
+
+To avoid problems the Dexcom G5/G6/ONE master app "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that it has its Bluetooth permissions disabled.
+
+Go to your iPhone Settings and scroll down the app. Select the Dexcom app and in the options, disable Bluetooth. You will be able to enable it back later on if you wish.
+
+<img src="../DexApp.png" style="zoom:50%;" />
+
 To to the **Bluetooth** tab and click the **+** button to add a new Device Type.
 
 <img src="../BluetoothAdd.png" style="zoom:50%;" />
@@ -162,13 +179,15 @@ Once connected, you will always see its status as Scanning since it only communi
 
 If you're using a Dexcom 6 or ONE sensor, you will be prompted to enter the calibration code reported on the sensor box once warm-up is complete.
 
-Once the transmitter paired, you can enable Follow Dexcom-app and reinstall/re-enable the Dexcom app on your phone. Both xDrip4iOS and the Dexcom app will be connected to the sensor. This allows you to use the best of both (Clarity uploads and xDrip4iOS unique features).
+Once the transmitter paired, you can **enable Follow Dexcom-app** and re-enable Bluetooth in the Dexcom app on your phone. **Both xDrip4iOS and the Dexcom app will be connected to the sensor.** This allows you to use the best of both (Clarity uploads and xDrip4iOS unique features).
 
 <img src="../DexStatus2.png" style="zoom:40%;" />
 
 ### Dexcom Share Upload
 
-You can configure xDrip4iOS to upload your G5/G6 (not ONE) sensor data to your **Dexcom Share** account.
+This feature is not available with Dexcom ONE.
+
+You can configure xDrip4iOS to upload your G5/G6 sensor data to your **Dexcom Share** account.
 
 !!!info "Dexcom Share"
     You must have an invitation sent (even to yourself) by the Dexcom app to enable sharing. You can then use xDrip4iOS to share your data with any follower app (official and third party).
@@ -182,7 +201,6 @@ In the Settings Menu, enable **Upload to Dexcom Share**, enter you account/user 
 If you are inside the US, then also select the **Use Dexcom US Servers** option. If you are anywhere else (Canada, Europe etc, **do not** select this option)
 
 This will not upload your data inside **Clarity** as only the Dexcom app can do this.  
-This feature is not available with Dexcom ONE.
 
 </br>
 
