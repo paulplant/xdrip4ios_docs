@@ -29,7 +29,7 @@ If **yes**, then let's continue.
 
 **Disable LibreLink Bluetooth Permission**
 
-To avoid problems with the LibreLink app "stealing" the bluetooth connection from xDrip4iOS, we need to ensure that the LibreLink app has it's bluetooth permissions disabled.
+To avoid problems with the LibreLink app "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that the LibreLink app has it's Bluetooth permissions disabled.
 
 Go to your iPhone Settings and scroll down to LibreLink. Select the app and in the options, disable Bluetooth.
 
@@ -39,7 +39,9 @@ Go to your iPhone Settings and scroll down to LibreLink. Select the app and in t
 
 Go to the **Bluetooth** tab and choose **CGM** as your **Device Type**, press **OK**.
 
-If you already have a previous CGM added, you will get a warning to say that you can only have one CGM device added at a time. Please delete the previous device and try again.
+If you already have a Libre 2 connected, add a second Libre 2 CGM device and continue reading. Once connected to the new one, you can delete the previous Libre 2 CGM.
+
+If you already have a previous CGM added (and it is not a Libre 2), you will get a warning that says that you can only have one CGM device added at a time. Please delete the previous device and try again (only if it is not a Libre 2).
 
 <img src="../CGMDelete.png" style="zoom:58%;" />
 
@@ -71,23 +73,32 @@ When xDrip4iOS finds your sensor, you will get a message saying the the sensor h
 
 <img src="../L2DirectConnectedOk.png" style="zoom:56%;" />
 
-You can now choose if you want to use the **Libre** algorithm or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
 
-<img src="../LibreAlgo.png" style="zoom:56%;" />
+<img src="../LibreAlgo.png" style="zoom:50%;" />
 
 Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings from your sensor.
 
-- If you are using the **Libre algorithm**, you will then automatically start getting values.
+- If you are using the **Transmitter algorithm**, you will then automatically start getting values.
 <br /><br />
 
 - If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the calibration rules where possible.
-<br />
+  <br />
+
+If you just changed sensor and you have data from the new one, you can **now** delete the old Libre 2 sensor from the CGM list.
+
 ___
 
 ### Libre 1/2 with a Transmitter
 
 !!!info "Compatibility"
     This method is only valid for the Libre 1 or European Libre 2 sensors with a [compatible transmitter](../index.md#compatible-sensors) such as MiaoMiao, Bubble, Droplet...
+
+**Disable other apps connected to the transmitter Bluetooth Permission**
+
+To avoid problems with other apps (Tomato, Diabox, zDrip, ...) "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that they have their Bluetooth permissions disabled.
+
+Go to your iPhone Settings and scroll down the app. Select it and in the options, disable Bluetooth.
 
 
 Firstly make sure that your Libre sensor is started and working. If you scan the sensor with the LibreLink app, **can you see the values/graph**?
@@ -112,13 +123,13 @@ You will get a message asking you to keep xDrip4iOS open whilst the bluetooth co
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
-You can now choose if you want to use the **Libre** algorithm or deselect this option to use the **xDrip** algorithm with manual calibrations (**recommended**).
+You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
 
 <img src="../LibreAlgo.png" style="zoom:56%;" />
 
 Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings from your sensor.
 
-- If you are using the **Libre algorithm**, you will then automatically start getting values.
+- If you are using the **Transmitter algorithm**, you will then automatically start getting values.
 <br /><br />
 
 - If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the calibration rules where possible.
@@ -129,10 +140,18 @@ ___
 ## Dexcom 
 
 !!!info "Compatibility"
-    This method is valid for all Dexcom G4/G5 systems and also G6 up until "Firefly" transmitters. See [here](../index.md#dexcom) for more information.
+    This method is valid for all Dexcom G4/G5 and G6/ONE systems. See [here](../index.md#dexcom) for more information.
 
 !!!info "Dexcom G4"
     To connect to a Dexcom G4 transmitter, a xDrip Wireless Bridge (Wixel) is needed. More information is available [here](http://www.nightscout.info/wiki/welcome/nightscout-with-xdrip-wireless-bridge)
+
+**Disable the Dexcom app connected to the transmitter Bluetooth Permission**
+
+To avoid problems the Dexcom G5/G6/ONE master app "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that it has its Bluetooth permissions disabled.
+
+Go to your iPhone Settings and scroll down the app. Select the Dexcom app and in the options, disable Bluetooth. You will be able to enable it back later on if you wish.
+
+<img src="../DexApp.png" style="zoom:50%;" />
 
 To to the **Bluetooth** tab and click the **+** button to add a new Device Type.
 
@@ -146,7 +165,7 @@ You will be prompted to input your **Transmitter ID** (for example: *80H9W4*).
 
 <img src="../DexSN.png" style="zoom:50%;" />
 
-Once you have entered your Transmitter ID, you will see a message asking you to keep xDrip4iOS open whilst the transmitter is found and a bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and stay close to it.
+Once you have entered your Transmitter ID, you will see a message asking you to keep xDrip4iOS open whilst the transmitter is found and a Bluetooth connection is made. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and stay close to it.
 
 <img src="../Scanning.png" style="zoom:50%;" />
 
@@ -154,16 +173,28 @@ Once you have entered your Transmitter ID, you will see a message asking you to 
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
+Once connected, you will always see its status as Scanning since it only communicates for a short period of time every 5 minutes.
+
+<img src="../DexStatus1.png" style="zoom:40%;" />
+
+If you're using a Dexcom 6 or ONE sensor, you will be prompted to enter the calibration code reported on the sensor box once warm-up is complete.
+
+Once the transmitter paired, you can **enable Follow Dexcom-app** and re-enable Bluetooth in the Dexcom app on your phone. **Both xDrip4iOS and the Dexcom app will be connected to the sensor.** This allows you to use the best of both (Clarity uploads and xDrip4iOS unique features).
+
+<img src="../DexStatus2.png" style="zoom:40%;" />
+
 ### Dexcom Share Upload
 
-You can configure xDrip4iOS to upload your sensor data to your **Dexcom Share** account.
+This feature is not available with Dexcom ONE.
+
+You can configure xDrip4iOS to upload your G5/G6 sensor data to your **Dexcom Share** account.
 
 !!!info "Dexcom Share"
     You must have an invitation sent (even to yourself) by the Dexcom app to enable sharing. You can then use xDrip4iOS to share your data with any follower app (official and third party).
 
 In the Settings Menu, enable **Upload to Dexcom Share**, enter you account/user name and password.
 
-<img src="../../img/Settings.png" style="zoom:50%;" />
+<img src="../../img/Settings.png" style="zoom:75%;" />
 
 <img src="../DexShare.png" style="zoom:50%;" />
 
@@ -195,7 +226,7 @@ Further help and support can be found in the CGM In The Cloud Facebook group [he
 
 In order to connect xDrip4iOS to Nightscout and upload your CGM data, in the Settings Menu, select **Enable Nightscout**.
 
-<img src="../../img/Settings.png" style="zoom:50%;" />
+<img src="../../img/Settings.png" style="zoom:75%;" />
 
 <img src="../Nightscout.png" style="zoom:50%;" />
 

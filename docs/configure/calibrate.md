@@ -3,6 +3,7 @@
 !!!warning "Disclaimer"
     No matter which calibration method you decide to use and/or how good you are in calibrating, there are many reasons and factors why xDrip4iOS can show values that differ greatly from your actual blood glucose. Due to this, use careful consideration if you are about to apply a correction bolus because the app says that you have a high blood glucose OR before you decide to take in some fast carbs, because the app is saying you have a hypo, but you don't feel like it at all. 
     
+
     It is always recommended to take a proper finger prick test if you have any doubts about the accuracy of the reading shown in the app.
 
 !!!info "Please note"
@@ -29,21 +30,24 @@ ___
 
 ## Algorithms and calibration methods
 
+!!!info "G6 and ONE"
+    G6 and ONE do not use the xDrip4iOS calibration algorithms but send the calibration request directly to the transmitter the same way the Dexcom app would do. You cannot use xDrip algorithm with these sensors.
+
 xDrip4iOS application offers three different ways how the app interprets the raw SG values provided by the sensor. Each xDrip4iOS user needs to consider that what is the best method for *themselves* to use.
 
-1. Libre algorithm *(basic)*
+1. Libre Transmitter algorithm *(basic)*
 2. xDrip algorithm with single-point calibration *(recommended)*
 3. xDrip algorithm with multi-point calibration *(advanced use)*
 
-### Libre algorithm
+### Transmitter algorithm
 
 Choose this method if you have just started to use xDrip4iOS and/or you are not (yet) familiar enough with the concept of calibration that you would like to try it out and/or you just want a simple setup and you are ok with the inaccuracies that come from this method. 
 
-Libre algorithm is not an actual calibration method at all, but more of a default setting in the app for those users, who don't want to spend time on thinking when or how to calibrate. For this method the app has a specific built-in algorithm that applies a correction to the BG reading provided by the sensor and then the corrected BG reading is shown to the user. The user is not able to impact to the correction which is done by the algorithm.
+Transmitter algorithm is not an actual calibration method at all, but more of a default setting in the app for those users, who don't want to spend time on thinking when or how to calibrate. For this method the app has a specific built-in algorithm that applies a correction to the BG reading provided by the sensor and then the corrected BG reading is shown to the user. The user is not able to impact to the correction which is done by the algorithm.
 
-!!!info "Please note when using Libre algorithm!"
-    * Even if xDrip4iOS says that it uses the *Libre* algorithm, there will most likely be small differences between the readings shown by the LibreLink app and readings shown by xDrip4iOS.
-    
+!!!info "Please note when using Transmitter algorithm!"
+    * There will most likely be small differences between the readings shown by the LibreLink app and readings shown by xDrip4iOS.
+
     * Please expect that due to the lack of calibration there could be relatively large differences between the reading shown in xDrip4iOS and your actual blood glucose reading.
 
 ### xDrip algorithm with single-point calibration
@@ -107,14 +111,14 @@ ___
      * You need to understand that the finger prick reading you see in BG reader, is shown in xDrip4iOS only after the above mentioned delay. If you calibrate when your BG is steady, you know that you are giving the app a chance to calculate the best possible calibration correction. If you calibrate, when BG is not steady, you are shooting a moving target.
      * Being steady does not mean only that your actual BG is steady but that also the reading in the app is steady. Probably everyone who wears a sensor and has gone to swimming, in sauna, out in the cold, layed on a sofa pressure on sensor etc. etc. have seen that the sensor reading might suddenly rise or fall. If you calibrate when this happens, you can be certain that the applied calibration is bad and you get very inaccurate BG readings from the app.
      * Over time, you might learn to make calibrations also when your BG is not 100 % steady, e.g. *slowly* coming down. This is however not recommended for newbies due to a high probability of making an error.
-<br /><br />
+  <br /><br />
 
 * **Calibrate only when you are in range.** There are two reasons to this: <br />
   
      * First reason is that you should not be too interested if you are 14 or 16 mmol/l or if you are 2,9 or 3,1 mmol/l. Either or, you know that you have a hyper or a hypo and you need to take actions. At this time the BG reading in the app and its accuracy does not matter *that* much. I.e. aim to get the in-range accuracy to be good and settle for that out-of-range accuracy might be so-so.
      * Second reason is that the sensors themselves are the most accurate in range area and their inaccuracies increase when BG is outside the normal range. As we know, we want as accurate readings as possible, when calibrating, so you don't want to apply calibrations on top of inaccurate sensor readings.
      * Of course, if the app says that you are out of range and shows 3,0 mmol/l but your actual BG (as per a finger prick) says 4,0 (*and* your BG is steady), you can calibrate. No T1D wants to hear low alarms blazing, when they are not actually hypo'ing.
-<br /><br />
+  <br /><br />
   
 * **Ensure you minimize the margin of error, when taking a finger prick**:<br />
   
@@ -122,7 +126,7 @@ ___
      * Use strips that have not expired. While it's *possible* to use expired strips and get accurate readings with them as well, do you want to take the chance?
      * Wash your hands before you take the reading. You might have some residues in your fingers, which impact the measurement - wash them off first.
      * Don't squeeze your fingertip to get a blood drop out.
-<br /><br />
+  <br /><br />
 
 * Everyone knows how wild the sensor readings might be during the first 12-24 hours after a new sensor has been installed. This happens because the area where you applied the sensor is not yet used to the small filament that is inside your skin and via which the sensor takes readings. These sudden changes make also calibration more difficult. You can mitigate these if you **attach a new sensor on your skin 12-24 hours *before* you actually take it in use**. That way your skin has time to get used to the sensor and the readings are much more calm, when you start the sensor.
 <br /><br />
@@ -139,10 +143,15 @@ ___
 
 ## How to calibrate in xDrip4iOS?
 
+<img src="../img/CalibrateIcon.png" style="zoom:50%;" />
+
+!!!info "G6 and ONE"
+    G6 and ONE do not use the xDrip4iOS calibration algorithms but send the calibration request directly to the transmitter the same way the Dexcom app would do. You cannot use xDrip algorithm with these sensors.
+
 Alright, if you've read these instructions this far, you are ready for calibration. This section gives you instructions on how you will apply a new calibration in xDrip4iOS.
 
 1. Select the calibration method you want to use: either "Single-point calibration" or "Multi-point calibration". You can make this selection in "Bluetooth" tab in the app inside your transmitter.
-2. On the main screen of the app, click "Calibrate"
+2. On the main screen of the app, select "Calibrate"
    * If you have just connected a new sensor (or resetted the calibrations by stop->start sensor), the app does not allow you to calibrate right away. You need to wait until the app gets at least two BG readings from the sensor, before a calibration can be applied.
 3. A pop-up opens, which asks you to enter a calibration value. Here you enter the value from your BG reader after a finger prick.
 
@@ -152,9 +161,14 @@ After this, the app calculates the calibration curve as per the provided calibra
 
 Remember to monitor the readings in the app after a calibration; if they start to go up or down within 15-20 mins, there is a chance that your BG was not actually steady at the moment of the calibration, i.e. your actual BG had already started to change, but because this change was not yet visible in the app, the calibration was not accurate. Practice makes perfect and over time you might learn to do a relatively accurate calibrations, even when your BG is going *slowly* up or down, but the ground rule is: BG steady and in range. 
 
-
 !!!info "Please note"
-    * If you notice that the calibration that you applied was bad (for whatever reason) and made the BG readings inaccurate, you can reset all the calibrations by stopping and starting the sensor. Unfortunately it is not possible to remove individual calibration values<br /><br />
+   * If you notice that the calibration that you applied was bad (for whatever reason) and made the BG readings inaccurate, you can reset all the calibrations by stopping and starting the sensor. Unfortunately it is not possible to remove individual calibration values
+
+!!!warning "G6 and ONE"  
+    Do NOT stop the sensor unless you physically want to remove it.  
+    Only use restart if you know what you're doing.
+
+<br /><br />
     * If you change the calibration method, it resets all the previous calibrations.
 
 ___
@@ -165,7 +179,7 @@ ___
 * By default, xDrip4iOS has alerts to remind you to perform a calibration. If the app alerts you about this, it doesn't mean that you _must_ do a new calibration. If you feel that these alerts/reminders occur too often, you can increase their interval. Often people turn calibration alerts even completely off.<br /><br />
 * Sometimes a new calibration value makes the calibration slope and/or intercept to become something crazy without user noticing it right away. If you have a Nightscout installation, it is possible to see calibration curve there in the reports. There is a specific "Calibrations" report type for this.<br /><br />
     * This report returns you the current and the past calibration graphs so that you can look at them and assess their accuracy. You can also compare the previous curve and the current curve and think how the calibration that you just did changed the curve.<br /><br />
-    * It is to be noted that in Nightscout reports, the calibration report shows the graph as inverted: sensor raw value is on Y axis and BG reading value after the calibration on the X axis. This means that you need to know how to read the graph and slope and intercept values reported by Nightscout - this part is not explained in these instructions more than these below:<br /><br />
+    * It is to be noted that in [Nightscout reports](https://nightscout.github.io/nightscout/reports/#calibrations), the calibration report shows the graph as inverted: sensor raw value is on Y axis and BG reading value after the calibration on the X axis. This means that you need to know how to read the graph and slope and intercept values reported by Nightscout - this part is not explained in these instructions more than these below:<br /><br />
         * Values in these reports are shown based on 'mg/dl' and multiplied by 1000. <br /><br />
         * On the report, the intercept value of "-24000" is actually a positive intercept of 24 mg/dl or 1,5 mmol/l <br /><br />
         * On the report, the slope value of 1100 is actually slope of 0,91  (1/1,1)

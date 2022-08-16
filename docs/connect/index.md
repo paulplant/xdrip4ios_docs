@@ -12,9 +12,9 @@ In order to be able to see Blood Glucose data in xDrip4iOS, you need to connect 
 
 There are two types of data sources that you can use:
 
-In **Master** mode, your iPhone will connect directly to a bluetooth-enabled CGM system (sensor/transmitter) in order to receive real-time data.
+In **Master** mode, your iPhone will connect directly to a Bluetooth-enabled CGM system (sensor/transmitter) in order to receive real-time data.
 
-In **Follower** mode, your iPhone will connect to a Nightscout site over the internet  and pull real-time data. 
+In **Follower** mode, your iPhone will connect to a Nightscout site over the internet and pull real-time data. 
 
 Put simply, a **Master** is usually used by the actual person who is wearing the sensor and a **Follower** is usually a parent/friend/caregiver that wants to be able to track (follow) the other person's CGM values.
 

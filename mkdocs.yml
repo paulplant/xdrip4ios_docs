@@ -21,10 +21,11 @@ pages:
     - 'Connect to Nightscout as a Follower': 'connect/follower.md'
     - 'Connect to M5Stack/M5StickC': 'connect/devices.md'
 - Configure/Using:
-    - 'General': 'configure/index.md'
+    - 'Home Screen' : 'configure/homeview.md'
+    - 'Settings': 'configure/index.md'
     - 'Alarms': 'configure/alarms.md'
     - 'Calibration': 'configure/calibrate.md'
-#    - 'Statistics': 'configure/statistics.md'
+    - 'Treatments': 'configure/treatments.md'
     - 'Apple Watch': 'configure/applewatch.md'
     - 'Other Smartwatches': 'configure/smartwatches.md'
 - Advanced:
