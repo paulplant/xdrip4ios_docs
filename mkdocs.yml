@@ -8,7 +8,7 @@ markdown_extensions:
     - toc:
         permalink: ⌁
 
-pages:
+nav:
 - 'Introduction': 'index.md'
 - 'FAQ': 'faq.md'
 - Install: 
