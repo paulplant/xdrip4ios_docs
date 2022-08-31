@@ -32,8 +32,6 @@ To add a shortcut to the xDrip4iOS Watch app as a complication on a compatible w
 
 This shortcut/complication *will not* display BG values. It will just display the xDrip4iOS shortcut and allow you to quickly launch the app.
 
-</br> 
-
 Alternatively, this can be done from the Watch app on the iPhone.
 
 Adding it to the dock, depends on the mode. If you have the Dock set to “most recent” then it simply depends on when you last opened xDrip4iOS whether it will appear or not. If you want it there permanently and in front, you must set it to “Favourites” mode. And “favourites” are managed from the Apple Watch app on the iPhone, you can add xDrip4iOS as a favorite there to have it in dock permanently.
