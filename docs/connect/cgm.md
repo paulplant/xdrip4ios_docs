@@ -179,9 +179,15 @@ Once connected, you will always see its status as Scanning since it only communi
 
 If you're using a Dexcom 6 or ONE sensor, you will be prompted to enter the calibration code reported on the sensor box once warm-up is complete.
 
-Once the transmitter paired, you can **enable Follow Dexcom-app** and re-enable Bluetooth in the Dexcom app on your phone. **Both xDrip4iOS and the Dexcom app will be connected to the sensor.** This allows you to use the best of both (Clarity uploads and xDrip4iOS unique features).
+### "Follow Dexcom-app" option
+
+Once the transmitter is paired, you can **enable Follow Dexcom-app** and re-enable Bluetooth in the Dexcom app on your phone. **Both xDrip4iOS and the Dexcom app will be connected to the sensor.** This allows you to use the best of both worlds (Clarity uploads and xDrip4iOS unique features).
+
+In this case, xDrip4iOS will simply spy on the communications between the transmitter and the Dexcom app. Whilst it is therefore technically the Dexcom app that is controlling the communications with the transmitter, with "Follow Dexcom-app" mode enabled, xDrip4iOS can still send commands to start/end the sensor session and also send calibrations.
 
 <img src="../DexStatus2.png" style="zoom:40%;" />
+
+**Please note:** If you do not have the original Dexcom app installed on your iPhone and connected to your transmitter, *do not* enable this option or you will not get any readings.
 
 ### Dexcom Share Upload
 
@@ -200,9 +206,9 @@ In the Settings Menu, enable **Upload to Dexcom Share**, enter you account/user 
 
 If you are inside the US, then also select the **Use Dexcom US Servers** option. If you are anywhere else (Canada, Europe etc, **do not** select this option)
 
-Finally, enter a Dexcom receiver serial number. This is required for this method of uploading CGM data to Dexcom Share servers. The receiver does not need to be in use or paired with any transmitter.
+Finally, enter a Dexcom receiver serial number. **This is required** for this method of uploading CGM data to Dexcom Share servers. The receiver does not need to be in use or paired with any transmitter.
 
-This will not upload your data inside **Clarity**, as only the Dexcom app can do this.
+This will not upload your data inside **Clarity**, as only the Dexcom app can do this. It will just upload your data to Dexcom Share so that people using the Follow app can follow you. We would still recommend using Nightscout (see below) instead of Dexcom Share as it has many more benefits.
 
 </br>
 
