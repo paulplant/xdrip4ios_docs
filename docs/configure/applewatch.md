@@ -4,7 +4,7 @@ There are currently two ways to show your BG information on your Apple Watch usi
 
 Most people chose to use both methods as each one works well at certain times.
 
-------
+</br>
 
 ## Apple Watch App
 
@@ -61,7 +61,4 @@ Select the xDrip4iOS calendar (or whatever you called it).
 You can then customize the indications.
 
 <img src="../img/AppleWatch3.png" style="zoom:50%;" />
-
-</br>
-
 
