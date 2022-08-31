@@ -19,8 +19,6 @@ If it isn't:
 - In the “My Watch” tab to scroll all the way down to the “Available apps” section
 - Tap “Install” next to xDrip4iOS
 
-</br>
-
 The Watch App can be opened by just pressing the side button of your Watch and looking for the xDrip4iOS icon. Just press it to open the app.
 
 To add a shortcut to the xDrip4iOS Watch app as a complication on a compatible watch face:
