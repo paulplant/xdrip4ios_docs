@@ -8,6 +8,8 @@ Most people chose to use both methods as each one works well at certain times.
 
 ## Apple Watch App
 
+<img src="../img/Complication.png" style="zoom:75%;" />
+
 **Prerequisite:** xDrip4iOS must be installed on your Watch.  
 This should be automatically done when you install xDrip4iOS on your phone. 
 
@@ -19,9 +21,7 @@ If it isn't:
 
 </br>
 
-The Watch App can be opened by just pressing the side button of your Watch and looking for the xDrip4iOS icon. Just press it to open the app:
-
-<img src="../img/Complication.png" style="zoom:50%;" />
+The Watch App can be opened by just pressing the side button of your Watch and looking for the xDrip4iOS icon. Just press it to open the app.
 
 To add a shortcut to the xDrip4iOS Watch app as a complication on a compatible watch face:
 
