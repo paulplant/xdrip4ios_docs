@@ -19,14 +19,16 @@ If it isn't:
 
 </br>
 
+The Watch App can be opened by just pressing the side button of your Watch and looking for the xDrip4iOS icon. Just press it to open the app:
+
+<img src="../img/Complication.png" style="zoom:50%;" />
+
 To add a shortcut to the xDrip4iOS Watch app as a complication on a compatible watch face:
 
 - Long press the watch face
 - Tap “modify”
 - Select the complication slot where you want to have it and scroll with the digital crown until xDrip4iOS is selected
 - Press the crown to exit back to watchface
-
-<img src="../img/Complication.png" style="zoom:50%;" />
 
 This shortcut/complication *will not* display BG values. It will just display the xDrip4iOS shortcut and allow you to quickly launch the app.
 
