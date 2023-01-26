@@ -1,6 +1,6 @@
 # FreeAPS (Loop) Integration
 
-xDrip4iOS can be used as an offline CGM data source for the FreeAPS fork of Loop
+FreeAPS used to be the only way to use xDrip4iOS as an offline cgm data source for Loop, but since the release of Loop 3 a new branch called [main_lnl_patches](https://www.loopandlearn.org/github-lnl-patches/) has been created by Loop And Learn which also supports using xDrip4iOS as an offline cgm data source for Loop (as well as support for Glucose Direct and the integration of the CustomTypeOne patch which adds more features to Loop 3). Because Loop and Learn has shifted their focus to Loop 3 and will only perform minor maintainance on FreeAPS, it is highly reccommended that users of FreeAPS switch to this branch of Loop 3 instead.
 
 ___
 ## What is FreeAPS (Loop)?
@@ -9,7 +9,7 @@ ___
 
 An APS works by reading blood glucose values, predicting/calculating the insulin requirement and automatically adjusting a user's insulin pump with the aim of keeping the user within their target blood glucose range.
 
-[FreeAPS](https://github.com/loopnlearn/LoopWorkspace) is a fork of the [Loop](https://loopkit.github.io/loopdocs/) project. This fork was originally developed by **Ivan Valkou**. His repository was frozen last spring. To support the users of the FreeAPS fork, maintenance has been taken over by the Loop and Learn mentors. 
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc/) is a fork of the [Loop](https://loopkit.github.io/loopdocs/) project. This fork was originally developed by **Ivan Valkou**. His repository was frozen last spring. To support the users of the FreeAPS fork, maintenance was taken over by the Loop and Learn mentors. Only minor maintenence will be performed, though, so users are highly encouraged to switch to the [main_lnl_patches](https://www.loopandlearn.org/github-lnl-patches/) branch of Loop 3 which also supports xDrip4iOS as an offline cgm source.
 
 !!!info "FreeAPS vs FreeAPS X??"
     This could get confusing, so pay attention:
@@ -29,13 +29,7 @@ Important: The Testflight version of xDrip4iOS **cannot** be used with FreeAPS. 
 ___
 ## How do I install FreeAPS (Loop)?
 
-The Loop and Learn repository is [here](https://github.com/loopnlearn/LoopWorkspace).
-
-With the advent of iOS 15 (Xcode 13), all Loop and FreeAPS builds require using LoopWorkspace. LoopDocs has been modifed for workspace builds.  If you follow the directions for [LoopDocs: Build Loop App](https://loopkit.github.io/loopdocs/build/step14), when you get to the instruction where you choose what Loop to build, select FreeAPS instead of Loop Master.
-
-Please read the [LoopDocs: Updating](https://loopkit.github.io/loopdocs/build/updating) page to ensure your Mac is fully updated (both MacOS and Xcode) and Xcode Command Line tools/Git are installed before proceeding.
-
-Follow all instructions in LoopDocs for building the Loop app - the only difference is you to select FreeAPS instead of Loop when running the script in the terminal. 
+Instructions for installing FreeAPS can be found at [Loop and Learn](https://www.loopandlearn.org/freeapsdoc/).
 
 Remember that xDrip4iOS is a separate app and must be [built from source](../install/build.md) in order to successfully interface with FreeAPS.
 
