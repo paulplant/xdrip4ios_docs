@@ -27,46 +27,10 @@ ___
 To be able to build and run xDrip4iOS without restrictions on your personal devices, you will ideally need an Apple Developer Account. This is a paid account (around 100 EUR/USD per year) which gives you full access to Apple development tools and documentation, together with the ability to self-sign your own apps (or submit them to Testflight or App Store if you wanted).
 
 More information at the [Apple Developer](https://developer.apple.com) website.
-
 ___
-### Install the Cocoa Pods Framework to your Mac
-
-If this is the first time that you have built xDrip4iOS on your Mac, then you will need to install a set of frameworks called CocoaPods. If you have previously installed CocoaPods, you can skip this step.
-
-!!!info "APPLE "M1" PROCESSOR?"
-    In this step, the process will change slightly depending on the type of Mac you are using. You will be using either an Intel-based or M1-based Mac.
-
-    - The newer Mac Mini, MacBook Air or MacBook Pro (2020-2021) will generally have the new M1 processor (aka *Apple Silicon*)
-    - Most older Macs (<2020) will be running Intel processesors and will not need the following step to be carried out
-  
-    If you are one of these newer M1 Macs, then you **must perform** the following steps before trying to install the Cocoapods framework.
-    
-    Firslty, make sure you run Terminal using *Rosetta* (this is an Apple tool that allows you to *translate* older applications to run on the newer M1 architecture):
-
-    - Right-click on Terminal in Finder
-    - Click "Get Info"
-    - Select "Open with Rosetta"
-    - Clikc "OK"
-  
-    Then, open Terminal and run the following command to install **ffi**:
-
-    **sudo gem install ffi**
-
-    Once successfully installed, you should now be able to continue as per the Intel instructions below
-
-
-To install the Cocoapods framework to your Mac, please enter the following command:
-
-    sudo gem install cocoapods
-
-Note the use of "**sudo**" here to elevate the permissions to allow installation at a system level. If asked for your password, use the admin password that you use to log into your Mac (this is generally just your user password).
-
-You should get an "OK" message confirming successfull installation. 
-
-
 ### Clone the xdripswift project
 
-Good job for getting to here. Now it's time to grab a copy of the source code from Github and build the project.
+Let's start by grabbing a copy of the source code from Github and building the project.
 
 You should open Terminal, navigate into your Documents folder (or wherever you prefer) and run the following command to clone the xDrip4iOS project:
 
@@ -75,14 +39,6 @@ You should open Terminal, navigate into your Documents folder (or wherever you p
 This will create a new folder called xdripswift and it will copy all needed code into it. Once completed we should navigate into this folder:
 
     cd xdripswift
-
-### Install Cocoa Pods Dependencies
-
-Earlier we installed the full Cocoa Pods framework onto your system. Now we will go into the cloned project folder and install the individual project dependencies there:
-
-    pod install
-
-Again, you will see some activity and you should get an OK message.
 
 ### Configure the Override File
 
@@ -112,16 +68,7 @@ If you **have** a paid Developer account, then you will probably already know th
 
 Put this ID (your ID, not the example shown below) here:
 
-<span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">95C72J2362</span>
-
-!!!info "No Apple Development Account?"
-    If you **don't** have a paid Developer account then you can always use something else. Examples:
-    <br /><br />
-    <span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">johnsmith</span>
-    <br />
-    <span style="color:red">//</span>XDRIP_DEVELOPMENT_TEAM = <span style="color:green">iloveinsulin</span>
-
-    If you get an error message that the Bundle Identifier is not available it's because somebody else has already used/registered it. Just choose a different one. It can even be completely random such as "DI20F77G9S0WLKWOCYVH". Just make sure you keep a note of it.
+XDRIP_DEVELOPMENT_TEAM = <span style="color:green">95C72J2362</span>
 
 Finally, just uncomment the MAIN_APP_BUNDLE_IDENTIFIER line. No need to edit anything else. Your file should now look like this:
 
@@ -142,6 +89,8 @@ ___
 Now we're going to open the Workspace file. Go back to terminal and run the following command (again, inside your xdripswift folder).
 
     xed .
+
+(If you prefer to do this manually you can open the xdrip.xcworkspace file from within Finder. Do *not* try opening the xdrip.xcodeproj file as it *will not work* for building the app)
 
 Open the xdrip file on the left of the screen and you should see that your Bundle Identifier has been correctly configured with the values you used in the previous step.
 
