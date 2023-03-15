@@ -96,8 +96,6 @@ If you have correctly followed the above instructions, Xcode will now automatica
 
 The only think you need to do now is to plug in your iPhone, select it from the list (do not select what looks like your phone under iOS Simulators, you **must** select your actual phone under **iOS Devices**) and then hit the build button (or go to Product -> Build in the Xcode menu).
 
-</br>
-
 ___
 
 ### How do I Update?
