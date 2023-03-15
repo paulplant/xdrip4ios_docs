@@ -79,31 +79,23 @@ ___
 <span style="color:green">XDRIP_DEVELOPMENT_TEAM = 95C77J2362</span><span style="color:blue"> *<--- here you put your unique ID*</span>
 
 <span style="color:gray">// Change to support running multiple apps simultaneously.<br /></span>
-<span style="color:green">MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
+<span style="color:green">MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span><span style="color:blue"> *<--- make sure you have removed the // from this line*</span>
 
-Make sure you save/close the file and exit out of the editor/Xcode before continuing.
+Make sure you save/close the xDripConfigOverride file before continuing.
 
 ___
 ### Build the Project
 
-Now we're going to open the Workspace file. Go back to terminal and run the following command (again, inside your xdripswift folder).
+Now we're going to open the Workspace file. Go back to Terminal and run the following command (again, inside your xdripswift folder).
 
     xed .
 
-(If you prefer to do this manually you can open the xdrip.xcworkspace file from within Finder. Do *not* try opening the xdrip.xcodeproj file as it *will not work* for building the app)
+(If you prefer to do this manually you can open the xdrip.xcworkspace file from within Finder. **Do not try opening the xdrip.xcodeproj file as it **will not work for building the app**)
 
-Open the xdrip file on the left of the screen and you should see that your Bundle Identifier has been correctly configured with the values you used in the previous step.
+If you have correctly followed the above instructions, Xcode will now automatically download all package dependencies and correctly configure the app Signing, the App Group and Bundle Identifiers (you won't need to do anything).
 
-Now you'll need to "sign" the targets in order to allow Xcode to create a provisioning profile to be able to install the app to your iPhone. Go to the **Signing & Capabilities** tab one and select your **Team** in the drop down Signing option for each target.
+The only think you need to do now is to plug in your iPhone, select it from the list (do not select what looks like your phone under iOS Simulators, you **must** select your actual phone under **iOS Devices**) and then hit the build button (or go to Product -> Build in the Xcode menu).
 
-Please note that there are **four** targets to sign:
-
-1. xdrip
-2. xDrip4iOS Widget
-3. Watch App
-4. Watch App Watchkit Extension
-
-Repeat this for each target, connect your iPhone to your Mac, select your device at the top of the screen (don't select a simulator!) and hit **Build** ("Play")
 </br>
 
 ___
