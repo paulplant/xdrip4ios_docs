@@ -18,7 +18,7 @@ It is also able to act as a **Follower** device and pull remote CGM data from [N
 ___
 ## What Do I Need?
 
-To run xDrip4iOS you will firstly need an iPhone 7 or newer running minimum iOS13.
+To run xDrip4iOS you will firstly need an iPhone 7 or newer running minimum iOS15.
 
 To work as a **Master** device, you will need to have a compatible CGM system (see below). If you want to share your CGM data with Nightscout, then you will also need a working internet connection.
 
@@ -37,10 +37,10 @@ That's it. Nothing else is needed.
 ___
 ## Compatible Sensors
 
-xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/transmitters.
+xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmitters.
 
 ### Libre 
-**Libre 1 *(European 14 day)***
+**Libre 1 European** *(14 day)*
 
 | Transmitter Type &nbsp;&nbsp;&nbsp;| Firmware Version &nbsp;&nbsp;&nbsp;| Compatible? &nbsp;&nbsp;&nbsp; |
 |:-------------- |:------------- | :----------- |
@@ -51,11 +51,11 @@ xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/
 
 </br>
 
-**Libre 1 *(US 14 days)* and 2 *(European 14 day)***
+**Libre 1 US**  *(14 day)*
 
 | Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :------------------------------------ | :---------------------------------- | :----------------------------- |
-| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:green">Yes</span>** *(2)* |
+| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:red">No</span>** |
 | MiaoMiao 1                                          | >= 39                           | **<span style="color:green">Yes</span>** *(1)*             |
 | MiaoMiao 2                                          | >= 7                             | **<span style="color:green">Yes</span>** *(1)*          |
 | Miaomiao 3 | - | **<span style="color:green">Yes</span>** *(1)* |
@@ -63,44 +63,101 @@ xDrip4iOS is compatible with many Libre sensors and also certain Dexcom sensors/
 | Atom                                                | All                              | **<span style="color:green">Yes</span>**                        |
 | GNSentry                                            | -                                | **<span style="color:red">No</span>**                             |
 
-</br> 
- *(1)* The MiaoMiao firmware can be upgraded, if needed, using Tomato App
-
- *(2)* Only Libre 2 Europe</br>
+ *(1) The MiaoMiao firmware can be upgraded, if needed, using Tomato App*
 </br>
 
-**Libre 2 US/CA/AUS, Libre Pro, Libre H**
+**Libre 2 European** *(14 day)*
 
-- **<span style="color:red">Not compatible</span>**
+| Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
+| :------------------------------------ | :---------------------------------- | :----------------------------- |
+| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:green">Yes</span>**  |
+| MiaoMiao 1                                          | >= 39                           | **<span style="color:green">Yes</span>** *(1)*             |
+| MiaoMiao 2                                          | >= 7                             | **<span style="color:green">Yes</span>** *(1)*          |
+| Miaomiao 3 | - | **<span style="color:green">Yes</span>** *(1)* |
+| Bubble, Bubble mini                               | All                              | **<span style="color:green">Yes</span>**/**<span style="color:red">No</span>** *(2)*                       |
+| Atom                                                | All                              | **<span style="color:green">Yes</span>**                        |
+| GNSentry                                            | -                                | **<span style="color:red">No</span>**                             |
+
+ *(1) The MiaoMiao firmware can be upgraded, if needed, using Tomato App*
+ </br>
+ *(2) Bubble and Bubble Mini transmitters are not currently compatible with xDrip4iOS if using the newer "C5" Libre 2 EU sensors*
 </br> </br> 
 
+**Libre 2 US/Canadian/Australian**
+
+- **<span style="color:red">Not compatible at the current time</span>**
+</br>  
+
+**Libre Pro, Libre H**
+
+- **<span style="color:red">Not compatible at the current time</span>**
+</br>  
+
+**Libre 3**
+
+- **<span style="color:red">Not compatible at the current time</span>**
+</br>  
+
+___
 ### Dexcom 
-**Dexcom G4** *(1)* **/ G5**
 
-- **<span style="color:green">Fully compatible</span>** with a bridge/Wixel device and using raw data mode.</br> 
+**Dexcom G4** *(1)* **/ G5** <span style="color:orange"><--- (Obsolete)</span>
 
-**Dexcom G5**
+- **<span style="color:green">Fully compatible</span>** with a bridge/Wixel device and using raw data mode.
+</br> 
+
+**Dexcom G5** <span style="color:orange"><--- (Obsolete)</span>
 
 - **<span style="color:green">Fully compatible</span>** using raw mode.
-  
+</br> 
 
-**Dexcom G6  and ONE**
+**Dexcom G6**
 
-- **<span style="color:green">Fully compatible</span>** using either raw data or native modes (see below).
+- **<span style="color:green">Fully compatible</span>** using native mode.
 
-Older 80xxxx/81xxxx G6 transmitters can work in **raw mode** with the possibility of processing all data using the xDrip algorithm and manual calibration. Sensor session limits do not apply in this mode.
+All G6 transmitters (including older pre-firefly 80xxxx/81xxxx transmitters) will work in **native mode** using the algorithm inside the transmitter. This means that xDrip4iOS will have a 2 hour warm-up, a factory 10 day sensor expiry and a 90-110 day transmitter life. 
 
-Newer G6 "Firefly" transmitters (>8Gxxxx) and ONE will only work in **native mode** using the algorithm inside the transmitter. This means that xDrip4iOS will be limited to the factory 10 day sensor sessions and is also able to start/stop sensor sessions as well as calibrating.
+The sensors can be started using the sensor code on the label and can be calibrated from inside the xDrip4iOS app.
 
-If you need to use the official Dexcom app to upload data to Dexcom Share or Clarity, you can set xDrip4iOS to "Follow Dexcom App" mode. In this mode, the main connection between the transmitter and your iPhone is handled by the Dexcom app. xDrip4iOS will simply receive a copy of the transmitted data. This allows you to use xDrip4iOS for all features (alarms, graphs, statistics, Nightscout, Watch app etc) without needing to stop using the official app.
-</br>
+You can connect to the G6 transmitters in two ways:
+
+1. Directly to the transmitter using xDrip4iOS and *without using the Dexcom app*
+2. Indirectly to the transmitter using xDrip4iOS and the Dexcom app in parallel by enabling "Read from Dexcom app" mode.
+
+If using a modified G6 **Anubis** transmitter, the Anubis-specific limits (50 minute warm-up, 60 day sensor expiry, 180 day transmitter expiry, resetable) all apply. For more information about the Anubis project, please see the [Facebook group](https://www.facebook.com/groups/310545804061135).
+</br> 
+
+**Dexcom ONE**
+
+- **<span style="color:green">Partially compatible</span>** using native mode with **"Read from Dexcom app" enabled** (see below).
+ 
+Dexcom One transmitters  will work in **native mode** using the algorithm inside the transmitter. This means that xDrip4iOS will have a 2 hour warm-up, a factory 10 day sensor expiry and a 90-110 day transmitter life. 
+
+The sensors can be started using the sensor code on the label.
+
+Note that One transmitters with a transmitter ID **starting with C** (Cxxxxx) can only be used with "Read from Dexcom App" enabled. They also **cannot be calibrated** from within xDrip4iOS.
+</br> 
+</br> 
+
+**"Read from Dexcom App" Mode**
+</br> 
+If you need to use the official Dexcom app to upload data to Dexcom Share or Clarity, you can set xDrip4iOS to "Read from Dexcom App" mode. 
+
+In this mode, the main connection between the transmitter and your iPhone is handled by the Dexcom app. xDrip4iOS will simply receive a copy of the transmitted data and process it. This allows you to use xDrip4iOS for all features (alarms, graphs, statistics, Nightscout, Watch app etc) without needing to stop using the official app.
+</br> 
 
 ___
 ## Where Can I Get Help?
 
-The main public support group for all support is the xDrip4iOS group on [Facebook](https://www.facebook.com/groups/853994615056838). Feel free to join the group, ask questions and participate.
+The **official public group** for all technical support is the **xDrip4iOS** group on [Facebook](https://www.facebook.com/groups/853994615056838). Feel free to join the group, ask questions and participate.
 
-You can also find all source code, technical information and register issues in our  [Github repository](https://github.com/JohanDegraeve/xdripswift).
+Please **do not** send e-mails or private messages to the development team requesting general/personal help with the app. Help of this type is only offered in the xDrip4iOS Facebook group.
+
+You can also find all source code, technical information and register issues in our  [GitHub repository](https://github.com/JohanDegraeve/xdripswift).
+
+All bug reports should be carefully verified and raised in GitHub as an issues.
+
+Again, do not raise GitHub issues if you are just new to the app and are looking for technical help or assume something isn't working - please read these instructions and visit the Facebook group for help in this case.
 </br>
 
 ___
