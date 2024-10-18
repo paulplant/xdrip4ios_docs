@@ -29,10 +29,9 @@ nav:
     - 'Apple Watch': 'configure/applewatch.md'
     - 'Other Smartwatches': 'configure/smartwatches.md'
 - Advanced:
-    - 'FreeAPS (Loop) Integration': 'advanced/freeaps.md'
-    - 'FreeAPS X (OpenAPS) Integration': 'advanced/freeapsx.md'
+    - 'Open-Source AID Integration': 'advanced/os-aid.md'
 - Troubleshoot:
     - 'Troubleshooting': 'troubleshoot/index.md'
-    - 'Cannot Connect?': 'troubleshoot/connection_troubles.md'
+    - 'Cannot Connect?': 'troubleshoot/connection_problems.md'
     - 'Disconnections?': 'troubleshoot/disconnections.md'
-    - 'How to Report Errors': 'troubleshoot/reporting.md'
+    - 'How to Report Errors': 'troubleshoot/reporting_issues.md'
