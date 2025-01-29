@@ -155,11 +155,11 @@ If using a modified **Anubis** G6 transmitter, this will be automatically recogn
 
 - **<span style="color:green">Compatible</span>** using native mode with **"Read from Dexcom app" enabled** (see below).
  
-Dexcom One transmitters  will work in **native mode** using the algorithm inside the transmitter. This means that xDrip4iOS will have a 2 hour warm-up, a factory 10 day sensor expiry and a 90-110 day transmitter life. 
+Dexcom ONE transmitters  will work in **native mode** using the algorithm inside the transmitter. This means that xDrip4iOS will have a 2 hour warm-up, a factory 10 day sensor expiry and a 90-110 day transmitter life. 
 
 The sensors can be started using the sensor code on the label.
 
-Note that One transmitters with a transmitter ID **starting with C** (Cxxxxx) can only be used with "Read from Dexcom App" enabled. They also **cannot be calibrated** from within xDrip4iOS.
+Note that ONE transmitters with a transmitter ID **starting with C** (Cxxxxx) can only be used with "Read from Dexcom App" enabled. They also **cannot be calibrated** from within xDrip4iOS.
 </br> 
 
 !!!info "READ FROM DEXCOM APP"
