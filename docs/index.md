@@ -142,7 +142,7 @@ You can connect to the G6 transmitters in two ways:
 2. By using xDrip4iOS and the Dexcom app in parallel by enabling "Read from Dexcom app" mode.
 </br> 
 
-#### Anubis G6
+#### Dexcom G6 (Anubis)
 
 If using a modified **Anubis** G6 transmitter, this will be automatically recognised by xDrip4iOS (from version 5.4.1 onwards) and the Anubis-specific limits (50 minute warm-up, 60 day sensor expiry, 180 day transmitter expiry, resetable) all apply. For more information about the Anubis project, please see the [Facebook group](https://www.facebook.com/groups/310545804061135).
 </br> 
