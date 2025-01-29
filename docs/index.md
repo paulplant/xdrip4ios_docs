@@ -189,8 +189,21 @@ ___
 - Master: <span style="color:red">Not compatible</span>
 - Follower: <span style="color:red">Not compatible</span> *(1)*
   
-  
 *(1) There are some community solutions online to get Medtronic data into Nightscout including using xDrip+ on Android. Once there, xDrip4iOS can follow this data using Nightscout Follower mode.*
+
+___
+### Eversense 
+
+#### All sensors
+- Master: <span style="color:red">Not compatible</span>
+- Follower: <span style="color:red">Not compatible</span>
+</br> 
+___
+### Glucomen 
+
+#### All sensors
+- Master: <span style="color:red">Not compatible</span>
+- Follower: <span style="color:red">Not compatible</span>
 </br> 
 
 ## Where Can I Get Help?
