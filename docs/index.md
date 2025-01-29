@@ -20,7 +20,9 @@ It is also able to act as a **Follower** device and pull remote CGM data from on
 
 ## What Do I Need?
 
-To run xDrip4iOS you will firstly need an iPhone 7 or newer running minimum iOS 16.2. If you want to use a connected Apple Watch, then it must be a Series 4 or newer running watchOS 10.
+📱 To run xDrip4iOS you will need an iPhone 7 or newer running **minimum iOS 16.2**. 
+
+⌚️ If you want to use a connected Apple Watch, then it must be a Series 4 or newer running **minimum watchOS 10**.
 
 To work as a **Master** device, you will need to have a compatible CGM system (see below). If you want to share your CGM data with Nightscout, then you will also need a working internet connection.
 
