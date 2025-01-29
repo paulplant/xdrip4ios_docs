@@ -45,8 +45,8 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 
 ### Libre 
 #### Libre 1 European *(14 day)*
-- <span style="color:orange">This sensor is now considered obsolete</span>
-- **Master**: <span style="color:green">Compatible</span>
+- <span style="color:orange">This sensor is now considered **obsolete**</span>
+- **Master**: <span style="color:green">**Compatible**</span>
 
 | Master/Transmitter Type &nbsp;&nbsp;&nbsp;| Firmware Version &nbsp;&nbsp;&nbsp;| Compatible? &nbsp;&nbsp;&nbsp; |
 |:-------------- |:------------- | :----------- |
@@ -58,8 +58,8 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 </br>
 
 #### Libre 1 US  *(14 day)*
-- <span style="color:orange">This sensor is now considered obsolete</span>
-- **Master**: <span style="color:green">Compatible</span>
+- <span style="color:orange">This sensor is now considered **obsolete**</span>
+- **Master**: <span style="color:green">**Compatible**</span>
   
 | Master/Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :------------------------------------ | :---------------------------------- | :----------------------------- |
@@ -76,8 +76,8 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 
 #### Libre 2 European *(14 day)*
 
-- Master: <span style="color:green">Compatible</span>
-- Follower: <span style="color:green">Compatible</span> using LibreLinkUp Follower Mode
+- Master: <span style="color:green">**Compatible**</span>
+- Follower: <span style="color:green">**Compatible**</span> using LibreLinkUp Follower Mode
   
 | Master/Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :------------------------------------ | :---------------------------------- | :----------------------------- |
@@ -94,20 +94,20 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 
 #### Libre 2 US/Canadian/Australian/Russian/Korean/Japanese/Latin America
 
-- Master: <span style="color:red">Not compatible</span>
-- Follower: <span style="color:green">Compatible</span> using LibreLinkUp Follower Mode
+- Master: <span style="color:red">**Not compatible**</span>
+- Follower: <span style="color:green">**Compatible**</span> using LibreLinkUp Follower Mode
 </br>
 
 #### Libre H
 
-- Master: <span style="color:red">Not compatible</span>
-- Follower: <span style="color:red">Not compatible</span>
+- Master: <span style="color:red">**Not compatible**</span>
+- Follower: <span style="color:red">**Not compatible**</span>
 </br>   
 
 #### Libre Pro (India)
 
-- Master: <span style="color:green">Partially compatible</span>
-- Follower: <span style="color:red">Not compatible</span>
+- Master: <span style="color:green">**Partially compatible**</span>
+- Follower: <span style="color:red">**Not compatible**</span>
 
 | Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :------------------------------------ | :---------------------------------- | :----------------------------- |
@@ -119,8 +119,8 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 
 #### Libre 3 (All markets)
 
-- Master: <span style="color:red">Not compatible</span>
-- Follower: <span style="color:green">Compatible</span> using LibreLinkUp Follower Mode
+- Master: <span style="color:red">**Not compatible**</span>
+- Follower: <span style="color:green">**Compatible**</span> using LibreLinkUp Follower Mode
 </br>  
 
 ___
@@ -128,13 +128,13 @@ ___
 
 #### Dexcom G4 / G5
 
-- <span style="color:orange">This sensor is now considered obsolete</span>
-- Master: <span style="color:green">Compatible</span> with a bridge/Wixel device and using raw data mode.
+- <span style="color:orange">This sensor is now considered **obsolete**</span>
+- Master: <span style="color:green">**Compatible**</span> with a bridge/Wixel device and using raw data mode.
 </br> 
 
 #### Dexcom G6
 
-- Master: <span style="color:green">Compatible</span> using native mode.
+- Master: <span style="color:green">**Compatible**</span> using native mode.
 
 All G6 transmitters (including older pre-firefly 80xxxx/81xxxx transmitters) will work in **native mode** using the algorithm inside the transmitter. This means that they will have a 2 hour warm-up, a factory 10 day sensor expiry and a 90-110 day transmitter life. 
 
@@ -173,25 +173,25 @@ Note that One transmitters with a transmitter ID **starting with C** (Cxxxxx) ca
 
 #### Dexcom G7
 
-- Master: <span style="color:green">Compatible</span> (Dexcom G7 app must be running at the same time).
+- Master: <span style="color:green">**Compatible**</span> (Dexcom G7 app must be running at the same time).
 </br> 
 
 #### Dexcom ONE+
 
-- Master: <span style="color:green">Compatible</span> (Dexcom ONE+ app must be running at the same time).
+- Master: <span style="color:green">**Compatible**</span> (Dexcom ONE+ app must be running at the same time).
 </br> 
 
 #### Dexcom Stelo
 
-- Master: <span style="color:green">Compatible</span> (Dexcom Stelo app must be running at the same time).
+- Master: <span style="color:green">**Compatible**</span> (Dexcom Stelo app must be running at the same time).
 </br> 
 
 ___
 ### Medtronic 
 
 #### All sensors
-- Master: <span style="color:red">Not compatible</span>
-- Follower: <span style="color:red">Not compatible</span> *(1)*
+- Master: <span style="color:red">**Not compatible**</span>
+- Follower: <span style="color:red">**Not compatible**</span> *(1)*
   
 *(1) There are some community solutions online to get Medtronic data into Nightscout including using xDrip+ on Android. Once there, xDrip4iOS can follow this data using Nightscout Follower mode.*
 
@@ -199,15 +199,15 @@ ___
 ### Eversense 
 
 #### All sensors
-- Master: <span style="color:red">Not compatible</span>
-- Follower: <span style="color:red">Not compatible</span>
+- Master: <span style="color:red">**Not compatible**</span>
+- Follower: <span style="color:red">**Not compatible**</span>
 </br> 
 ___
 ### Glucomen 
 
 #### All sensors
-- Master: <span style="color:red">Not compatible</span>
-- Follower: <span style="color:red">Not compatible</span>
+- Master: <span style="color:red">**Not compatible**</span>
+- Follower: <span style="color:red">**Not compatible**</span>
 </br> 
 
 ## Where Can I Get Help?
