@@ -45,7 +45,6 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 
 ### Libre 
 #### Libre 1 European *(14 day)*
-
 - <span style="color:orange">This sensor is now considered obsolete</span>
 - **Master**: <span style="color:green">Compatible</span>
 
@@ -59,7 +58,6 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 </br>
 
 #### Libre 1 US  *(14 day)*
-
 - <span style="color:orange">This sensor is now considered obsolete</span>
 - **Master**: <span style="color:green">Compatible</span>
   
