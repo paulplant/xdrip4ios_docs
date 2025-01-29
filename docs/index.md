@@ -46,6 +46,7 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 ### Libre 
 #### Libre 1 European *(14 day)*
 
+- <span style="color:orange">This sensor is now considered obsolete</span>
 - **Master**: <span style="color:green">Compatible</span>
 
 | Master/Transmitter Type &nbsp;&nbsp;&nbsp;| Firmware Version &nbsp;&nbsp;&nbsp;| Compatible? &nbsp;&nbsp;&nbsp; |
@@ -54,21 +55,23 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 | Bubble, Bubble mini | All | **<span style="color:green">Yes</span>** |
 | Atom | All | **<span style="color:green">Yes</span>** |
 | GNSentry | All | **<span style="color:green">Yes</span>** |
+
 </br>
 
 #### Libre 1 US  *(14 day)*
 
+- <span style="color:orange">This sensor is now considered obsolete</span>
 - **Master**: <span style="color:green">Compatible</span>
   
 | Master/Transmitter Type &nbsp;&nbsp;&nbsp; | Firmware Version &nbsp;&nbsp;&nbsp; | Compatible? &nbsp;&nbsp;&nbsp; |
 | :------------------------------------ | :---------------------------------- | :----------------------------- |
-| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | -                                 | **<span style="color:red">No</span>** |
-| MiaoMiao 1                                          | >= 39                           | **<span style="color:green">Yes</span>** *(1)*             |
-| MiaoMiao 2                                          | >= 7                             | **<span style="color:green">Yes</span>** *(1)*          |
+| Direct Bluetooth (no transmitter)&nbsp;&nbsp;&nbsp; | - | **<span style="color:red">No</span>** |
+| MiaoMiao 1 | >= 39 | **<span style="color:green">Yes</span>** *(1)* |
+| MiaoMiao 2 | >= 7 | **<span style="color:green">Yes</span>** *(1)* |
 | Miaomiao 3 | - | **<span style="color:green">Yes</span>** *(1)* |
-| Bubble, Bubble mini                               | All                              | **<span style="color:green">Yes</span>**                        |
-| Atom                                                | All                              | **<span style="color:green">Yes</span>**                        |
-| GNSentry                                            | -                                | **<span style="color:red">No</span>**                             |
+| Bubble, Bubble mini | All | **<span style="color:green">Yes</span>** |
+| Atom | All | **<span style="color:green">Yes</span>** |
+| GNSentry | - | **<span style="color:red">No</span>** |
 
  *(1) The MiaoMiao firmware can be upgraded, if needed, using Tomato App*
 </br>
@@ -125,8 +128,9 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 ___
 ### Dexcom 
 
-#### Dexcom G4 / G5 <span style="color:orange"><--- (Obsolete)</span>
+#### Dexcom G4 / G5
 
+- <span style="color:orange">This sensor is now considered obsolete</span>
 - Master: <span style="color:green">Compatible</span> with a bridge/Wixel device and using raw data mode.
 </br> 
 
