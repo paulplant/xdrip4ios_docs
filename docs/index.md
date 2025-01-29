@@ -44,7 +44,7 @@ That's it. Nothing else is needed.
 xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmitters.
 
 ### Libre 
-#### Libre 1 European *(14 day)*
+#### Libre 1 (European)
 - <span style="color:orange">This sensor is now considered **obsolete**</span>
 - **Master**: <span style="color:green">**Compatible**</span>
 
@@ -57,7 +57,7 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 
 </br>
 
-#### Libre 1 US  *(14 day)*
+#### Libre 1 (US)
 - <span style="color:orange">This sensor is now considered **obsolete**</span>
 - **Master**: <span style="color:green">**Compatible**</span>
   
@@ -72,9 +72,8 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 | GNSentry | - | **<span style="color:red">No</span>** |
 
  *(1) The MiaoMiao firmware can be upgraded, if needed, using Tomato App*
-</br>
 
-#### Libre 2 European *(14 day)*
+#### Libre 2 / 2 Plus (European)
 
 - Master: <span style="color:green">**Compatible**</span>
 - Follower: <span style="color:green">**Compatible**</span> using LibreLinkUp Follower Mode
@@ -90,19 +89,11 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 | GNSentry | - | **<span style="color:red">No</span>** |
 
  *(1) The MiaoMiao firmware can be upgraded, if needed, using Tomato App*
-</br> 
 
-#### Libre 2 US/Canadian/Australian/Russian/Korean/Japanese/Latin America
+#### Libre 2 / 2 Plus (US/Canadian/Australian/Russian/Korean/Japanese/Latin America)
 
 - Master: <span style="color:red">**Not compatible**</span>
 - Follower: <span style="color:green">**Compatible**</span> using LibreLinkUp Follower Mode
-</br>
-
-#### Libre H
-
-- Master: <span style="color:red">**Not compatible**</span>
-- Follower: <span style="color:red">**Not compatible**</span>
-</br>   
 
 #### Libre Pro (India)
 
@@ -117,11 +108,11 @@ xDrip4iOS is compatible many different Libre sensors and Dexcom sensors/transmit
 | Bubble, Bubble mini, Nano&nbsp;&nbsp;&nbsp;| All | **<span style="color:red">No</span>**    
 
 
-#### Libre 3 (All markets)
+#### Libre 3 / 3 Plus (All markets)
 
 - Master: <span style="color:red">**Not compatible**</span>
 - Follower: <span style="color:green">**Compatible**</span> using LibreLinkUp Follower Mode
-</br>  
+</br>
 
 ___
 ### Dexcom 

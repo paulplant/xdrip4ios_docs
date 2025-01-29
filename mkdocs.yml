@@ -12,6 +12,7 @@ nav:
 - 'Introduction': 'index.md'
 - 'FAQ': 'faq.md'
 - Install: 
+    - 'Install': 'install/install.md'
     - 'Install from Testflight': 'install/testflight.md'
     - 'Build from Source': 'install/build.md'
     - 'How Do I Release?': 'install/personal_testflight.md'
