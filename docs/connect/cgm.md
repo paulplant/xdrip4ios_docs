@@ -2,15 +2,15 @@
 
 <img src="../../img/Bluetooth.png" style="zoom:75%;" />
 
-In this page, we will go through the method of connecting a CGM system to xDrip4iOS so that this receives real-time CGM data from your sensor.
+In this page, we will go through the method of directly connecting a CGM system to xDrip4iOS so that the app receives real-time CGM data from your sensor.
 
 Firstly, make sure you have [correctly set](index.md) xDrip4iOS as a Master device and you have chosen the units that your BG should be displayed in.
 
-**Do not** try and connect to your CGM transmitter from the Bluetooth menu on your iPhone. You must **only** connect from within the xDrip4iOS app.
+**Do not** try and connect to your CGM transmitter from the Bluetooth menu on your iPhone. You must **only** try and connect from within the xDrip4iOS app.
 
 <img src="../iOS_BT.png" style="zoom:50%;" />
 
-Before continuing, please check the [compatibility tables](../index.md#compatible-sensors) to make sure that your CGM system is compatible.
+Before continuing, please check the [compatibility tables](../index.md#compatible-sensors) to make sure that your CGM system is compatible for connection in master mode.
 <br />
 ___
 
@@ -19,7 +19,7 @@ ___
 ### Libre 2 Direct Connection
 
 !!!info "Compatibility"
-    This is only valid for the European Libre 2 sensor (aka Libre2 EU). More information [here](../index.md#libre-2-direct-connection).
+    This is only valid for the European Libre 2 / Libre 2 Plus sensor (aka Libre2 EU). More information [here](../index.md#libre-2-direct-connection).
 
 Firstly make sure that your Libre 2 sensor is started and working. If you scan the sensor with the LibreLink app, **can you see the values/graph**?
 
@@ -27,9 +27,9 @@ If **not**, start the sensor from the LibreLink app or put a new sensor on and s
 
 If **yes**, then let's continue. 
 
-**Disable LibreLink Bluetooth Permission**
+**Disable LibreLink Bluetooth Permission** 
 
-To avoid problems with the LibreLink app "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that the LibreLink app has it's Bluetooth permissions disabled.
+To avoid problems with the LibreLink app "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that the LibreLink app has it's Bluetooth permissions disabled. <span style="color:red">This is not optional!</span> You must do it.
 
 Go to your iPhone Settings and scroll down to LibreLink. Select the app and in the options, disable Bluetooth.
 
@@ -37,11 +37,9 @@ Go to your iPhone Settings and scroll down to LibreLink. Select the app and in t
 
 **Connect to the Libre 2**
 
-Go to the **Bluetooth** tab and choose **CGM** as your **Device Type**, press **OK**.
+Go to the **Bluetooth** tab in xDrip4iOS and choose **CGM** as your **Device Type**, press **OK**.
 
-If you already have a Libre 2 connected, add a second Libre 2 CGM device and continue reading. Once connected to the new one, you can delete the previous Libre 2 CGM.
-
-If you already have a previous CGM added (and it is not a Libre 2), you will get a warning that says that you can only have one CGM device added at a time. Please delete the previous device and try again (only if it is not a Libre 2).
+If you already have a previous CGM/transmitter/sensor connected, you will get a warning that says that you can only have one CGM device added at a time. Please disconnect (and optionally delete if applicable) the previous device and try again.
 
 <img src="../CGMDelete.png" style="zoom:58%;" />
 
@@ -67,25 +65,24 @@ Once your sensor has been scanned successfully, you will see a message asking yo
 
 <img src="../Scanning.png" style="zoom:50%;" />
 
-When xDrip4iOS finds your sensor, you will get a message saying the the sensor has been connected correctly. Click **OK**.
+When xDrip4iOS finds your sensor (this should take maximum 60 seconds), you will get a message saying the the sensor has been connected correctly. Click **OK**.
 
 <img src="../L2DirectConnected.png" style="zoom:56%;" />
 
 <img src="../L2DirectConnectedOk.png" style="zoom:56%;" />
 
-You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
+You can now choose if you want to use the **Native** algorithm (fully automatic with no calibration required) or you can change to the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
 
 <img src="../LibreAlgo.png" style="zoom:50%;" />
 
-Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings from your sensor.
+Wait for up to 2-3 minutes for xDrip4iOS to receive the first two readings from your sensor.
 
-- If you are using the **Transmitter algorithm**, you will then automatically start getting values.
+- If you are using the **Native algorithm**, you will then automatically start getting values.
 <br /><br />
 
-- If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the calibration rules where possible.
+- If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the [calibration instructions](../../configure/calibrate).
   <br />
 
-If you just changed sensor and you have data from the new one, you can **now** delete the old Libre 2 sensor from the CGM list.
 
 ___
 
@@ -96,10 +93,9 @@ ___
 
 **Disable other apps connected to the transmitter Bluetooth Permission**
 
-To avoid problems with other apps (Tomato, Diabox, zDrip, ...) "stealing" the Bluetooth connection from xDrip4iOS, we need to ensure that they have their Bluetooth permissions disabled.
+To avoid problems with other apps (Tomato, Diabox, ...) interferring with the Bluetooth connection to xDrip4iOS, we need to ensure that they have their Bluetooth permissions disabled.
 
 Go to your iPhone Settings and scroll down the app. Select it and in the options, disable Bluetooth.
-
 
 Firstly make sure that your Libre sensor is started and working. If you scan the sensor with the LibreLink app, **can you see the values/graph**?
 
@@ -117,13 +113,13 @@ Select **CGM** and then chose your transmitter type from the list.
 
 <img src="../SelectCGM.png" style="zoom:50%;" />
 
-You will get a message asking you to keep xDrip4iOS open whilst the bluetooth connection is made with your transmitter. Just leave your iPhone on the table and have a coffee. DO NOT play Roblox, watch Netflix or listen to Spotify. Put the phone down without touching it and keep it close to you. Do it now.
+You will get a message asking you to keep xDrip4iOS open whilst the bluetooth connection is made with your transmitter. The connection will usually happen in a short time to most transmitter types.
 
 <img src="../Scanning.png" style="zoom:50%;" />
 
 When xDrip4iOS finds your transmitter, you will get a message saying that it has been connected correctly. Click **OK**.
 
-You can now choose if you want to use the **Transmitter** algorithm (no calibration required) or deselect this option to use the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
+You can now choose if you want to use the **Native** algorithm (no calibration required) or use the **xDrip** algorithm with manual [calibrations](../../configure/calibrate) (**recommended**).
 
 <img src="../LibreAlgo.png" style="zoom:56%;" />
 
@@ -132,7 +128,7 @@ Wait for up to 10-15 minutes for xDrip4iOS to receive the first two readings fro
 - If you are using the **Transmitter algorithm**, you will then automatically start getting values.
 <br /><br />
 
-- If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the calibration rules where possible.
+- If you are using the **xDrip algorithm**, xDrip4iOS will ask you for an initial calibration. Make sure you use a good blood glucose meter and follow the follow the [calibration instructions](../../configure/calibrate).
 <br />
 
 ___

@@ -9,8 +9,6 @@ There are several ways to get xDrip4iOS on your iPhone:
   - Using a Mac with [Xcode](build.md)
   - Using browser build (GitHub/Fastlane)
 
-</br>
-
 *(1) the public Testflight link has been full for several years. Apple closed down duplicate links so this option is no longer possible.*
 
 *(2) Do not join the Facebook group and post asking for invitations, codes, links. Check if any invitations are available and if not, please consider the next options*
