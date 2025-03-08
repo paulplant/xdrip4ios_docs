@@ -51,16 +51,16 @@ Right click the following link, chose the "**Save Link As...**" or "**Download L
 Open this file in TextEdit or Xcode and you will see the following structure. You will need to edit the lines highlighted in <span style="color:blue">blue</span>.
 
 ___
-<span style="color:gray">MAIN_APP_DISPLAY_NAME = xDrip4iO5</span>
+<span style="color:gray">// MAIN_APP_DISPLAY_NAME = xDrip4iO5</span>
 
 <span style="color:gray">// Put your team id here for signing<br /></span>
 <span style="color:blue">// XDRIP_DEVELOPMENT_TEAM =</span>
 
 <span style="color:gray">// Change to support running multiple apps simultaneously.<br /></span>
-<span style="color:blue">// MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
+<span style="color:gray">// MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
 ___
 
-You should remove the "//" characters to uncomment these lines and in XDRIP_DEVELOPMENT_TEAM add your Development Team Identifier to this line.
+You should remove the "//" characters to uncomment this line and add your Development Team Identifier to the end of the line.
 
 If you **have** a paid Developer account, then you will probably already know this identifier. If not, then you can log into the Apple Developer Portal and look at the Membership section](https://developer.apple.com/account/#!/membership). You can find your ID here:
 
@@ -70,16 +70,18 @@ Put this ID (your ID, not the example shown below) here:
 
 XDRIP_DEVELOPMENT_TEAM = <span style="color:green">95C72J2362</span>
 
-Finally, just uncomment the MAIN_APP_BUNDLE_IDENTIFIER line. No need to edit anything else. Your file should now look like this:
+Don't uncomment or change anything else unless you are activiely developing the app.
+
+Your file should now look like this:
 
 ___
-<span style="color:gray">MAIN_APP_DISPLAY_NAME = xDrip4iO5</span>
+<span style="color:gray">// MAIN_APP_DISPLAY_NAME = xDrip4iO5</span>
 
 <span style="color:gray">// Put your team id here for signing<br /></span>
 <span style="color:green">XDRIP_DEVELOPMENT_TEAM = 95C77J2362</span><span style="color:blue"> *<--- here you put your unique ID*</span>
 
 <span style="color:gray">// Change to support running multiple apps simultaneously.<br /></span>
-<span style="color:green">MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span><span style="color:blue"> *<--- make sure you have removed the // from this line*</span>
+<span style="color:gray">// MAIN_APP_BUNDLE_IDENTIFIER = com.$(DEVELOPMENT_TEAM).xdripswift</span>
 
 Make sure you save/close the xDripConfigOverride file before continuing.
 
