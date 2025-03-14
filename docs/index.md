@@ -4,8 +4,6 @@
 
 **xDrip4iOS** (also known as **"xDrip for iOS"** or **"xdripswift"**) is an open-source application to display real time blood glucose data.
 
-**xDrip4iOS** is also available on the App Store under the name [**Shuggah**](https://apps.apple.com/en/app/shuggah/id1586789452). The Shuggah release is done by third-party is not directly managed by the xDrip4iOS project team.
-
 <img src=".\img\xDrip4iOS_env.png" style="zoom:67%;" />
 
 It is able to connect as a **Master** device to various types of Continuous Glucose Monitor systems and display their values on the screen. This is the main way that most people (usually patients with Type 1 Diabetes) will use the app.

@@ -48,7 +48,7 @@ Right click the following link, chose the "**Save Link As...**" or "**Download L
 
 [xDripConfigOverride.xcconfig](https://raw.githubusercontent.com/JohanDegraeve/xdripswift/0d485d1978bf90fb51b3a6cef8389f8daddb595d/xDripConfigOverride.xcconfig)
 
-Open this file in TextEdit or Xcode and you will see the following structure. You will need to edit the lines highlighted in <span style="color:blue">blue</span>.
+Open this file in TextEdit or Xcode and you will see the following structure. You will need to edit the line highlighted in <span style="color:blue">blue</span>.
 
 ___
 <span style="color:gray">// MAIN_APP_DISPLAY_NAME = xDrip4iO5</span>
