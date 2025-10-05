@@ -2,11 +2,11 @@
 
 ## OS-AID Overview
 
-There are a number of Open Source Automated Insulin Delivery (OS-AID) systems. With version 5.3.3 and later, *xDrip4iOS* can interface with *Loop*, *Trio* and *iAPS*.
-
-If you are able to connect your CGM directly to the OS-AID of your choice, that is the best way to run the app in closed-loop. If you prefer to use some of the features available only with *xDrip4iOS*, you can configure *xDrip4iOS* in [follower mode](../connect/index.md#master-or-follower) instead of being the one that talks to the CGM directly.
+You are able to connect some CGM directly to the Open Source Automated Insulin Delivery (OS-AID) system of your choice. If you choose to do that, you can still use *xDrip4iOS* features independent of your OS-AID, but will not need the configuration described on this page.
 
 If you want, or need, *xDrip4iOS* to be the heartbeat for your OS-AID system, then follow these directions to configure *xDrip4iOS* to do that.
+
+With version 5.3.3 and later, *xDrip4iOS* can interface with *Loop*, *Trio* and *iAPS*.
 
 ## Loop Customization
 
