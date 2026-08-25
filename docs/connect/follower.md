@@ -1,33 +1,48 @@
-# Connect to Nightscout as a Follower
+# Follower mode
 
-<img src="../../img/Settings.png" style="zoom:75%;" />
+Follower mode receives glucose readings from an online source instead of a directly connected CGM.
 
-In this page, we will go through the method of connecting xDrip4iOS to an existing Nightscout instance.
+## Configure follower mode
 
-This will allow you to "follow" another person (child, loved one or patient) and see their CGM value and graph in real-time.
+Under **Settings > Data Source**, select **Follower**. Select the required service from **Data Source**, then select **Status** to open its settings. Enter the required account, site, or shared calendar details. Return to **Home** and wait for a current reading.
 
-Firstly, make sure you have valid CGM data being sent into the Nightscout site by a working master device/system.
+Changing to Follower mode stops the current direct sensor in xDrip4iOS and removes its CGM device. Confirm the change only when you intend to stop the direct connection on this device.
 
+## Available follower sources
 
-!!!info "Follower Restrictions"
-    Please note that when used in Follower Mode, xDrip4iOS cannot connect to any CGM system/sensor. For this reason you will see that the Calibration and Sensor buttons are disabled.
+![The available follower data sources](../img/screenshots/source/followerDataSources.png)
 
-In **Settings**, check that you are set to **Follower** mode. If not, click the option once to change modes.
+- [Nightscout](nightscoutFollower.md)
+- [LibreLinkUp and LibreLinkUp Russia](libreLinkUp.md)
+- [Dexcom Share](dexcomShareFollower.md)
+- [Shared Calendar](sharedCalendar.md)
+- [CareLink](careLink.md)
+- [Medtrum EasyView](medtrumEasyView.md)
 
-<img src="../Follower.png" style="zoom:50%;" />
+## Service settings
 
-___
+Each follower service has its own settings screen. Depending on the service, it can contain account details, login controls, patient selection, connection information, sensor information, and service availability.
 
-In order to connect xDrip4iOS to Nightscout as a Follower, in the Settings Menu, select **Enable Nightscout**.
+The optional **Alias** is available in the Profile section for Nightscout, Dexcom Share, LibreLinkUp, and Medtrum EasyView. Shared Calendar receives the alias from the source device. CareLink uses the selected CareLink patient.
 
-<img src="../Nightscout.png" style="zoom:50%;" />
+## Background updates
 
-You should enter your Nightscout **URL** as per the service you want to follow (if you don't know this, the master user will usually be able to give you this information).
+Under **Settings > Data Source**, use **Keep-alive** to select how xDrip4iOS should try to update readings while it is in the background:
 
-URL examples (change *mynightscout* and *12345* as necessary):
+- **Disabled** uses no additional method to request background updates.
+- **Normal** performs standard background update work.
+- **Aggressive** requests more frequent background opportunities and can use more battery.
+- **Continuous** plays silent audio continuously while the app is in the background. It has the highest battery use and should only be used in extreme cases when Normal and Aggressive do not work reliably enough.
+- **Heartbeat** uses a configured Bluetooth heartbeat device.
 
-- **Heroku/Mongo**: ```https://mynightscout.herokuapp.com```
-- **ns.10be.de** *(1)*: ```https://mynightscout.10be.de```  Port: ```12345```
-- **T1Pal**: ```https://mynightscout.t1pal.com``` (*Note: you'll find your public Url in [the Social page](https://t1pal.com/account/sites/my#Views)*)
+Start with Normal. Try Aggressive only if Normal does not provide reliable background updates. Use Continuous only if both of those options do not work well enough. iOS still decides whether an app can remain active, so Continuous cannot guarantee an exact download time.
 
-*(1) *If your URL needs a port number to access the service (such as the default mode of ns.10be.de), then enter this number in **Port**.
+Selecting **Shared Calendar** changes Disabled to Normal when needed.
+
+## Pump and treatment information
+
+**Pump & Treatments** selects where xDrip4iOS receives online pump and treatment information. **Automatic** uses the service that fits the current configuration. Nightscout can provide treatments and AID information. CareLink can provide pump and treatment information when CareLink is also the glucose source. Select **None** to stop online pump and treatment imports.
+
+## Optional Nightscout upload
+
+A Follower can upload downloaded readings to a separate Nightscout site. Do not upload them back to the same site from which they were downloaded. Test the Follower source before enabling Nightscout upload.

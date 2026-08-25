@@ -1,45 +1,25 @@
-# Connect a Data Source
+# Data sources
 
-<img src="../img/Settings.png" style="zoom:75%;" />
+xDrip4iOS can obtain glucose readings from a direct Bluetooth connection or from an online follower service.
 
-</br>
+## Direct CGM connection
 
-## Master or Follower?
+Select **Master** in **Settings** and add the CGM from the **Devices** tab. Use this path for:
 
+- Dexcom G6 or ONE
+- Dexcom G7, ONE+, or Stelo
+- Libre 2 or Libre 2 Plus EU
+- a Libre sensor with MiaoMiao or a Bubble-family transmitter
+- Medtrum Nano Pump.
 
+Start with [Add a direct CGM device](cgm.md).
 
-In order to be able to see Blood Glucose data in xDrip4iOS, you need to connect it to a **data source**.
+## Follower connection
 
-There are two types of data sources that you can use:
+Select **Follower** under **Settings > Data Source**, then select Nightscout, Dexcom Share, Shared Calendar, CareLink, LibreLinkUp, LibreLinkUp Russia, or Medtrum EasyView from **Data Source**. Select **Status** to configure the chosen service. Do not add a CGM device in the **Devices** tab for this mode.
 
-In **Master** mode, your iPhone will connect directly to a Bluetooth-enabled CGM system (sensor/transmitter) in order to receive real-time data.
+Start with [Follower overview](follower.md).
 
-In **Follower** mode, your iPhone will connect to a Nightscout site over the internet and pull real-time data. 
+## Optional Bluetooth devices
 
-Put simply, a **Master** is usually used by the actual person who is wearing the sensor and a **Follower** is usually a parent/friend/caregiver that wants to be able to track (follow) the other person's CGM values.
-
-Once we've decided whether we want to use xDrip4iOS as a **Master** or a **Follower** device, we need to click on the Settings tab and chose the mode we want. Click on the option if you need to change it between the two modes.
-
-<img src="Master.png" style="zoom:50%;" />
-
-</br>
-
-## Blood Glucose Unit
-
-The next step is to make sure that the Blood Glucose unit is correctly set. 
-
-If you are used to seeing your BG values as small numbers with a single decimal place such as 4.7, 6.3 or 10.4 then you are using **mmol/l**.
-<br />
-*(Common in Canada, Northen Europe, Australia, South Africa, China etc)*
-
-If you usually see your BG values as bigger numbers such as 76, 127 or 215 then you are using **mg/dl**.
-<br />
-*(Common in USA, Southern Europe, India, Japan, Central/South America etc)*
-
-<img src="Unit.png" style="zoom:50%;" />
-
-Once you've set your device mode and BG unit, you're ready to connect a data source.
-
-Click [here](cgm.md) to connect to your CGM as a Master
-
-Click [here](follower.md) to connect to Nightscout as a Follower
+A [Follower Heartbeat device](followerHeartbeat.md) can help Follower mode check for new readings in the background. An [M5Stack or M5StickC](devices.md) can display readings received by xDrip4iOS. Neither device supplies glucose readings.

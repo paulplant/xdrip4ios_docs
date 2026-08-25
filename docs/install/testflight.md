@@ -1,19 +1,24 @@
-# Install from Testflight
+# Install with TestFlight
 
-Testflight is Apple's platform that allows developers to distribute test versions (often known as Beta versions) of their apps. It is generally much easier for developers to publish for testing compared to releasing them in the main App Store. There are less restrictions and it is also easier for developers to release several versions in quick succession in order to work out bugs and issues.
+Use these steps after a trusted publisher sends you a TestFlight invitation or public link.
 
-There are two main ways to get xDrip4iOS on your iPhone:
+1. Install Apple's TestFlight app from the App Store.
+2. Open the invitation on the iPhone or iPad that will run xDrip4iOS.
+3. Accept the invitation.
+4. Select **Install** for xDrip4iOS.
+5. Open xDrip4iOS and complete [First-time setup](../getting-started/firstSetup.md).
 
-- Install from Testflight
-- Build and install from source code.
+## Build expiry
 
-The first option is easy for everybody. 
+Apple TestFlight builds expire after the period shown in TestFlight. Install a newer build before the current one expires. The publisher must upload a replacement. xDrip4iOS cannot extend its own TestFlight expiry.
 
-The second option is more complex and needs a Mac and some knowledge/experience, but it allows you to modify the code and install custom versions as required.
+## Updates
 
-Anybody who is using xDrip4iOS for looping will always need to build from source.
-___
+Enable automatic updates for the app in TestFlight, or open TestFlight and select **Update** when a new build is available. Read any publisher notes before updating a custom build.
 
-**Please note that the current public Testflight accounts are full..**
+## If the invitation does not work
 
-The only way to install xDrip4iOS is to either build it from source or to check the Facebook group for any available invitations on personal Testflights. Please join the group, read the rules and check for an open slot. **Do not post asking for invitations** or you will be removed from the group.
+- Confirm that the link is opened with the invited Apple Account when the invitation is private.
+- Confirm that the testing group still has an available place.
+- Ask the publisher whether a current build is available.
+- Do not request invitations in a public issue tracker unless that publisher directs users there.

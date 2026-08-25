@@ -1,38 +1,94 @@
 site_name: xDrip4iOS
+site_description: User documentation for xDrip4iOS
 theme: readthedocs
+
 extra_css:
-    - css/admonitions.css
-    - css/extra.css
+  - css/admonitions.css
+  - css/extra.css
+
 markdown_extensions:
-    - admonition
-    - toc:
-        permalink: ⌁
+  - admonition
+  - toc:
+      permalink: true
 
 nav:
-- 'Introduction': 'index.md'
-- 'FAQ': 'faq.md'
-- Install: 
-    - 'Install': 'install/install.md'
-    - 'Install from Testflight': 'install/testflight.md'
-    - 'Build from Source': 'install/build.md'
-    - 'How Do I Release?': 'install/personal_testflight.md'
-- Connect:
-    - 'Initial Configuration': 'connect/index.md'
-    - 'Connect to CGM as a Master': 'connect/cgm.md'
-    - 'Connect to Nightscout as a Follower': 'connect/follower.md'
-    - 'Connect to M5Stack/M5StickC': 'connect/devices.md'
-- Configure/Using:
-    - 'Home Screen' : 'configure/homeview.md'
-    - 'Settings': 'configure/index.md'
-    - 'Alarms': 'configure/alarms.md'
-    - 'Calibration': 'configure/calibrate.md'
-    - 'Treatments': 'configure/treatments.md'
-    - 'Apple Watch': 'configure/applewatch.md'
-    - 'Other Smartwatches': 'configure/smartwatches.md'
-- Advanced:
-    - 'Open-Source AID Integration': 'advanced/os-aid.md'
-- Troubleshoot:
-    - 'Troubleshooting': 'troubleshoot/index.md'
-    - 'Cannot Connect?': 'troubleshoot/connection_problems.md'
-    - 'Disconnections?': 'troubleshoot/disconnections.md'
-    - 'How to Report Errors': 'troubleshoot/reporting_issues.md'
+  - Introduction: index.md
+  - Getting started:
+      - Start here: getting-started/index.md
+      - Install xDrip4iOS: install/install.md
+      - First-time setup: getting-started/firstSetup.md
+      - Choose a data source: getting-started/dataSource.md
+      - Permissions and background operation: getting-started/permissions.md
+  - Data sources:
+      - Overview: connect/index.md
+      - Direct CGM connection:
+          - Add a direct CGM device: connect/cgm.md
+          - Dexcom G6 and ONE: connect/dexcomG5G6One.md
+          - Dexcom G7, ONE+ and Stelo: connect/dexcomG7OnePlusStelo.md
+          - Libre 2 and Libre 2 Plus EU: connect/libre2.md
+          - Libre with MiaoMiao or Bubble: connect/libreTransmitters.md
+          - Medtrum Nano Pump: connect/medtrum.md
+      - Follower mode:
+          - Follower overview: connect/follower.md
+          - Nightscout follower: connect/nightscoutFollower.md
+          - LibreLinkUp follower: connect/libreLinkUp.md
+          - Dexcom Share follower: connect/dexcomShareFollower.md
+          - Shared Calendar follower: connect/sharedCalendar.md
+          - CareLink follower: connect/careLink.md
+          - Medtrum EasyView follower: connect/medtrumEasyView.md
+      - Follower Heartbeat devices: connect/followerHeartbeat.md
+      - M5Stack and M5StickC: connect/devices.md
+  - Use the app:
+      - Home:
+          - Home overview: use/home.md
+          - Snooze: use/snooze.md
+          - Glucose Readings: use/glucoseReadings.md
+          - Sensor Management: use/sensor.md
+          - Glucose Adjustments: use/glucoseAdjustments.md
+          - Quick Show/Hide: use/quickShowHide.md
+          - Screen Lock: use/screenLock.md
+      - Treatments: use/treatments.md
+      - Statistics: use/statistics.md
+      - Devices: use/devices.md
+      - Settings:
+          - Settings overview: use/settings.md
+          - Data Source: getting-started/dataSource.md
+          - Glucose Display: use/glucoseDisplay.md
+          - Alerts and Notifications: use/alertsAndNotifications.md
+          - Sharing and Services:
+              - Overview: use/sharingAndServices.md
+              - Nightscout: services/nightscout.md
+              - Dexcom Share: services/dexcomShare.md
+              - Apple Health: services/appleHealth.md
+              - Calendar Share: services/calendarShare.md
+              - Contact Image: display/contactImage.md
+              - OS-AID Share: services/osAidShare.md
+              - Speak Glucose: display/speakGlucose.md
+              - M5Stack: connect/devices.md
+          - Data Management: use/dataManagement.md
+          - Troubleshooting: use/troubleshooting.md
+          - About xDrip4iOS: use/aboutXDrip4iOS.md
+          - Advanced Settings: use/advancedSettings.md
+      - iPad use: use/ipad.md
+  - Display glucose elsewhere:
+      - Apple Watch: display/appleWatch.md
+      - Widgets and Live Activities: display/widgetsLiveActivities.md
+      - Siri, Shortcuts, and quick actions: display/shortcuts.md
+      - Other smartwatches: display/otherSmartwatches.md
+  - Install and maintain:
+      - TestFlight: install/testflight.md
+      - Build from source: install/build.md
+      - Personal TestFlight: install/personalTestFlight.md
+      - Update and back up: install/update.md
+  - Troubleshooting:
+      - Troubleshooting index: troubleshoot/index.md
+      - Activity Log: troubleshoot/activityLog.md
+      - No readings or disconnections: troubleshoot/connectionProblems.md
+      - Alarms and background operation: troubleshoot/background.md
+      - Follower and service problems: troubleshoot/follower.md
+      - Report a problem: troubleshoot/reportingIssues.md
+  - Frequently asked questions: faq.md
+  - Reference:
+      - Supported systems: reference/supportedSystems.md
+      - Settings reference: reference/settings.md
+      - Glossary: reference/glossary.md
