@@ -10,6 +10,7 @@ xDrip4iOS displays glucose readings from a supported continuous glucose monitori
 - If you recently installed the app, follow [First-time setup](getting-started/firstSetup.md).
 - If this device receives readings directly from a sensor or transmitter, use [Direct CGM connection](connect/cgm.md).
 - If this device downloads another person's readings, use [Follower mode](connect/follower.md).
+- If you use CamAPS, check [Using xDrip4iOS with CamAPS](connect/camAPS.md) before adding the sensor.
 - For help with a main app screen, open the matching guide: [Home](use/home.md), [Treatments](use/treatments.md), [Statistics](use/statistics.md), [Devices](use/devices.md), or [Settings](use/settings.md).
 - For the adaptive tablet layout, see [iPad use](use/ipad.md).
 - To back up, restore, import, or remove local data, use [Data Management](use/dataManagement.md).

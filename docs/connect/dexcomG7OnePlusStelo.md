@@ -4,15 +4,17 @@ Use the `Dexcom G7/ONE+/Stelo` CGM choice for the integrated sensor and transmit
 
 ## How this connection works
 
-xDrip4iOS works alongside the official Dexcom app for this device family. The Dexcom app pairs with the sensor and controls its Bluetooth connection. xDrip4iOS then receives readings from the same active connection.
+xDrip4iOS works alongside the app that controls the sensor connection. This is normally the official Dexcom app. It can also be CamAPS when CamAPS is being used with a supported Dexcom G7 sensor. The other app pairs with the sensor and controls its Bluetooth connection. xDrip4iOS then receives readings from the same active connection.
 
-The Dexcom app must remain running in the background and receiving current readings. Do not force-close it or remove its Bluetooth permission. If the Dexcom app stops receiving readings, xDrip4iOS will also stop receiving them.
+The app controlling the sensor must remain running in the background and receiving current readings. Do not force-close it or remove its Bluetooth permission. If that app stops receiving readings, xDrip4iOS will also stop receiving them.
 
-Start the sensor and complete any pairing steps in the official app before adding it to xDrip4iOS.
+Start the sensor and complete any pairing steps in the controlling app before adding it to xDrip4iOS. See [Using xDrip4iOS with CamAPS](camAPS.md) if CamAPS controls the sensor.
 
 ## Connect
 
-Keep the Dexcom G7 app running in the background, connected to the sensor, and receiving current glucose values. xDrip4iOS receives this data through the connection maintained by the Dexcom app.
+Keep the controlling app running in the background, connected to the sensor, and receiving current glucose values. xDrip4iOS receives this data through the connection maintained by that app.
+
+The setup notice in xDrip4iOS names the Dexcom G7 app because it is the most common app used for this connection. If CamAPS controls the sensor, keep CamAPS running instead.
 
 In **Devices**, add a `Dexcom G7/ONE+/Stelo` CGM. When the identifier screen opens, select **OK** without entering anything to search automatically. Keep the iPhone near the active sensor until xDrip4iOS identifies it and receives a reading.
 
@@ -26,13 +28,13 @@ Dexcom G7-family devices connect briefly when data is available and disconnect a
 
 **Connected** can appear only briefly while data is being received. **Connecting** means that the sensor has not yet completed its first connection since it was activated in xDrip4iOS.
 
-Do not disconnect or delete the sensor because it shows **Waiting...**. Check that the official Dexcom app and **Home** both have a current reading if the waiting time becomes longer than the normal reading interval.
+Do not disconnect or delete the sensor because it shows **Waiting...**. Check that the app controlling the sensor and **Home** both have a current reading if the waiting time becomes longer than the normal reading interval.
 
 ## Using a sensor session that is already running
 
 xDrip4iOS reads the current sensor age, start time, and status from the sensor. Adding it does not start a new session or restart the warm-up.
 
-Manual sensor start and stop controls are not available for this family. Start, replace, and stop the sensor through its official system. The **Sensor Management** screen and the data source section at the bottom of **Home** update after xDrip4iOS receives the session information.
+Manual sensor start and stop controls are not available for this family. Start, replace, and stop the sensor through the app controlling it. The **Sensor Management** screen and the data source section at the bottom of **Home** update after xDrip4iOS receives the session information.
 
 ## 15-day G7 sensors
 
@@ -50,7 +52,7 @@ The sensor status comes from the Dexcom system. A connected Bluetooth state does
 
 The device can send missing readings after it reconnects. xDrip4iOS waits briefly so that the current and missing readings can be stored in the correct order. A short delay after reconnection does not always mean that the connection has failed.
 
-If readings remain missing, first confirm that the official Dexcom app is still open in the background and receiving current values. Then check the configured sensor in **Devices**. Do not delete it as the first response to a short gap.
+If readings remain missing, first confirm that the app controlling the sensor is still open in the background and receiving current values. Then check the configured sensor in **Devices**. Do not delete it as the first response to a short gap.
 
 ## Using a heartbeat instead of direct CGM
 

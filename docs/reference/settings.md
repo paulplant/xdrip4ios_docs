@@ -62,8 +62,11 @@ Account-based screens provide **Log In**. Some services require account details 
 - notification interval
 - Live Activity type
 - preview of the selected Live Activity layout
+- CarPlay style and preview on iOS 26 or later when a Live Activity is enabled
 - show reading in the app badge
 - multiply the badge value by ten when required for mmol/L display.
+
+The CarPlay **Style** choices are **Chart** and **Basic**. **Chart** is the default and includes a recent glucose chart. **Basic** shows a larger glucose value without the chart. The same compact layout can also be used by the Apple Watch Smart Stack.
 
 ### Alarms
 

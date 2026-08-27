@@ -14,6 +14,10 @@ Select **Master** in **Settings** and add the CGM from the **Devices** tab. Use 
 
 Start with [Add a direct CGM device](cgm.md).
 
+## Using CamAPS
+
+Whether xDrip4iOS can work alongside CamAPS depends on the sensor. Supported Dexcom sensors can provide readings to both apps. Libre 2 and Libre 3 sensors cannot provide direct readings to xDrip4iOS while CamAPS is using them. See [Using xDrip4iOS with CamAPS](camAPS.md).
+
 ## Follower connection
 
 Select **Follower** under **Settings > Data Source**, then select Nightscout, Dexcom Share, Shared Calendar, CareLink, LibreLinkUp, LibreLinkUp Russia, or Medtrum EasyView from **Data Source**. Select **Status** to configure the chosen service. Do not add a CGM device in the **Devices** tab for this mode.

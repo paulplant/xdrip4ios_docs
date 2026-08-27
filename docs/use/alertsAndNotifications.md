@@ -75,10 +75,13 @@ Under **Settings > Alerts and Notifications > Notifications**, configure:
 - the minimum notification interval
 - Live Activity display type
 - a preview of the selected Live Activity layout
+- CarPlay style and preview on iOS 26 or later
 - whether the app badge shows a reading
 - whether a badge value is multiplied by ten for mmol/L display compatibility.
 
 Live Activities are available in Master mode. In Follower mode, they are available only when **Keep-alive** is set to **Heartbeat** and a heartbeat device is connected.
+
+When a Live Activity is enabled on iOS 26 or later, the **CarPlay** section provides **Chart** and **Basic** styles. **Chart** includes the recent glucose chart. **Basic** shows a larger glucose value without the chart. The selected style can also affect the Apple Watch Smart Stack because Apple uses the same compact Live Activity layout for both displays.
 
 Press and hold an eligible xDrip4iOS notification to open its expanded view. The expanded view can show the alert title, current glucose, trend, delta, units, and a short chart.
 

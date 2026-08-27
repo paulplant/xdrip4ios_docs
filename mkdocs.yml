@@ -28,6 +28,7 @@ nav:
           - Libre 2 and Libre 2 Plus EU: connect/libre2.md
           - Libre with MiaoMiao or Bubble: connect/libreTransmitters.md
           - Medtrum Nano Pump: connect/medtrum.md
+          - Using xDrip4iOS with CamAPS: connect/camAPS.md
       - Follower mode:
           - Follower overview: connect/follower.md
           - Nightscout follower: connect/nightscoutFollower.md

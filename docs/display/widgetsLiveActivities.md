@@ -16,7 +16,7 @@ The project provides small, medium, and large system widgets plus circular and r
 
 Open **Settings > Alerts and Notifications > Notifications** and select Disabled, Minimal, Normal, or Large. The presentation can include the Lock Screen, Dynamic Island, and StandBy layouts supported by the device.
 
-When a Live Activity type is selected, the settings screen shows a preview of that layout. It uses the latest available information or example data when no current preview is available. On supported iOS versions, it also shows the CarPlay layout.
+When a Live Activity type is selected, the settings screen shows a preview of that layout. It uses the latest available information or example data when no current preview is available.
 
 Live Activities are available in Master mode. In Follower mode, they require **Heartbeat** under **Settings > Data Source > Keep-alive** and a connected heartbeat device.
 
@@ -29,6 +29,19 @@ Supported detailed Live Activity layouts can show a coloured sensor noise indica
 Supported Live Activity layouts can also show the current Loop, CareLink pump, or CareLink SmartGuard state. The symbol and colour can indicate that the system is active, checking, suspended, disconnected, or has old data. xDrip4iOS only displays the state reported by the connected service.
 
 The Shortcuts app also includes **Restart Live Activity**. You can use this action in a personal automation if you rarely open xDrip4iOS. The action requests a restart. It does not guarantee that iOS will keep the activity active.
+
+## CarPlay style
+
+On iOS 26 or later, a **CarPlay** section appears below the Live Activity settings when a Live Activity is enabled. Select **Style** and choose:
+
+- **Chart** shows the current glucose, trend arrow, change, and recent glucose chart. It can also show current AID information when this is available. This is the default style.
+- **Basic** uses the available space for a larger glucose value, trend arrow, and change. It does not show a chart.
+
+The preview below the setting updates when the style is changed. It does not start a Live Activity or confirm that CarPlay is currently displaying one.
+
+Apple uses this same compact Live Activity layout for CarPlay and the Apple Watch Smart Stack. Changing the CarPlay style can therefore change both displays.
+
+CarPlay decides when and where a Live Activity is shown. The selected style changes its contents only.
 
 ## StandBy
 

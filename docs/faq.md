@@ -12,6 +12,12 @@ All TestFlight builds expire after Apple's displayed test period. The publisher 
 
 Libre 3 is not a direct CGM choice in xDrip4iOS. It can be viewed through a supported follower path, such as LibreLinkUp, when the official system uploads its readings.
 
+## Can I use xDrip4iOS with CamAPS?
+
+Yes, when CamAPS uses a supported Dexcom sensor. CamAPS controls the sensor connection and must remain running in the background. Use **Coexistence Mode** for Dexcom G6. Dexcom G7 uses the active connection maintained by CamAPS without a separate Coexistence Mode setting.
+
+No, when CamAPS uses Libre 2, Libre 2 Plus, Libre 3, or Libre 3 Plus. The Libre sensor connection used by CamAPS cannot also provide direct readings to xDrip4iOS. This is caused by the way the sensor connects to the iPhone. It is not a fault in either app. See [Using xDrip4iOS with CamAPS](connect/camAPS.md).
+
 ## Is Dexcom G5 still supported?
 
 Yes. Dexcom G5 remains fully supported internally. It has been removed from the user-facing data source list and general documentation because it is now very obsolete. Existing users can continue to use it.
@@ -20,13 +26,17 @@ Yes. Dexcom G5 remains fully supported internally. It has been removed from the 
 
 Yes. Add the transmitter and leave the sensor code field showing its placeholder. Select **OK**. xDrip4iOS reads the existing sensor session from the transmitter and does not start a new session or restart the warm-up.
 
+## Can xDrip4iOS scan a Dexcom G6 sensor code?
+
+Yes. When starting a new G6 sensor, select **Scan with Camera** or **Choose Photo** on the sensor code screen. xDrip4iOS fills in the four-digit code and can save the lot number and sensor serial number from the label. Label scanning is optional and is not needed when the sensor session is already running.
+
 ## Can xDrip4iOS and the Dexcom app both receive G6 readings?
 
-Yes. Set the G6 device to **Coexistence** mode and keep the Dexcom app running in the background. Use **Primary** when xDrip4iOS should use the main transmitter connection and the Dexcom app is not using it. See [Dexcom G6 and ONE](connect/dexcomG5G6One.md).
+Yes. Enable **Coexistence Mode** when the Dexcom app or CamAPS controls the transmitter connection, and keep that app running in the background. If xDrip4iOS connects directly, disable **Coexistence Mode** and normally use the `Mobile App (Default)` Bluetooth channel. Experimental channels are available for specific multi-device setups. See [Dexcom G6 and ONE](connect/dexcomG5G6One.md).
 
-## Why must the Dexcom app remain open for G7, ONE+, or Stelo?
+## Why must the sensor app remain open for G7, ONE+, or Stelo?
 
-The official Dexcom app controls the sensor connection. xDrip4iOS receives the readings that it relays. Start and pair the sensor in the Dexcom app, then leave that app running in the background.
+The app that paired the sensor controls its connection. This is normally the official Dexcom app, but it can be CamAPS for a supported Dexcom G7 sensor. xDrip4iOS receives readings from that active connection. Start and pair the sensor in the controlling app, then leave that app running in the background.
 
 ## What is a Follower Heartbeat device?
 

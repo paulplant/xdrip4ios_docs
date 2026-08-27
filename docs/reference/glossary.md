@@ -16,6 +16,10 @@ Ambulatory Glucose Profile. A 24-hour chart that combines readings from several 
 
 Older readings retrieved after a connection gap.
 
+**Bluetooth channel**
+
+One of the Bluetooth connections made available by a Dexcom G6 transmitter. xDrip4iOS normally uses the Mobile App channel. The other channels are intended for specific multi-device setups.
+
 **Calibration**
 
 A relationship between sensor data and a reference blood glucose measurement. Not every system accepts or needs user calibration.
@@ -24,9 +28,9 @@ A relationship between sensor data and a reference blood glucose measurement. No
 
 Continuous glucose monitoring system.
 
-**Coexistence**
+**Coexistence Mode**
 
-A Dexcom G6 and ONE connection mode that allows xDrip4iOS to receive readings while the official Dexcom app uses the main transmitter connection.
+A Dexcom G6 and ONE connection mode that allows xDrip4iOS to receive readings while another app, such as the Dexcom app or CamAPS, controls the transmitter connection.
 
 **CV**
 

@@ -15,13 +15,13 @@ The Activity Log can include:
 - app starts and closures
 - Bluetooth scanning, connection, disconnection, pairing, and recovery
 - the displayed Bluetooth name for some user-initiated device actions
-- direct CGM setup and NFC scan results
+- direct CGM setup, NFC scan results, and Dexcom G6 sensor label scan results
 - Follower sign-in, download, failure, retry, and recovery
 - accepted glucose readings and calibrations
-- sensor sessions, sensor noise, sensor health conditions, and transmitter read success
+- sensor sessions, submitted sensor codes, sensor noise, sensor health conditions, and transmitter read success
 - alerts that were raised, scheduled, snoozed, dismissed, disabled, or blocked by notification permission
 - Nightscout, Apple Health, Apple Watch, Live Activity, Calendar, and OS-AID updates
-- changes to data source, keep-alive, therapy source, Live Activity, and glucose processing settings
+- changes to data source, keep-alive, therapy source, Dexcom connection mode, Dexcom Bluetooth channel, Live Activity, and glucose processing settings
 - completed backup, restore, cleanup, and deletion actions
 - changes to glucose readings and treatments.
 
@@ -53,6 +53,7 @@ Searching changes only the list shown on the screen. The copied or shared report
 - iPhone or iPad class and iOS version
 - Master or Follower mode and the selected data source
 - background keep-alive mode when applicable
+- selected Dexcom Bluetooth channel when a Dexcom G6 or ONE transmitter is configured
 - glucose units and glucose-processing settings
 - the enabled state of supported sharing and display integrations.
 

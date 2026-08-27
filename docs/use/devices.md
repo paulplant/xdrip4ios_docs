@@ -26,6 +26,7 @@ Select a configured device in the **Devices** tab. The page for that device alwa
 - transmitter ID
 - battery information
 - sensor details
+- Dexcom G6 connection mode and Bluetooth channel
 - the percentage of expected readings received
 - Libre calibration options
 - device-specific M5Stack controls

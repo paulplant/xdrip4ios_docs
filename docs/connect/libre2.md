@@ -30,6 +30,14 @@ You can connect xDrip4iOS to a supported Libre sensor that has already been star
 
 Keep Bluetooth permission disabled for the Libre app after the scan. The Libre app and xDrip4iOS cannot both control the direct Bluetooth connection.
 
+## Using CamAPS
+
+xDrip4iOS cannot receive direct readings from the same Libre 2 or Libre 2 Plus sensor while CamAPS is using it. CamAPS needs the sensor connection and it cannot be shared with xDrip4iOS.
+
+Do not disable Bluetooth permission for CamAPS or scan the sensor into xDrip4iOS to try to use both apps. This limitation is caused by the way the Libre sensor connects to the iPhone. It is not an xDrip4iOS fault or a missing setting.
+
+See [Using xDrip4iOS with CamAPS](camAPS.md) for the differences between Libre and Dexcom sensors.
+
 ## Sensor detection and duration
 
 xDrip4iOS can detect a new Libre sensor and its age. It distinguishes supported Libre 2 Plus variants and uses the detected lifetime when available. Manual start remains available for recovery situations, but normal direct operation should use the sensor information received by the app.

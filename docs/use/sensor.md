@@ -17,7 +17,7 @@ If **Start Sensor** is available:
 1. Confirm that the physical sensor is inserted and the transmitter is ready.
 2. Select **Start Sensor**.
 3. Enter the actual start time when requested.
-4. Enter the printed sensor code when the transmitter requests one.
+4. Enter or scan the printed sensor code when the transmitter requests one.
 5. Confirm the start.
 
 Use only the code printed for the sensor. The transmitter can reject a wrong code or use it to calculate incorrect readings.
@@ -25,6 +25,28 @@ Use only the code printed for the sensor. The transmitter can reject a wrong cod
 For a Dexcom G6 session, leaving the code empty uses `0000` and starts a no-code session. The transmitter will then request regular calibrations. xDrip4iOS shows a warning before this is confirmed.
 
 This applies only when you deliberately select **Start Sensor** and the transmitter has no active session. If a Dexcom sensor session is already running when the transmitter is added, leave the placeholder code unchanged and select **OK**. xDrip4iOS reads the existing session from the transmitter and does not start it again. See [Dexcom G6 and ONE](../connect/dexcomG5G6One.md#connecting-to-a-sensor-session-that-is-already-running).
+
+### Scan a Dexcom G6 sensor label
+
+When starting a new Dexcom G6 sensor, the sensor code screen provides three choices:
+
+- enter the four-digit code manually
+- select **Scan with Camera** and place the Data Matrix on the sensor label inside the frame
+- select **Choose Photo** and choose a clear photo containing one sensor label.
+
+A successful scan fills in the sensor code and shows the lot number and sensor serial number from the label. Check this information before selecting **OK**. You can still edit the code or enter it manually if the label cannot be read.
+
+Scanning the label is optional. It is not needed when connecting to a G6 sensor session that is already running. In that case, leave the placeholder code unchanged and select **OK**.
+
+### Stored Dexcom G6 sensor information
+
+When this information is available, **Sensor Management** can show:
+
+- **Scanned Label Code** when the sensor label was scanned
+- **Sensor Code** when the code was entered manually
+- **Lot Number** and **Sensor Serial Number** when they were read from a scanned label.
+
+A confirmed no-code session shows `0000 (No-code session)`. xDrip4iOS uses validated data from the transmitter to keep the displayed sensor information matched to the active session.
 
 ## Stop a sensor
 

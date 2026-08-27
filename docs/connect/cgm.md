@@ -21,6 +21,7 @@ Only one CGM device can be active. If another CGM is present in **Devices**, dis
 - [Libre 2 and Libre 2 Plus EU](libre2.md)
 - [Libre with MiaoMiao or Bubble](libreTransmitters.md)
 - [Medtrum Nano Pump](medtrum.md)
+- [Using xDrip4iOS with CamAPS](camAPS.md)
 
 ## Connection status
 

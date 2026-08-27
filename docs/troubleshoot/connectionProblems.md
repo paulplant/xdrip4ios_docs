@@ -24,24 +24,28 @@ Different CGM systems must be used with their official app in different ways.
 
 ### Dexcom G6 and ONE
 
-Open the device in the **Devices** tab and check **Connection Mode**.
+Open the device in the **Devices** tab and check **Coexistence Mode** and **Bluetooth Channel**.
 
-- **Primary** means xDrip4iOS uses the main transmitter connection. The Dexcom app must not also try to use that connection.
-- **Coexistence** allows xDrip4iOS to receive readings while the Dexcom app uses the main connection. The Dexcom app must remain running in the background.
+- When **Coexistence Mode** is enabled, the Dexcom app or CamAPS controls the connection. That app must remain running in the background and receiving readings. **Bluetooth Channel** is disabled in this mode.
+- When **Coexistence Mode** is disabled, xDrip4iOS controls its own connection. `Mobile App (Default)` is the normal channel. Another app using the same channel can cause missed readings.
+- `Receiver or Pump (Experimental)` can leave the **Mobile App** channel available for another phone app. It can prevent a Dexcom receiver or compatible pump from connecting.
+- `Slot 3 (Anubis Experimental)` is available only for an identified Anubis transmitter and should be used only for testing.
 
-If both apps are required, use Coexistence. If xDrip4iOS is the only app receiving directly from the transmitter, use Primary. See [Dexcom G6 and ONE](../connect/dexcomG5G6One.md).
+If xDrip4iOS is the only app connected directly, disable **Coexistence Mode** and select `Mobile App (Default)`. If the Dexcom app or CamAPS must control the connection, enable **Coexistence Mode**. Use an experimental channel only when the setup specifically requires it. A channel change is used at the next transmitter connection. See [Dexcom G6 and ONE](../connect/dexcomG5G6One.md).
 
 ### Dexcom G7, ONE+, and Stelo
 
-The official Dexcom app controls the sensor connection. It must remain running in the background and continue receiving readings. Start and pair the sensor in the Dexcom app first.
+The app that paired the sensor controls its connection. This is normally the official Dexcom app. It can also be CamAPS for a supported Dexcom G7 sensor. The controlling app must remain running in the background and continue receiving readings. Start and pair the sensor in that app first.
 
-If the official app has stopped receiving readings, correct that connection before changing xDrip4iOS. See [Dexcom G7, ONE+, and Stelo](../connect/dexcomG7OnePlusStelo.md).
+If the controlling app has stopped receiving readings, correct that connection before changing xDrip4iOS. See [Dexcom G7, ONE+, and Stelo](../connect/dexcomG7OnePlusStelo.md).
 
 ### Libre 2 and Libre 2 Plus EU
 
 xDrip4iOS needs Bluetooth access, but Bluetooth permission for the Libre app must remain disabled after the NFC setup scan. Enabling it can allow the Libre app to take the connection.
 
 Repeat the NFC scan only when the device screen asks for it. Repeated scans do not repair a normal Bluetooth gap. See [Libre 2 and Libre 2 Plus EU](../connect/libre2.md).
+
+If CamAPS uses the Libre sensor, xDrip4iOS cannot receive direct readings from it at the same time. Do not change the CamAPS Bluetooth connection to troubleshoot xDrip4iOS. See [Using xDrip4iOS with CamAPS](../connect/camAPS.md).
 
 ### Libre with MiaoMiao or Bubble
 
@@ -76,7 +80,7 @@ The current reading should return first. Backfilled readings can then appear in 
 Adding an existing sensor session does not normally require starting it again.
 
 - For Dexcom G6 and ONE, leave the sensor code field showing its placeholder and select **OK**. xDrip4iOS reads the session already stored in the transmitter.
-- For Dexcom G7, ONE+, and Stelo, start and pair the sensor in the official Dexcom app. xDrip4iOS receives that running session through the official app connection.
+- For Dexcom G7, ONE+, and Stelo, start and pair the sensor in the app that controls it. xDrip4iOS receives that running session through the same connection.
 - For Libre 2 and Libre 2 Plus EU, scan the running sensor when requested. xDrip4iOS uses its existing start time.
 
 Do not stop a working sensor only to add it to xDrip4iOS.

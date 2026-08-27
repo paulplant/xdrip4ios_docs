@@ -11,6 +11,8 @@ xDrip4iOS offers four ways to show glucose information on Apple Watch. They do n
 
 The Watch app and xDrip4iOS complications require the xDrip4iOS Watch app to be installed. The Contact Image and Calendar options use standard Apple complications.
 
+On supported systems, Apple Watch can also show the xDrip4iOS Live Activity in the Smart Stack. Apple uses the same compact layout for the Smart Stack and CarPlay. The **CarPlay > Style** choice under **Settings > Alerts and Notifications > Notifications** can therefore change both displays. See [CarPlay style](widgetsLiveActivities.md#carplay-style).
+
 ## xDrip4iOS Watch app
 
 Install xDrip4iOS from the Watch app on the paired iPhone if automatic app installation is disabled.
