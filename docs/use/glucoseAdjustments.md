@@ -15,13 +15,88 @@ Select **Glucose Adjustments** in the toolbar at the top of **Home**. Choose the
 
 ## Adjustment
 
-Enable **Adjustment**, then use **Offset** and **Scale** to change eligible readings. **Emphasis** selects where Scale has the most effect:
+Glucose Adjustment is intended for sensors and follower sources that cannot be calibrated directly.
 
-- **Normal** applies the effect evenly through the glucose range.
-- **Highs** applies more of the effect at higher values.
-- **Lows** applies more of the effect at lower values.
+It is different from sensor calibration. Calibration changes how the sensor or xDrip algorithm calculates glucose. Adjustment changes the completed glucose value afterwards.
 
-Use recent blood glucose checks when setting an adjustment. The preview shows the original value and the result of the selected settings.
+If the active sensor already has a suitable calibration process, xDrip4iOS disables Adjustment. This prevents two different correction systems from being applied to the same glucose values.
+
+Adjustment is available for glucose sources where direct calibration is not available. This includes compatible factory-calibrated sensors and follower data sources.
+
+### Add BG checks first
+
+Before creating an adjustment, add recent BG checks to the chart. Ideally, use several checks from the previous 4 to 12 hours at different glucose levels:
+
+- a lower glucose value
+- a value within the normal range
+- a higher glucose value
+
+The BG checks appear as reference points in the live preview. Adjust the controls until the adjusted glucose curve follows these reference values as closely as possible.
+
+The app does not calculate Scale or Emphasis automatically from the BG checks. The BG checks provide the real blood glucose values that you use to evaluate the live preview.
+
+!!! warning
+    Do not adjust the curve only because its shape looks better. The adjusted curve should be supported by reliable BG checks.
+
+### Offset
+
+Offset moves the complete glucose curve up or down by the same amount.
+
+For example, an Offset of `+10 mg/dL` adds 10 mg/dL to every eligible reading. An Offset of `-10 mg/dL` subtracts 10 mg/dL.
+
+You can set the Offset in two ways:
+
+- Use the plus and minus buttons to move the value up or down.
+- Select the glucose value shown beside Offset and enter a current BG value. xDrip4iOS calculates the required Offset automatically.
+
+Offset is usually sufficient when the sensor curve has the correct overall shape but remains consistently above or below the BG checks.
+
+### Scale
+
+Some sensors produce a glucose curve that appears flatter or more exaggerated than the BG checks.
+
+Scale changes the distance between lower and higher glucose values:
+
+- `1.00` keeps the original range.
+- A Scale below `1.00` pulls the curve inwards and reduces the difference between lower and higher values.
+- A Scale above `1.00` stretches the curve outwards and increases the difference between lower and higher values.
+
+For example, with Normal Emphasis and no Offset:
+
+| Original | Scale 0.90 | Scale 1.10 |
+| ---: | ---: | ---: |
+| 70 mg/dL | 73 mg/dL | 67 mg/dL |
+| 100 mg/dL | 100 mg/dL | 100 mg/dL |
+| 200 mg/dL | 190 mg/dL | 210 mg/dL |
+
+Use several BG checks at different glucose levels when changing Scale. The app warns when there are not enough BG checks visible in the preview.
+
+Adjust Scale until the difference between the lower, in-range and higher parts of the curve matches the BG checks more closely.
+
+### Emphasis
+
+Emphasis changes which part of the glucose range is affected most by Scale.
+
+- **Normal** applies Scale around the middle of the glucose range.
+- **Highs** biases the Scale effect towards higher glucose values.
+- **Lows** biases the Scale effect towards lower glucose values.
+
+Emphasis does not make a separate adjustment. It changes the centre around which Scale stretches or compresses the curve.
+
+Emphasis has no effect when Scale is `1.00`.
+
+### Suggested workflow
+
+1. Select a preview period containing several useful BG checks. Normally, use the previous 4 to 12 hours.
+2. Enable **Adjustment**.
+3. Set the Offset so the curve is generally aligned with the BG checks.
+4. Compare the lower, in-range and higher parts of the curve.
+5. If the curve is too flat or too exaggerated, adjust Scale.
+6. If the Scale correction is needed mainly at higher or lower values, change Emphasis.
+7. Continue adjusting Offset and Scale while watching the live preview.
+8. Apply from **Now** first, or apply to the selected historical period when you are satisfied with the preview.
+
+It can take some practice to balance Offset, Scale and Emphasis. The live preview allows you to see the combined result before applying it.
 
 ## Smoothing
 
