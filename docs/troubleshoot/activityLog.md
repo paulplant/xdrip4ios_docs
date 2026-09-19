@@ -70,4 +70,4 @@ An **Issue Report** can attach detailed developer trace files. Those files can c
 
 Opening, copying, or sharing the Activity Log does not attach the developer trace files.
 
-See [Report a problem](reportingIssues.md) for the other information to include in a useful support request.
+See [How to ask for help](reportingIssues.md) for the other information to include in a useful support request.

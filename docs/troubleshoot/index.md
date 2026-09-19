@@ -16,7 +16,7 @@ Use [Alarms and background operation](background.md).
 
 ## App behaviour is incorrect or reproducible
 
-Use [Report a problem](reportingIssues.md) to collect the version, source type, timestamps, and other useful details. Send an Issue Report only when an xDrip4iOS developer asks for one.
+Use [How to ask for help](reportingIssues.md) to describe your CGM or system, your setup, and what is going wrong. Send an Issue Report only when an xDrip4iOS developer asks for one.
 
 ## Understand what happened recently
 

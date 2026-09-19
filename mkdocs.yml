@@ -87,7 +87,7 @@ nav:
       - No readings or disconnections: troubleshoot/connectionProblems.md
       - Alarms and background operation: troubleshoot/background.md
       - Follower and service problems: troubleshoot/follower.md
-      - Report a problem: troubleshoot/reportingIssues.md
+      - How to ask for help: troubleshoot/reportingIssues.md
   - Frequently asked questions: faq.md
   - Reference:
       - Supported systems: reference/supportedSystems.md

@@ -89,4 +89,4 @@ Do not stop a working sensor only to add it to xDrip4iOS.
 
 Deleting the device removes its saved ID and settings. Delete and add it again only after the normal checks fail and you have recorded those details.
 
-If the device repeatedly disconnects, include the **Read Success** percentage, the hours that show gaps, and the times of the disconnections in [Report a problem](reportingIssues.md).
+If the device repeatedly disconnects, include the **Read Success** percentage, the hours that show gaps, and the times of the disconnections in [How to ask for help](reportingIssues.md).

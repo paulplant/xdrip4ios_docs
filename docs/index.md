@@ -36,4 +36,4 @@ See [Supported systems](reference/supportedSystems.md) before buying or configur
 
 ## Get help
 
-Use the [Troubleshooting index](troubleshoot/index.md) first. If the problem continues, collect the details described in [Report a problem](troubleshoot/reportingIssues.md). Never publish passwords, API secrets, tokens, or personally identifying health information in a public issue.
+Use the [Troubleshooting index](troubleshoot/index.md) first. If the problem continues, collect the details described in [How to ask for help](troubleshoot/reportingIssues.md). Never publish passwords, API secrets, tokens, or personally identifying health information in a public issue.
