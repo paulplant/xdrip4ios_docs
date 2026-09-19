@@ -54,7 +54,12 @@ nav:
       - Settings:
           - Settings overview: use/settings.md
           - Data Source: getting-started/dataSource.md
-          - Glucose Display: use/glucoseDisplay.md
+          - General:
+              - Overview: use/general.md
+              - Home Screen: use/homeScreen.md
+              - Glucose Ranges: use/glucoseRanges.md
+              - Treatments: use/treatmentSettings.md
+              - Statistics: use/statisticsSettings.md
           - Alerts and Notifications: use/alertsAndNotifications.md
           - Sharing and Services:
               - Overview: use/sharingAndServices.md

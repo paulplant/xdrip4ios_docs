@@ -44,7 +44,7 @@ The **Ambulatory Glucose Profile** combines readings from many days into one 24-
 
 The trend charts show changes in estimated A1C and CV over time. When compatible Nightscout or CareLink treatment history is available, they can also show changes in average total daily insulin and average carbohydrates. CareLink total daily insulin includes recorded boluses and automatic basal deliveries.
 
-The **Daily Pattern** shows the Time in Range for each day. The average for the selected period appears beside the section title. The target line provides a simple reference for comparing the daily results.
+The **Daily Pattern** shows the percentage in the selected clinical range for each day. The average for the selected period appears beside the section title. The dashed line marks the 70% clinical target.
 
 Statistics describe stored history. They do not predict the next glucose value.
 

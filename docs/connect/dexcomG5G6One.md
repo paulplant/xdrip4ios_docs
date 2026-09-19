@@ -16,9 +16,12 @@ Find the transmitter ID on the transmitter box or in the source app. Do not ente
 
 ## Connect
 
-In **Devices**, add a `Dexcom G6/ONE` CGM. Enter the six-character transmitter ID, select **Connect**, and keep the transmitter close for one reading cycle.
+In **Devices**, add a `Dexcom G6/ONE` CGM. Select the connection mode before entering the six-character transmitter ID.
 
-Before scanning, force-close any app that is already connected to the transmitter, such as the Dexcom app or CamAPS. The other app must not remain connected while xDrip4iOS makes its first connection or while xDrip4iOS is using the primary connection.
+- Select **Primary Mode** when xDrip4iOS should control the transmitter connection. Force-close any other app that connects to the transmitter or remove its Bluetooth permission.
+- Select **Coexistence Mode** when the Dexcom app, CamAPS, or another compatible app controls the connection. Keep that app running in the background and receiving current readings.
+
+Enter the transmitter ID, continue to the device screen, and select **Connect**. Keep the transmitter close for one reading cycle.
 
 xDrip4iOS identifies the exact product from the transmitter ID when possible.
 
@@ -42,15 +45,15 @@ Some transmitters supply factory-calibrated readings and sensor dates. The avail
 
 You can add a transmitter after its sensor session has already been started in the Dexcom app, a receiver, or another compatible app. You do not need to start the sensor again in xDrip4iOS.
 
-If xDrip4iOS asks for a sensor code, leave the field empty so that the `0000` placeholder remains, then select **OK**. xDrip4iOS will read the current session from the transmitter and use its original start time. It will not send a new sensor start command to the transmitter, restart the warm-up, or change the existing session.
+If xDrip4iOS asks for a sensor code, select **Use Without Code**. Check that **No code (0000)** is selected, then select **Continue** and confirm the warning. xDrip4iOS will read the current session from the transmitter and use its original start time. It will not send a new sensor start command, restart the warm-up, or change the existing session.
 
 Keep the transmitter close and allow at least one reading cycle for the current session details to appear.
 
-Do not scan the label or replace the placeholder with the printed code for this process. The placeholder tells xDrip4iOS to check the session that is already stored in the transmitter.
+Do not scan the label or enter the printed code for this process. **Use Without Code** tells xDrip4iOS to check the session that is already stored in the transmitter.
 
-The `0000` placeholder does not replace the sensor code for a session that is already running. It is only used as a no-code start if the transmitter does not have an active session and you choose to start a new one.
+The no-code choice does not replace the sensor code for a session that is already running. It is only used as a no-code start if the transmitter does not have an active session and you choose to start a new one.
 
-If a Dexcom G6 sensor is started without a code, xDrip4iOS uses `0000`. This creates a no-code session and the transmitter will request regular calibrations. Review the warning before selecting **Start Anyway**.
+If a Dexcom G6 sensor is started without a code, xDrip4iOS uses `0000`. This creates a no-code session and the transmitter will request calibrations after warm-up and periodically afterwards. Review the warning before selecting **Continue**.
 
 ## Using the Dexcom G6 with xDrip4iOS and other apps
 
@@ -63,16 +66,16 @@ Two settings control how xDrip4iOS connects:
 
 These settings are not interchangeable. **Bluetooth Channel** is disabled when **Coexistence Mode** is enabled because the other app controls the connection in that mode.
 
-| Intended setup | Coexistence Mode | Bluetooth Channel |
+| Intended setup | Connection Mode | Bluetooth Channel |
 | --- | --- | --- |
-| xDrip4iOS is the only app connected to the transmitter | Disabled | `Mobile App (Default)` |
-| The Dexcom app or CamAPS controls the connection | Enabled | Disabled automatically |
-| xDrip4iOS connects independently while another phone app uses the Mobile App channel | Disabled | `Receiver or Pump (Experimental)` |
-| An Anubis transmitter uses its experimental third channel | Disabled | `Slot 3 (Anubis Experimental)` |
+| xDrip4iOS is the only app connected to the transmitter | `Primary Mode` | `Slot 2: Mobile App (Default)` |
+| The Dexcom app or CamAPS controls the connection | `Coexistence Mode` | Not used |
+| xDrip4iOS connects independently while another phone app uses the Mobile App channel | `Primary Mode` | `Slot 1: Receiver or Pump` |
+| An Anubis transmitter uses its extra third channel | `Primary Mode` | `Slot 3: Anubis Extra` |
 
-### Primary mode
+### Primary Mode
 
-Use **Primary mode** when xDrip4iOS is the main app connected to the transmitter. xDrip4iOS controls the connection and receives readings directly.
+Use **Primary Mode** when xDrip4iOS is the main app connected to the transmitter. xDrip4iOS controls the connection and receives readings directly.
 
 The default **Mobile App** channel is the correct choice when xDrip4iOS is the only phone app connected directly. Another app using the same channel can compete with xDrip4iOS. One or both apps can then miss readings.
 
@@ -86,18 +89,11 @@ If CamAPS controls the transmitter, see [Using xDrip4iOS with CamAPS](camAPS.md)
 
 The other app controls and authenticates the transmitter connection. xDrip4iOS receives the readings from that same connection. The other app must be connected to the same transmitter and receiving readings before this mode can work.
 
-When adding the transmitter to xDrip4iOS for the first time:
-
-1. Force-close the other app.
-2. Add the transmitter in xDrip4iOS and wait for it to connect.
-3. Open the transmitter in **Devices** and enable **Coexistence Mode**.
-4. Reopen the other app and confirm that it has a current reading.
+When adding the transmitter, select **Coexistence Mode** on the first setup screen. Confirm that the other app is connected to the same transmitter and has a current reading, then add the transmitter ID in xDrip4iOS.
 
 Keep the other app running in the background. Do not swipe it away. If it stops receiving readings, loses Bluetooth permission, or is force-closed, xDrip4iOS will also stop receiving readings in **Coexistence Mode**.
 
-If the other app is CamAPS, close it only while xDrip4iOS makes the initial connection. Reopen it immediately after enabling **Coexistence Mode**.
-
-The transmitter screen in **Devices** shows whether **Primary mode** or **Coexistence Mode** is active. Changing the mode can interrupt the connection until the next reading cycle.
+The transmitter screen in **Devices** shows whether **Primary Mode** or **Coexistence Mode** is active. The G6 mode can be changed later. Changing it can interrupt readings until the next connection.
 
 ### Bluetooth Channel
 
@@ -105,13 +101,21 @@ Open the transmitter in **Devices**. **Bluetooth Channel** appears under **Devel
 
 The available choices are:
 
-- `Mobile App (Default)` uses the normal phone-app channel. Leave this selected for a normal xDrip4iOS connection.
-- `Receiver or Pump (Experimental)` makes xDrip4iOS use the channel normally reserved for a Dexcom receiver or compatible pump. This leaves the **Mobile App** channel available for another phone app. Do not select it if a receiver or pump needs that channel. xDrip4iOS can prevent that device from connecting.
-- `Slot 3 (Anubis Experimental)` is available only after xDrip4iOS has identified an Anubis transmitter. It leaves both standard channels available for other devices. Use it only for testing.
+- `Slot 2: Mobile App (Default)` uses the normal phone-app channel. Leave this selected for a normal xDrip4iOS connection.
+- `Slot 1: Receiver or Pump` makes xDrip4iOS use the channel normally reserved for a Dexcom receiver or compatible pump. This leaves the Mobile App channel available for another phone app. Do not select it if a receiver or pump needs that channel. xDrip4iOS can prevent that device from connecting.
+- `Slot 3: Anubis Extra` is available only after xDrip4iOS has identified an Anubis transmitter. It leaves both standard channels available for other devices. Use it only for testing.
 
 The two experimental choices display a warning before they are saved. A channel change is used the next time xDrip4iOS connects to the transmitter for a reading. It might not appear to change immediately.
 
-If you do not have a specific reason to use another channel, select `Mobile App (Default)`. If readings stop after changing the channel, return to the default and wait for the next reading cycle.
+If you do not have a specific reason to use another channel, select `Slot 2: Mobile App (Default)`. If readings stop after changing the channel, return to the default and wait for the next reading cycle.
+
+## Battery information
+
+The transmitter screen shows **Voltage A** and **Voltage B** after the transmitter provides battery data. The battery symbol uses limits intended for the G6 family.
+
+Select **Voltage B** to open **Battery History**. The chart begins after the first genuine battery reading is stored. Select the available time range to review changes. Gaps mean that no battery value was received during that period.
+
+The **Battery Low (G6)** alarm uses the G6 transmitter battery setting. This is separate from the G7 battery alarm.
 
 ## Anubis G6 transmitters
 
@@ -126,6 +130,6 @@ When an Anubis transmitter is detected, xDrip4iOS provides these extra features:
 - **Reset Transmitter** requests a transmitter reset on the next connection.
 - **Last Reset Time** shows the last recorded reset.
 - **Maximum Sensor Days** changes the sensor life reminder shown by xDrip4iOS. It can be set up to 60 days. Enter `0` to return to the default 10 days.
-- **Bluetooth Channel** can offer `Slot 3 (Anubis Experimental)`. This third channel is intended only for testing.
+- **Bluetooth Channel** can offer `Slot 3: Anubis Extra`. This third channel is intended only for testing.
 
 **Maximum Sensor Days** is only a visual reminder. It does not extend the sensor, keep a sensor session running, or stop the session when that number of days is reached.

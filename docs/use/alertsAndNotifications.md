@@ -49,6 +49,10 @@ Disabling an alarm disables the complete alarm group. Deleting a later scheduled
 
 The low iPhone battery alarm is not shown while the iPhone is charging.
 
+Dexcom G6 and G7-family devices use separate battery assessments. The alarm editor identifies the active setting as **Battery Low (G6)** or **Battery Low (G7)**. Changing one does not replace the saved threshold for the other family.
+
+When you go back after changing an alarm, xDrip4iOS asks whether to **Save** or **Discard Changes**. This prevents an accidental back gesture from losing the changes.
+
 **Large Snooze Screen** uses larger controls when an active alarm opens the snooze picker automatically. It is enabled by default. Disable it to use the standard-size picker. The normal Snooze screen opened from the Home toolbar is not changed. The same option is available under **Quick Show/Hide > Additional Items**.
 
 ### Not Looping
@@ -74,6 +78,7 @@ Under **Settings > Alerts and Notifications > Notifications**, configure:
 - whether a glucose reading appears in notifications
 - the minimum notification interval
 - Live Activity display type
+- whether available IOB and COB are shown in supported Live Activity layouts
 - a preview of the selected Live Activity layout
 - CarPlay style and preview on iOS 26 or later
 - whether the app badge shows a reading
@@ -83,7 +88,7 @@ Live Activities are available in Master mode. In Follower mode, they are availab
 
 When a Live Activity is enabled on iOS 26 or later, the **CarPlay** section provides **Chart** and **Basic** styles. **Chart** includes the recent glucose chart. **Basic** shows a larger glucose value without the chart. The selected style can also affect the Apple Watch Smart Stack because Apple uses the same compact Live Activity layout for both displays.
 
-Press and hold an eligible xDrip4iOS notification to open its expanded view. The expanded view can show the alert title, current glucose, trend, delta, units, and a short chart.
+Press and hold an eligible xDrip4iOS notification to open its expanded view. Glucose and relevant sensor alerts can show the current glucose, trend, delta, units, and a short chart. Other alerts use a text-only expanded view.
 
 The notification interval limits routine glucose notifications. It does not change the CGM reading interval or the schedule of configured alarms.
 

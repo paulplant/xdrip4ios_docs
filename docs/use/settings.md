@@ -7,7 +7,7 @@ On iPad, Settings uses a sidebar and detail area. Select a settings category in 
 The main sections follow the order shown in the app:
 
 - [Data Source](../getting-started/dataSource.md)
-- [Glucose Display](glucoseDisplay.md)
+- [General](general.md)
 - [Alerts and Notifications](alertsAndNotifications.md)
 - [Sharing and Services](sharingAndServices.md)
 - [Data Management](dataManagement.md)

@@ -8,7 +8,7 @@ Use the date selector to choose a day. Use the filter to show the required treat
 
 ![The Treatments tab with its date selector and treatment filters](../img/screenshots/source/treatmentsMainEmpty.png)
 
-The list can show insulin, carbohydrates, exercise, blood glucose checks, basal entries, site changes, sensor starts, pump battery changes, and notes. CareLink automatic basal deliveries can also appear when CareLink is the selected treatment source. You can add insulin, carbohydrates, exercise, a blood glucose check, or a note from xDrip4iOS.
+The list can show insulin, carbohydrates, exercise, blood glucose checks, basal entries, basal injections, site changes, sensor starts, pump battery changes, and notes. CareLink automatic basal deliveries can also appear when CareLink is the selected treatment source. You can add insulin, carbohydrates, exercise, a blood glucose check, a basal injection, or a note from xDrip4iOS.
 
 The filter choices are saved. If a treatment appears to be missing, check the selected date and enable its treatment type in the filter.
 
@@ -29,6 +29,7 @@ Use the unit shown beside the value. Insulin and carbohydrate entries do not use
 - **Carbohydrates** records an amount in grams.
 - **Exercise** records a duration in minutes.
 - **Blood Glucose Check** records a meter value in the selected glucose unit.
+- **Basal (Injection)** records a long-acting basal insulin injection in whole units. Enter the insulin type, such as Tresiba. The previous basal amount and insulin type are filled in when you add the next basal injection. Check both values before saving.
 - **Note** records text without requiring a numeric value.
 
 The date and time can be changed before saving. The optional note remains attached to that treatment.
@@ -37,13 +38,23 @@ The date and time can be changed before saving. The optional note remains attach
 
 Select a treatment to open it. Change the available fields and save, or select the delete control. A swipe action can also delete an eligible row.
 
-Insulin, carbohydrates, exercise, blood glucose checks, and notes can be edited. Basal, automatic basal, site change, sensor start, and pump battery entries are read-only because they describe events imported from another system.
+Insulin, carbohydrates, exercise, blood glucose checks, basal injections, and notes can be edited. Pump basal, automatic basal, site change, sensor start, and pump battery entries are read-only because they describe events imported from another system.
 
 !!! warning
     Deleting a treatment cannot be undone in xDrip4iOS. If Nightscout synchronisation is enabled, a local change can also be uploaded or reflected in Nightscout.
 
 ## Nightscout synchronisation
 
-When Nightscout is configured, xDrip4iOS can synchronise treatments. A treatment can include information about who entered it. Avoid creating the same event in several apps unless you understand how your Nightscout setup prevents duplicates.
+When Nightscout treatment sync is active, a treatment added, changed, or deleted in xDrip4iOS is sent to Nightscout. If a recently synchronised treatment is deleted from Nightscout, xDrip4iOS confirms that deletion and removes its local copy.
+
+A treatment can include information about who entered it. Avoid creating the same event in several apps unless you understand how your Nightscout setup prevents duplicates.
 
 CareLink treatments are imported when **Pump & Treatments** is set to **Automatic** or `CareLink` and CareLink is the active glucose source. Changing the **Automatic Basal** display between **Basal Pulses** and **Temp Basals** changes the chart only. It does not change the stored delivered insulin.
+
+## IOB and COB estimates
+
+xDrip4iOS can estimate insulin on board from recorded bolus insulin and carbohydrates on board from recorded carbohydrate treatments. Basal injections are not included in the IOB estimate.
+
+Open **Settings > General > Treatments** to select the insulin type and carbohydrate duration. See [Treatment settings](treatmentSettings.md).
+
+When Nightscout or CareLink provides a value, the online source remains responsible for that value. xDrip4iOS does not replace it with a local estimate during a temporary service gap.

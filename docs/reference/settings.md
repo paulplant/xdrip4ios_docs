@@ -24,7 +24,7 @@ The settings shown by xDrip4iOS depend on Master or Follower mode, enabled servi
 
 Account-based screens provide **Log In**. Some services require account details to be entered in xDrip4iOS first. CareLink opens Medtronic's login page, and its saved username and password are optional. **Log Out** appears at the top of the screen when an account is connected. CareLink and Shared Calendar also provide **Refresh**.
 
-## Glucose Display
+## General
 
 **Blood Glucose Units** selects mg/dL or mmol/L for display and entry. Set this before entering glucose ranges, alarm values, calibrations, or blood glucose treatments.
 
@@ -35,8 +35,10 @@ Account-based screens provide **Log In**. Some services require account details 
 - screen-lock dimming type
 - show mini chart
 - automatically reset the main chart to the current time
-- show original glucose readings when Glucose Adjustments are active
+- show original values when Glucose Adjustments are active
 - show sensor noise on the main chart
+- show available IOB and COB curves on the main chart
+- render basal data downwards from the top of the chart
 - select 3, 5, 8, 12, or 24 hours for the main chart
 - show remaining sensor lifetime instead of elapsed time.
 
@@ -48,11 +50,17 @@ Account-based screens provide **Log In**. Some services require account details 
 - low
 - urgent low.
 
+### Treatments
+
+- Insulin Type for locally estimated IOB
+- Carb Duration for locally estimated COB
+- Automatic values when the selected online source supplies the calculation.
+
 ### Statistics
 
 - show compact statistics on **Home**
 - time-in-range calculation type
-- IFCC A1C unit selection.
+- show estimated HbA1c in mmol/mol.
 
 ## Alerts and Notifications
 
@@ -61,6 +69,7 @@ Account-based screens provide **Log In**. Some services require account details 
 - show readings in notifications
 - notification interval
 - Live Activity type
+- Show IOB/COB for supported Live Activity layouts
 - preview of the selected Live Activity layout
 - CarPlay style and preview on iOS 26 or later when a Live Activity is enabled
 - show reading in the app badge
@@ -120,7 +129,7 @@ The CarPlay **Style** choices are **Chart** and **Basic**. **Chart** is the defa
 - OS-AID sharing disabled for the direct Medtrum Nano Pump source
 - warned opt-in sharing for Medtrum EasyView follower readings
 - spoken reading language, trend, delta, and interval
-- M5Stack colour, Wi-Fi, and Bluetooth settings.
+- M5Stack colour and Bluetooth settings.
 
 ## About xDrip4iOS
 
@@ -148,4 +157,4 @@ Version, build, installation date, licence information, and GitHub project.
 
 ## Advanced Settings
 
-Advanced settings can include Issue Report, support logging, sensor unlock data, LibreLinkUp version, maximum carbohydrate hours, StandBy display, frequent Nightscout or Apple Health readings, and online-help translation. Change an advanced setting only when its feature guide or a support instruction tells you to do so.
+Advanced settings can include Issue Report, support logging, sensor unlock data, LibreLinkUp and CareLink versions, maximum carbohydrate hours, StandBy display, frequent Nightscout or Apple Health readings, and online-help translation. Change an advanced setting only when its feature guide or a support instruction tells you to do so.

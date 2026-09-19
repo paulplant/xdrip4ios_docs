@@ -29,9 +29,11 @@ While the Watch app is open, it repeatedly asks the paired iPhone for current da
 
 The Watch app does not connect directly to the CGM or an online Follower service. The iPhone must receive the reading first.
 
-When sensor information is available, the Watch app uses the **Prefer Sensor Countdown** choice from **Settings > Glucose Display > Home Screen** on the iPhone. A coloured dot beside the data source can show the current sensor noise status.
+When sensor information is available, the Watch app uses the **Prefer Sensor Countdown** choice from **Settings > General > Home Screen** on the iPhone. A coloured dot beside the data source can show the current sensor noise status.
 
-When available, the AID row shows insulin on board, carbohydrates on board when the source provides it, the age of the latest activity, and the current Loop, CareLink pump, or CareLink SmartGuard state. The state can show that the system is active, checking, suspended, disconnected, or has old data. CareLink does not provide a changing carbohydrates on board value, so COB is not shown for a CareLink status. xDrip4iOS displays this information only.
+When available, the therapy area shows insulin on board and carbohydrates on board. The values can come from an AID source or can be estimated from treatments recorded on the iPhone.
+
+It can also show the age of the latest activity and the current Loop, CareLink pump, or CareLink SmartGuard state. The state can be active, checking, suspended, disconnected, or old. A CareLink account can provide IOB without reporting a pump. CareLink does not provide a changing COB value, but xDrip4iOS can estimate COB from recorded carbohydrate treatments when the selected treatment source allows it.
 
 ## xDrip4iOS Watch complications
 

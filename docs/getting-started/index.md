@@ -4,7 +4,7 @@ Use this sequence for a new installation.
 
 1. [Install xDrip4iOS](../install/install.md).
 2. Open the app and allow the permissions that match the features you will use.
-3. Under **Settings > Glucose Display**, select `mg/dL` or `mmol/L` before entering glucose thresholds.
+3. Under **Settings > General**, select `mg/dL` or `mmol/L` before entering glucose thresholds.
 4. Choose **Master** if this device will connect directly to CGM hardware. Choose **Follower** if it will receive readings from an online source or shared calendar.
 5. Configure the data source.
 6. Confirm that a current glucose value and timestamp appear on the **Home** tab.

@@ -2,7 +2,7 @@
 
 ## Select the glucose unit
 
-Under **Settings > Glucose Display**, select the glucose unit used by you and your care team. Do this before configuring ranges or alerts.
+Under **Settings > General**, select the glucose unit used by you and your care team. Do this before configuring ranges or alerts.
 
 ## Select Master or Follower
 

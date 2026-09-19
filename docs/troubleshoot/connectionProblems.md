@@ -17,6 +17,11 @@ Check whether the problem affects only xDrip4iOS or also the manufacturer's rece
 7. For Libre 2 direct, repeat NFC only if the device screen says that a scan is needed.
 8. Check transmitter or relay battery when the device reports it.
 9. Select the CGM in the **Devices** tab and open **Read Success**. Review the 24-hour percentage and hourly chart.
+10. Open **Signal Strength** on the device screen and check the reception near the normal iPhone position.
+
+For a continuously connected device, **Signal Strength** shows a live two-minute chart while the screen is open. For a Dexcom device, it shows the last measurement and its age because the transmitter disconnects between readings.
+
+If **Battery History** is available, check whether the level or Dexcom Voltage B has been falling. Gaps in the chart mean that no battery value was received. They do not mean that the battery was empty.
 
 ## Check how your CGM shares Bluetooth
 
@@ -26,18 +31,21 @@ Different CGM systems must be used with their official app in different ways.
 
 Open the device in the **Devices** tab and check **Coexistence Mode** and **Bluetooth Channel**.
 
-- When **Coexistence Mode** is enabled, the Dexcom app or CamAPS controls the connection. That app must remain running in the background and receiving readings. **Bluetooth Channel** is disabled in this mode.
-- When **Coexistence Mode** is disabled, xDrip4iOS controls its own connection. `Mobile App (Default)` is the normal channel. Another app using the same channel can cause missed readings.
-- `Receiver or Pump (Experimental)` can leave the **Mobile App** channel available for another phone app. It can prevent a Dexcom receiver or compatible pump from connecting.
-- `Slot 3 (Anubis Experimental)` is available only for an identified Anubis transmitter and should be used only for testing.
+- In **Coexistence Mode**, the Dexcom app or CamAPS controls the connection. That app must remain running in the background and receiving readings. **Bluetooth Channel** is disabled in this mode.
+- In **Primary Mode**, xDrip4iOS controls its own connection. `Slot 2: Mobile App (Default)` is the normal channel. Another app using the same channel can cause missed readings.
+- `Slot 1: Receiver or Pump` can leave the Mobile App channel available for another phone app. It can prevent a Dexcom receiver or compatible pump from connecting.
+- `Slot 3: Anubis Extra` is available only for an identified Anubis transmitter and should be used only for testing.
 
-If xDrip4iOS is the only app connected directly, disable **Coexistence Mode** and select `Mobile App (Default)`. If the Dexcom app or CamAPS must control the connection, enable **Coexistence Mode**. Use an experimental channel only when the setup specifically requires it. A channel change is used at the next transmitter connection. See [Dexcom G6 and ONE](../connect/dexcomG5G6One.md).
+If xDrip4iOS is the only app connected directly, select **Primary Mode** and `Slot 2: Mobile App (Default)`. If the Dexcom app or CamAPS controls the connection, select **Coexistence Mode**. Use another channel only when the setup specifically requires it. A channel change is used at the next transmitter connection. See [Dexcom G6 and ONE](../connect/dexcomG5G6One.md).
 
 ### Dexcom G7, ONE+, and Stelo
 
-The app that paired the sensor controls its connection. This is normally the official Dexcom app. It can also be CamAPS for a supported Dexcom G7 sensor. The controlling app must remain running in the background and continue receiving readings. Start and pair the sensor in that app first.
+Open the sensor in **Devices** and check the selected connection mode.
 
-If the controlling app has stopped receiving readings, correct that connection before changing xDrip4iOS. See [Dexcom G7, ONE+, and Stelo](../connect/dexcomG7OnePlusStelo.md).
+- In **Primary Mode**, xDrip4iOS controls the connection. Other Dexcom apps must not use the same channel. Confirm that the pairing code came from the current applicator and leave `Slot 2: Mobile App (Default)` selected unless another channel is deliberately required.
+- In **Coexistence Mode**, the Dexcom app, CamAPS, or another compatible app controls the connection. Keep it running in the background and confirm that it has a current reading.
+
+See [Dexcom G7, ONE+, and Stelo](../connect/dexcomG7OnePlusStelo.md).
 
 ### Libre 2 and Libre 2 Plus EU
 
@@ -79,8 +87,8 @@ The current reading should return first. Backfilled readings can then appear in 
 
 Adding an existing sensor session does not normally require starting it again.
 
-- For Dexcom G6 and ONE, leave the sensor code field showing its placeholder and select **OK**. xDrip4iOS reads the session already stored in the transmitter.
-- For Dexcom G7, ONE+, and Stelo, start and pair the sensor in the app that controls it. xDrip4iOS receives that running session through the same connection.
+- For Dexcom G6 and ONE, select **Use Without Code**, then select **Continue** and confirm the warning. xDrip4iOS reads the session already stored in the transmitter.
+- For Dexcom G7, ONE+, and Stelo, xDrip4iOS reads the running session without restarting it. Primary Mode still requires the pairing code from the current applicator. In Coexistence Mode, manage the sensor in the controlling app.
 - For Libre 2 and Libre 2 Plus EU, scan the running sensor when requested. xDrip4iOS uses its existing start time.
 
 Do not stop a working sensor only to add it to xDrip4iOS.

@@ -18,7 +18,7 @@ Always check the reading age. A plausible value can still be unsafe to use when 
 
 ## Main chart
 
-The main chart shows recent readings and can also show treatments, calibrations, original readings, glucose-range lines, sensor noise, and AID information when enabled.
+The main chart shows recent readings and can also show treatments, calibrations, original readings, glucose-range lines, sensor noise, basal data, IOB, and COB when enabled.
 
 - Drag horizontally to view earlier data.
 - Double-tap the chart to return to the current time.
@@ -33,6 +33,8 @@ The main chart periods are 3, 5, 8, 12, and 24 hours. A short message shows the 
 
 The mini chart provides a 1, 2, 3, or 7-day overview. Drag the highlighted time window to move the main chart through the stored history. Select the mini-chart period to choose a range, or double-tap the mini chart to move to the next period.
 
+Open **Settings > General > Home Screen** or **Quick Show/Hide** and enable **Show IOB/COB** to add available IOB and COB curves. The values can come from a connected AID source or can be estimated from recorded treatments. **Render Basal Downwards** places pump basal data at the top of the chart so that it is separated from the IOB and COB curves. Basal injection markers remain with the treatment markers.
+
 ## Statistics
 
 When enabled, the statistics area shows low, in-range, and high percentages, average glucose, estimated A1C or GMI information, coefficient of variation, and a time-in-range chart. Use the period menu below the chart to view today, 1 day, 7 days, 30 days, or 90 days.
@@ -43,11 +45,11 @@ Open **Statistics** for more detailed statistics, longer periods, trend charts, 
 
 ## Landscape chart
 
-Rotate the iPhone to landscape when rotation is enabled to compare one day of glucose readings with an Ambulatory Glucose Profile from recent history. Use the comparison menu to select the number of previous days. This makes it easier to see where the selected day followed or differed from the recent pattern.
+Rotate the iPhone to landscape when rotation is enabled to compare one day of glucose readings with an Ambulatory Glucose Profile from recent history. Use the comparison menu to select 3, 7, 30, 60, or 90 previous days. Select **None** to hide the comparison profile.
 
-Swipe left or right, or select the arrows at the sides, to change the day. Double-tap the middle of the chart or the date to return to today. Double-tap the range summary to switch between Time in Range and Time in Tight Range.
+The header shows the selected date, average glucose, and the range summary. Swipe left or right, or select the arrows at the sides, to change the day. Double-tap the middle of the chart or the date to return to today. Double-tap the range summary to switch between Time in Range and Time in Tight Range.
 
-When compatible Nightscout AID information is available, the landscape screen also shows temporary basal changes, insulin on board, and carbohydrates on board for the selected day.
+When compatible Nightscout AID information is available, the landscape screen also shows temporary basal changes, insulin on board, and carbohydrates on board for the selected day. A marker shows the current time when today is selected.
 
 ## iPad layout
 
@@ -57,7 +59,7 @@ In landscape, select the expand button on the main chart to open a larger Ambula
 
 ## Sensor and data source information
 
-The progress line near the bottom of the **Home** screen shows the estimated position in the active sensor lifetime when this information is available. It normally shows elapsed time. Open **Settings > Glucose Display > Home Screen** and enable **Prefer Sensor Countdown** to show the estimated time remaining instead.
+The progress line near the bottom of the **Home** screen shows the estimated position in the active sensor lifetime when this information is available. It normally shows elapsed time. Open **Settings > General > Home Screen** and enable **Prefer Sensor Countdown** to show the estimated time remaining instead.
 
 The section below the progress line shows the connected transmitter or follower source and indicates whether the connection has a problem. When sensor noise information is available, a coloured dot beside the data source shows its current status. Double-tap this section to open the related device or **Data Source** settings.
 
@@ -84,6 +86,8 @@ When compatible AID information is received from Nightscout, the pump and Loopin
 
 The current Loop, CareLink pump, or CareLink SmartGuard state can also appear on supported widgets, Live Activities, and in the Apple Watch app. The symbol can show that the system is active, checking, suspended, disconnected, or has old data. xDrip4iOS displays the reported state. It does not control insulin delivery.
 
-CareLink can provide entered meal amounts but does not provide a changing carbohydrates on board value. The Home and Apple Watch status areas therefore do not show COB when CareLink supplies the status.
+CareLink can provide IOB without reporting a pump. In that case, Home shows the IOB and its freshness without showing pump delivery information.
+
+CareLink does not provide a changing COB value. xDrip4iOS can still estimate COB locally from recorded carbohydrate treatments when this is enabled by the selected treatment source. See [Treatment settings](treatmentSettings.md).
 
 When Glucose Adjustments are active, press and hold the Glucose Adjustments button to show the original readings temporarily. Release the button to return to the adjusted readings.

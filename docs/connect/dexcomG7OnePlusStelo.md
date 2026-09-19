@@ -2,39 +2,106 @@
 
 Use the `Dexcom G7/ONE+/Stelo` CGM choice for the integrated sensor and transmitter products in this family.
 
-## How this connection works
+## Choose a connection mode
 
-xDrip4iOS works alongside the app that controls the sensor connection. This is normally the official Dexcom app. It can also be CamAPS when CamAPS is being used with a supported Dexcom G7 sensor. The other app pairs with the sensor and controls its Bluetooth connection. xDrip4iOS then receives readings from the same active connection.
+The first setup screen asks how xDrip4iOS should connect.
 
-The app controlling the sensor must remain running in the background and receiving current readings. Do not force-close it or remove its Bluetooth permission. If that app stops receiving readings, xDrip4iOS will also stop receiving them.
+### Primary Mode
 
-Start the sensor and complete any pairing steps in the controlling app before adding it to xDrip4iOS. See [Using xDrip4iOS with CamAPS](camAPS.md) if CamAPS controls the sensor.
+Use **Primary Mode** when xDrip4iOS should connect directly to the sensor and receive the readings itself.
 
-## Connect
+Another app must not use the same Dexcom connection. Force-close that app or remove its Bluetooth permission before connecting. This includes the Dexcom app and CamAPS.
 
-Keep the controlling app running in the background, connected to the sensor, and receiving current glucose values. xDrip4iOS receives this data through the connection maintained by that app.
+Primary Mode requires the four-digit pairing code from the current applicator. Keep the applicator until xDrip4iOS has connected successfully.
 
-The setup notice in xDrip4iOS names the Dexcom G7 app because it is the most common app used for this connection. If CamAPS controls the sensor, keep CamAPS running instead.
+### Coexistence Mode
 
-In **Devices**, add a `Dexcom G7/ONE+/Stelo` CGM. When the identifier screen opens, select **OK** without entering anything to search automatically. Keep the iPhone near the active sensor until xDrip4iOS identifies it and receives a reading.
+Use **Coexistence Mode** when the Dexcom app, CamAPS, or another compatible app controls the sensor connection.
+
+The other app must remain running in the background and receiving current readings. Do not force-close it or remove its Bluetooth permission. If that app stops receiving readings, xDrip4iOS will also stop receiving them.
+
+Start and manage the sensor in the other app. A pairing code is not required by xDrip4iOS in Coexistence Mode.
+
+The selected G7 connection mode is kept for that saved device. To change it, remove the device from xDrip4iOS and add it again with the required mode. Removing it from xDrip4iOS does not stop the physical sensor.
+
+## Connect in Primary Mode
+
+1. In **Devices**, add a `Dexcom G7/ONE+/Stelo` CGM.
+2. Select **Primary Mode**.
+3. Enter the four-digit pairing code, select **Scan with Camera**, or select **Choose Photo**.
+4. Check the code and any sensor information, then select **Continue**.
+5. Leave the Bluetooth name empty and continue to the device screen.
+6. Select **Scan** and keep the iPhone near the sensor.
+
+Scanning the current applicator can also read the sensor serial number, manufacture date, and expiry date. Check the information before continuing.
 
 If automatic search does not find the sensor, open the iPhone Bluetooth settings and find its name. Add the device again and enter all or part of that name. The name must begin with `DX` and can contain up to six characters.
 
-The identifier is the Bluetooth identifier, not the four-digit pairing code. xDrip4iOS recognises `DX01` identifiers as Stelo and `DX02` identifiers as ONE+. Other matching devices are shown as G7.
+The Bluetooth name is not the four-digit pairing code. xDrip4iOS recognises `DX01` identifiers as Stelo and `DX02` identifiers as ONE+. Other matching devices are shown as G7.
+
+## Connect in Coexistence Mode
+
+1. Start and pair the sensor in the app that will control it.
+2. Confirm that the other app has a current reading.
+3. In **Devices**, add a `Dexcom G7/ONE+/Stelo` CGM.
+4. Select **Coexistence Mode**.
+5. Leave the Bluetooth name empty and continue to the device screen.
+6. Select **Scan** and keep the controlling app running in the background.
+
+If CamAPS controls the sensor, see [Using xDrip4iOS with CamAPS](camAPS.md).
 
 ## Understanding the connection status
 
-Dexcom G7-family devices connect briefly when data is available and disconnect again between readings. After the first successful connection, the device shows a green **Waiting...** status with the elapsed waiting time. This is the normal state between readings.
+Dexcom G7-family sensors connect briefly when data is available and disconnect again between readings. After the first successful connection, the device shows a green **Waiting...** status with the elapsed waiting time. This is normal.
 
 **Connected** can appear only briefly while data is being received. **Connecting** means that the sensor has not yet completed its first connection since it was activated in xDrip4iOS.
 
-Do not disconnect or delete the sensor because it shows **Waiting...**. Check that the app controlling the sensor and **Home** both have a current reading if the waiting time becomes longer than the normal reading interval.
+Do not disconnect or delete the sensor because it shows **Waiting...**. Check the latest reading time on **Home** if the wait becomes longer than the normal reading interval.
 
-## Using a sensor session that is already running
+## Sensor start and status
 
-xDrip4iOS reads the current sensor age, start time, and status from the sensor. Adding it does not start a new session or restart the warm-up.
+xDrip4iOS reads the sensor start time, age, warm-up, and current status from the sensor. Adding a sensor that is already running does not restart it.
 
-Manual sensor start and stop controls are not available for this family. Start, replace, and stop the sensor through the app controlling it. The **Sensor Management** screen and the data source section at the bottom of **Home** update after xDrip4iOS receives the session information.
+Manual start and stop controls are not shown for this family. A new sensor can show **Waiting for Sensor Start** before the session begins, followed by **Warming Up**. The **Sensor Management** screen and the data source section at the bottom of **Home** update when new session information is received.
+
+In Coexistence Mode, start, replace, and stop the sensor in the app that controls it.
+
+## Bluetooth Channel
+
+**Bluetooth Channel** appears under **Developer Settings** on the device screen when Primary Mode is selected.
+
+- `Slot 2: Mobile App (Default)` is the normal choice and the validated direct xDrip4iOS connection.
+- `Slot 1: Receiver or Pump` uses the channel normally assigned to a compatible receiver or pump.
+- `Slot 3: Smart Watch` uses the factory smartwatch channel.
+
+Leave `Slot 2: Mobile App (Default)` selected unless another device already needs that channel and you understand which Dexcom channel is free. Selecting a channel used by another app or device can prevent one of them from connecting.
+
+The setting is not shown in Coexistence Mode because the other app controls the connection.
+
+## Sensor information
+
+When the current applicator was scanned, **Sensor Management** can show:
+
+- Sensor Code
+- Sensor Serial Number
+- Manufacture Date
+- Expiry Date.
+
+The device screen can also show the sensor start date, firmware, version code, sensor status, Bluetooth signal strength, battery values, and **Read Success** when available.
+
+## Calibration
+
+G7-family sensors are factory calibrated. When the sensor reports that an optional calibration is allowed, **Sensor Management** shows the calibration control.
+
+After a calibration is entered, xDrip4iOS can show whether it is queued, sent, processing, completed, or rejected. A rejection can occur because of the value, time, a duplicate entry, or a limit reported by the sensor. Wait for the current calibration to finish before entering another one.
+
+Follow the Dexcom guidance for meter checks and calibrations. The availability of the control does not mean that calibration is required.
+
+## Battery information
+
+The device screen shows **Voltage A** and **Voltage B** after the sensor provides battery data. The coloured battery symbol uses limits intended for the G7 family and is different from the G6 transmitter assessment.
+
+Select **Voltage B** to open **Battery History**. The chart begins after xDrip4iOS receives the first genuine battery reading. Gaps mean that no battery value was received during that period.
 
 ## 15-day G7 sensors
 
@@ -42,18 +109,12 @@ Some G7 products have a 15-day sensor life. When xDrip4iOS detects a compatible 
 
 Enable this only for a G7 sensor that is intended to run for 15 days. Stelo is recognised automatically. The setting changes how xDrip4iOS calculates and displays the expected sensor end. It does not extend the physical sensor session.
 
-## Device information
-
-Open the configured sensor in **Devices** to see its Bluetooth name, connection time, sensor start date, sensor status, and **Read Success** information when available.
-
-The sensor status comes from the Dexcom system. A connected Bluetooth state does not always mean that the sensor is ready to provide a glucose value. Check the sensor status and the reading time on **Home**.
-
 ## Missing readings after a short gap
 
-The device can send missing readings after it reconnects. xDrip4iOS waits briefly so that the current and missing readings can be stored in the correct order. A short delay after reconnection does not always mean that the connection has failed.
+The sensor can send missing readings after it reconnects. xDrip4iOS waits briefly so that the current and missing readings can be stored in the correct order. A short delay after reconnection does not always mean that the connection has failed.
 
-If readings remain missing, first confirm that the app controlling the sensor is still open in the background and receiving current values. Then check the configured sensor in **Devices**. Do not delete it as the first response to a short gap.
+In Coexistence Mode, first confirm that the controlling app is still receiving current values. In Primary Mode, check the selected Bluetooth channel and keep other Dexcom apps disconnected.
 
 ## Using a heartbeat instead of direct CGM
 
-`Dexcom G7/ONE+/Stelo` also appears in the **Follower Heartbeat** category. That option does not read glucose from the device. Use it only with Follower mode as described in [Follower Heartbeat devices](followerHeartbeat.md).
+`Dexcom G7/ONE+/Stelo` also appears in the **Follower Heartbeat** category. That option does not read glucose from the sensor. Use it only with Follower mode as described in [Follower Heartbeat devices](followerHeartbeat.md).

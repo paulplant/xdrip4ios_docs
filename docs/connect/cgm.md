@@ -4,7 +4,7 @@ Use the **Devices** tab to add and manage a supported CGM device in Master mode.
 
 ## Before you add a device
 
-Under **Settings > Glucose Display**, select the correct glucose unit. Under **Settings > Data Source**, select **Master** mode. Allow Bluetooth access when iOS asks. Keep the active sensor or transmitter near the iPhone.
+Under **Settings > General**, select the correct glucose unit. Under **Settings > Data Source**, select **Master** mode. Allow Bluetooth access when iOS asks. Keep the active sensor or transmitter near the iPhone.
 
 Do not add the device from the iOS Bluetooth settings. xDrip4iOS scans and connects from inside the app.
 

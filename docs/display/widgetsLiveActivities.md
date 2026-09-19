@@ -28,13 +28,15 @@ Supported detailed Live Activity layouts can show a coloured sensor noise indica
 
 Supported Live Activity layouts can also show the current Loop, CareLink pump, or CareLink SmartGuard state. The symbol and colour can indicate that the system is active, checking, suspended, disconnected, or has old data. xDrip4iOS only displays the state reported by the connected service.
 
+When IOB or COB is available, the Live Activity settings show **Show IOB/COB**. This controls the values in the Large Lock Screen layout and the CarPlay or Smart Stack **Chart** layout. These values can come from an AID source or can be estimated from recorded treatments.
+
 The Shortcuts app also includes **Restart Live Activity**. You can use this action in a personal automation if you rarely open xDrip4iOS. The action requests a restart. It does not guarantee that iOS will keep the activity active.
 
 ## CarPlay style
 
 On iOS 26 or later, a **CarPlay** section appears below the Live Activity settings when a Live Activity is enabled. Select **Style** and choose:
 
-- **Chart** shows the current glucose, trend arrow, change, and recent glucose chart. It can also show current AID information when this is available. This is the default style.
+- **Chart** shows the current glucose, trend arrow, change, and recent glucose chart. It can also show current AID, IOB, and COB information when this is available. This is the default style.
 - **Basic** uses the available space for a larger glucose value, trend arrow, and change. It does not show a chart.
 
 The preview below the setting updates when the style is changed. It does not start a Live Activity or confirm that CarPlay is currently displaying one.

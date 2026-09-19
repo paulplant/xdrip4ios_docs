@@ -17,21 +17,20 @@ Follow the release instructions in the selected firmware repository. Confirm the
 
 Turn on the flashed device. In **Devices**, add an **M5Stack** device and select `M5Stack` or `M5StickC`. Select **Connect** and wait for the display to show the current xDrip4iOS reading.
 
-## Configure display and network settings
+## Configure the display
 
 Open **Settings > Sharing and Services > M5Stack**. Available settings include:
 
 - text colour
-- up to three Wi-Fi names and passwords
 - a Bluetooth password.
 
 In the **Devices** tab, select the configured device to find its display controls. Depending on the model, these can include background colour, rotation, brightness, and other device-specific options.
 
-**Connect to Wi-Fi** sends the saved network details to compatible firmware. The M5 device decides how those details are used. xDrip4iOS still needs its Bluetooth connection to configure and update the supported display functions.
-
 M5Stack can also show its battery level and provides a **Power Off** action. M5StickC has the common display controls but does not show every M5Stack-specific option.
 
-Treat Wi-Fi and Bluetooth passwords as secrets. Do not include them in screenshots or issue reports.
+Select the M5Stack battery value to open **Battery History** after the first genuine battery reading has been stored. Select **Signal Strength** to check the live Bluetooth connection.
+
+Treat the Bluetooth password as a secret. Do not include it in screenshots or issue reports.
 
 ## If it does not connect
 

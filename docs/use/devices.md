@@ -26,7 +26,8 @@ Select a configured device in the **Devices** tab. The page for that device alwa
 - transmitter ID
 - battery information
 - sensor details
-- Dexcom G6 connection mode and Bluetooth channel
+- Dexcom connection mode and Bluetooth channel
+- Bluetooth signal strength
 - the percentage of expected readings received
 - Libre calibration options
 - device-specific M5Stack controls
@@ -34,7 +35,28 @@ Select a configured device in the **Devices** tab. The page for that device alwa
 
 An unavailable control can indicate that the device is connected, that another CGM is active, that an NFC scan is required, or that the selected family does not support the function.
 
-Compatible EmaLink and OrangeLink devices added as a **Libre/Generic** Follower Heartbeat can show a battery level. The row is hidden when the device does not provide a supported battery value.
+Compatible heartbeat and display devices can show a battery level. The row is hidden when the device does not provide a supported value.
+
+## Signal Strength
+
+Select **Signal Strength** on a device screen to check the Bluetooth reception measured by the iPhone. The value is shown in dBm with a scale from weak to strong.
+
+Devices that stay connected show a live chart for the last two minutes. New measurements are added about once per second while the screen is open and the device is connected.
+
+Dexcom devices connect only briefly for each reading. Their screen shows the latest measurement and its age instead of a continuous chart.
+
+Use this screen when checking the effect of distance, body position, a case, or nearby interference. Signal strength can help explain a Bluetooth problem, but it does not show whether a glucose value is accurate.
+
+## Battery History
+
+Supported devices save genuine battery readings and provide a **Battery History** chart.
+
+- For Dexcom G6 and G7-family devices, select **Voltage B**.
+- For a compatible heartbeat, MiaoMiao, Bubble, or M5Stack device, select its battery value when the row shows a disclosure arrow.
+
+The available range depends on how long battery readings have been stored. It can include 3, 7, or 12 days and the recorded device lifetime. Gaps show periods when no battery value was received.
+
+For a newly added device, the chart can show **No battery history** until the next genuine battery reading arrives. A battery symbol is a quick status indicator. Open the chart to review the change over time.
 
 ## Connection status and wait time
 

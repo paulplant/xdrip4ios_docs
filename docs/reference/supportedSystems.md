@@ -7,7 +7,7 @@ xDrip4iOS supports the systems listed below. Regional sensor revisions and manuf
 | App choice | Supported family | Important requirement |
 | --- | --- | --- |
 | Dexcom G6/ONE | Dexcom G6, ONE, and compatible Anubis G6 transmitters | A six-character transmitter ID. Use Coexistence Mode or separate Bluetooth channels when another app or device also connects |
-| Dexcom G7/ONE+/Stelo | Dexcom G7, ONE+, and Stelo | The app controlling the sensor, such as Dexcom or CamAPS, must remain running and receive readings |
+| Dexcom G7/ONE+/Stelo | Dexcom G7, ONE+, and Stelo | Choose Primary Mode for a direct connection or Coexistence Mode when another app controls the connection |
 | Libre 2/2+ EU | European Libre 2 and Libre 2 Plus variants recognised by the app | NFC scan and Bluetooth permission disabled for the Libre app |
 | MiaoMiao | Libre sensors supported by the attached MiaoMiao transmitter | Charged transmitter attached to the sensor |
 | Nano/Bubble/Bubble Mini | Libre sensors supported by the attached transmitter | Charged transmitter attached to the sensor |
@@ -18,10 +18,10 @@ xDrip4iOS supports the systems listed below. Regional sensor revisions and manuf
 
 ### Important connection differences
 
-- Dexcom G6 and ONE can use **Primary mode** or **Coexistence Mode**. Coexistence is intended for use with the official Dexcom app or CamAPS.
-- In Primary mode, **Bluetooth Channel** normally uses `Mobile App (Default)`. The experimental `Receiver or Pump` choice leaves the Mobile App channel available for another phone app but can prevent a receiver or pump from connecting.
+- Dexcom G6 and ONE can use **Primary Mode** or **Coexistence Mode**. Coexistence is intended for use with the official Dexcom app or CamAPS.
+- In Primary Mode, **Bluetooth Channel** normally uses `Slot 2: Mobile App (Default)`. `Slot 1: Receiver or Pump` leaves the Mobile App channel available for another phone app but can prevent a receiver or pump from connecting.
 - Compatible Anubis G6 transmitters are recognised automatically and can provide additional transmitter information, a shorter warm-up, extended transmitter life, transmitter reset controls, and an experimental third Bluetooth channel.
-- Dexcom G7, ONE+, and Stelo readings are received through the app that controls the sensor connection. This is normally the official Dexcom app. It can also be CamAPS for a supported Dexcom G7 sensor. The controlling app must remain running and receiving readings.
+- Dexcom G7, ONE+, and Stelo can use **Primary Mode** or **Coexistence Mode**. Primary Mode requires the four-digit pairing code from the current applicator. Coexistence Mode relies on the official Dexcom app, CamAPS, or another compatible app and that app must remain running and receiving readings.
 - Libre 2 and Libre 2 Plus EU connect after an NFC scan. Bluetooth permission for the Libre app must remain disabled.
 - MiaoMiao, Bubble, and Nano devices are separate rechargeable transmitters attached to a compatible Libre sensor.
 - Medtrum Nano Pump is the Medtrum patch pump connection. It is not a separate CGM named Nano. The EasyPatch app must remain running and receiving readings.

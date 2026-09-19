@@ -19,7 +19,9 @@ Select **Log In** and sign in on Medtronic's page. Complete any additional steps
 
 xDrip4iOS keeps the CareLink session active and renews it when possible. Medtronic can still require another login later.
 
-The screen shows the connection state and any available account, patient, pump, sensor, and recent activity information. Return to **Home** and confirm that the reading time is current.
+The screen shows the connection state and any available account, patient, sensor, pump, and recent activity information. A pump section appears only when CareLink reports that a pump is present. Sensor-only accounts are supported and do not show a false disconnected pump state.
+
+Return to **Home** and confirm that the reading time is current.
 
 Use **Refresh** at the top of the CareLink screen to request a new check. Use **Log Out** when the account must be disconnected from xDrip4iOS.
 
@@ -33,7 +35,11 @@ The pump section on **Home** can show available information such as active insul
 
 The pump details can also show sensor time remaining and the limits reported by the pump. Coloured symbols beside the sensor and pump battery values help show when attention may be needed.
 
-CareLink or MiniMed SmartGuard status can also appear on **Home** and in the Apple Watch app. SmartGuard is shown only when CareLink reports automated delivery activity. CareLink does not provide a changing carbohydrates on board value, so COB is not shown for this source.
+CareLink or MiniMed SmartGuard status can also appear on **Home** and in the Apple Watch app. SmartGuard is shown only when CareLink reports automated delivery activity.
+
+Some accounts without a pump, including InPen accounts, can still provide IOB. xDrip4iOS shows that IOB and its freshness without presenting it as pump delivery.
+
+CareLink does not provide a changing carbohydrates on board value. When carbohydrate treatments are stored, xDrip4iOS can estimate COB locally using **Settings > General > Treatments**. See [Treatment settings](../use/treatmentSettings.md).
 
 Select **None** under **Pump & Treatments** if you only want CareLink glucose readings and do not want xDrip4iOS to import pump or treatment information.
 
@@ -63,6 +69,8 @@ CareLink requires internet access and background opportunities from iOS. Select 
 ## If CareLink does not connect
 
 Confirm the selected region and complete the login on Medtronic's page again if requested. If saved login details are incorrect, change them in the **Account** section or correct them on the login page.
+
+If a support instruction asks you to change the CareLink version, open **Advanced Settings**, enable the advanced options, and enter the exact version provided. Do not change it without a support instruction because an incorrect value can stop CareLink downloads.
 
 If the connection stops after the same Care Partner account is used in another app or on another device, use a separate follower account for xDrip4iOS and log in again. Also confirm that the intended patient is still available and selected.
 

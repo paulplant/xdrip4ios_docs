@@ -32,7 +32,7 @@ Quickly tap the red lock button to return to normal screen behaviour. This mode 
 
 ## Configure the display
 
-Open **Settings > Glucose Display > Home Screen > Screen Lock**:
+Open **Settings > General > Home Screen**:
 
 - **Chart Rotation** allows the iPhone Home screen to use its landscape chart.
 - **Lock Screen Clock** adds the clock to Clock Mode.
