@@ -88,6 +88,8 @@ When a Dexcom G6 transmitter requests two initial calibrations, the previous cal
 
 For a G7-family sensor, the screen can show whether a calibration is queued, sent, processing, completed, or rejected. Wait for the current calibration to finish before entering another one. If **Calibration not permitted** appears, the sensor is not accepting a calibration at that time.
 
+After a Dexcom warm-up finishes, Home and the Live Activity can show **Waiting for first reading…** until the transmitter sends the first glucose value. This is normally a short transition and does not mean that the sensor has restarted its warm-up.
+
 !!! warning
     Do not calibrate from another CGM value. Do not calibrate during rapid change unless the sensor manufacturer's procedure explicitly requires it. A poor calibration can affect later readings.
 
@@ -134,4 +136,4 @@ These warnings do not confirm that a glucose value is accurate or inaccurate. Ch
 
 ## Sensor lifetime on Home
 
-The sensor line near the bottom of **Home** normally shows the elapsed sensor time. Open **Settings > General > Home Screen** and enable **Prefer Sensor Countdown** to show the estimated time remaining instead. The same choice is used by the Apple Watch app. This option changes the display only. It does not extend or stop the sensor.
+The sensor line near the bottom of **Home** can show elapsed time or estimated time remaining. Open **Settings > General > Home Screen > Sensor Lifetime** and select **Elapsed** or **Remaining**. The same choice is used by the Apple Watch app. This option changes the display only. It does not extend or stop the sensor.

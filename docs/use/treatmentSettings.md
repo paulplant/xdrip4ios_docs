@@ -36,7 +36,7 @@ xDrip4iOS does not switch to a local estimate during a temporary outage from the
 
 Available IOB and COB values appear in the compact therapy area on **Home**. Select a locally calculated value to see that it is an estimate and review the setting used.
 
-Enable **Show IOB/COB** under **Settings > General > Home Screen** or **Quick Show/Hide** to add the curves to the main chart.
+Enable **Therapy** and **IOB/COB Curves** under **Settings > General > Home Screen** to add the curves to the main chart.
 
 Live Activity settings have a separate **Show IOB/COB** option. It controls the Large Lock Screen layout and the CarPlay or Smart Stack Chart layout.
 

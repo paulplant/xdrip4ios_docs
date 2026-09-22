@@ -5,7 +5,7 @@ Glucose Adjustments can change or smooth the values shown by xDrip4iOS. The orig
 !!! warning "xDrip4iOS values will be different"
     If xDrip4iOS uses a Dexcom sensor in **Coexistence Mode** or receives readings in **Follower** mode, it receives glucose values from another app or service. Enabling **Adjustment** or **Smoothing** changes the values displayed by xDrip4iOS. The values in xDrip4iOS will then differ from the original data source. This is expected.
 
-    Disable both **Adjustment** and **Smoothing** if xDrip4iOS should display the original values. You can also enable **Show Original Values** to compare the original and changed values.
+    Disable both **Adjustment** and **Smoothing** if xDrip4iOS should display the original values. You can also enable **Original Values** to compare the original and changed values.
 
     **OS-AID Share** sends unsmoothed data unless **Share Smoothed Data** is enabled. See [Glucose Adjustments and shared values](../services/osAidShare.md#glucose-adjustments-and-shared-values).
 
@@ -122,7 +122,7 @@ Under **Apply From**, select **Now** or an available period of recent history, t
 
 ## Original readings
 
-Enable **Show Original Values** in **Quick Show/Hide** or under **Settings > General > Home Screen** to compare them with the adjusted readings. You can also compare both values in **Glucose Readings**.
+Enable **Original Values** under **Settings > General > Home Screen** to compare them with the adjusted readings. You can also compare both values in **Glucose Readings**.
 
 When adjustments are active, press and hold the Glucose Adjustments button on **Home** to show the original readings temporarily.
 

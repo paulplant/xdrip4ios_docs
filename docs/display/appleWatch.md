@@ -29,7 +29,7 @@ While the Watch app is open, it repeatedly asks the paired iPhone for current da
 
 The Watch app does not connect directly to the CGM or an online Follower service. The iPhone must receive the reading first.
 
-When sensor information is available, the Watch app uses the **Prefer Sensor Countdown** choice from **Settings > General > Home Screen** on the iPhone. A coloured dot beside the data source can show the current sensor noise status.
+When sensor information is available, the Watch app uses the **Elapsed** or **Remaining** choice under **Settings > General > Home Screen > Sensor Lifetime** on the iPhone. A coloured dot beside the data source can show the current sensor noise status.
 
 When available, the therapy area shows insulin on board and carbohydrates on board. The values can come from an AID source or can be estimated from treatments recorded on the iPhone.
 

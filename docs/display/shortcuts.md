@@ -1,6 +1,6 @@
 # Siri, Shortcuts, and quick actions
 
-xDrip4iOS exposes an App Shortcut for the latest glucose, a Live Activity restart action, and an app-icon quick action for spoken readings.
+xDrip4iOS provides Siri and Shortcuts actions for the latest glucose and Speak Glucose. It also provides a Live Activity restart action and an app-icon quick action for spoken readings.
 
 ## Ask for the latest glucose
 
@@ -13,7 +13,13 @@ If the latest stored reading is more than seven minutes old, the response includ
 Find xDrip4iOS actions in Apple's Shortcuts app. The available actions include:
 
 - **What's my glucose level**
+- **Enable Speak Readings**
+- **Disable Speak Readings**
 - **Restart Live Activity**.
+
+The two speech actions change only the **Speak Glucose** main switch. They keep the language, interval, trend, delta, and daily schedule. They affect subsequent readings and do not immediately speak the current glucose value.
+
+These separate enable and disable actions are suitable for personal automations because running the same action again does not reverse the intended state. The daily speech schedule still applies after speech is enabled.
 
 You can use **Restart Live Activity** in a personal automation when iOS regularly ends a Live Activity. Frequent automation does not override iOS background or ActivityKit limits.
 

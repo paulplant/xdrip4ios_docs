@@ -53,7 +53,7 @@ Dexcom G6 and G7-family devices use separate battery assessments. The alarm edit
 
 When you go back after changing an alarm, xDrip4iOS asks whether to **Save** or **Discard Changes**. This prevents an accidental back gesture from losing the changes.
 
-**Large Snooze Screen** uses larger controls when an active alarm opens the snooze picker automatically. It is enabled by default. Disable it to use the standard-size picker. The normal Snooze screen opened from the Home toolbar is not changed. The same option is available under **Quick Show/Hide > Additional Items**.
+**Large Snooze Screen** uses larger controls when an active alarm opens the snooze picker automatically. It is enabled by default. Disable it to use the standard-size picker. The normal Snooze screen opened from the Home toolbar is not changed. The same option is available under **Quick Show/Hide > Alerts and Speech**.
 
 ### Not Looping
 

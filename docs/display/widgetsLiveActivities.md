@@ -30,6 +30,12 @@ Supported Live Activity layouts can also show the current Loop, CareLink pump, o
 
 When IOB or COB is available, the Live Activity settings show **Show IOB/COB**. This controls the values in the Large Lock Screen layout and the CarPlay or Smart Stack **Chart** layout. These values can come from an AID source or can be estimated from recorded treatments.
 
+## Sensor warm-up
+
+During sensor warm-up, supported Live Activity layouts show **Sensor warming up** and the expected completion time instead of a glucose value. This applies to the Lock Screen, Dynamic Island, CarPlay, and Apple Watch Smart Stack layouts.
+
+After Dexcom warm-up finishes, the Live Activity can show **Warm-up complete** and **Waiting for first reading…** until the first glucose value arrives. This short waiting period does not mean that another warm-up has started.
+
 The Shortcuts app also includes **Restart Live Activity**. You can use this action in a personal automation if you rarely open xDrip4iOS. The action requests a restart. It does not guarantee that iOS will keep the activity active.
 
 ## CarPlay style

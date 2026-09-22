@@ -28,7 +28,7 @@ These ranges can be different from the personal glucose ranges configured for th
 - **Time in Range** shows the percentage of readings below, within, and above the standard range.
 - **Time in Tight Range** uses the narrower upper limit of 140 mg/dL or 7.8 mmol/L.
 - **Average** shows the average of the stored readings.
-- **GMI** estimates an HbA1c value from the average CGM glucose. It is not a laboratory HbA1c result.
+- **GMI** estimates a value from the average CGM glucose. It is not a laboratory HbA1c result. It is shown as a percentage or in `mmol/mol`, according to **Settings > General > Statistics > GMI in mmols/mol**.
 - **CV** shows how much glucose values vary. A lower value normally means that glucose has been more stable.
 - **Data Capture** shows how much of the expected CGM history is available. The calculation expects one reading every five minutes.
 
@@ -38,11 +38,11 @@ The target markers beside CV and Data Capture provide a simple reference. They d
 
 **Trends** helps show when patterns repeat and how results have changed during the selected period.
 
-![The Statistics trends for a 30 day period](../img/screenshots/source/statisticsTrends.png)
-
 The **Ambulatory Glucose Profile** combines readings from many days into one 24-hour chart. The middle line shows the usual glucose value at each time of day. The shaded areas show how widely readings varied. This can make repeated overnight, morning, afternoon, or evening patterns easier to see.
 
-The trend charts show changes in estimated A1C and CV over time. When compatible Nightscout or CareLink treatment history is available, they can also show changes in average total daily insulin and average carbohydrates. CareLink total daily insulin includes recorded boluses and automatic basal deliveries.
+The trend charts show changes in GMI and CV over time. The GMI chart uses the selected GMI unit and identifies the interval represented by each point. It uses daily points for 7 days, 3-day points for 30 days, and weekly points for longer periods.
+
+When compatible Nightscout or CareLink treatment history is available, the trends can also show changes in average total daily insulin and average carbohydrates. CareLink total daily insulin includes recorded boluses and automatic basal deliveries.
 
 The **Daily Pattern** shows the percentage in the selected clinical range for each day. The average for the selected period appears beside the section title. The dashed line marks the 70% clinical target.
 
@@ -66,7 +66,7 @@ Choose:
 
 ![The report options before generating a report](../img/screenshots/source/generateReportOptions.png)
 
-Select **Generate Report** to create the PDF. Review the preview, then use the share button to save, print, or send it.
+Select **Generate Report** to create the PDF. The report uses the GMI unit selected when generation starts. Review the preview, then use the share button to save, print, or send it.
 
 ![A generated report ready to review and share](../img/screenshots/source/reportPreview.png)
 

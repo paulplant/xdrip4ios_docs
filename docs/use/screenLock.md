@@ -32,9 +32,10 @@ Quickly tap the red lock button to return to normal screen behaviour. This mode 
 
 ## Configure the display
 
-Open **Settings > General > Home Screen**:
+Open **Settings > General > Home Screen** and enable **Chart Rotation** to allow the iPhone Home screen to use its landscape chart.
 
-- **Chart Rotation** allows the iPhone Home screen to use its landscape chart.
+Then open **Screen Lock**:
+
 - **Lock Screen Clock** adds the clock to Clock Mode.
 - **Lock Screen Dimming** selects Disabled, Dimmed, Dark, or Very Dark.
 

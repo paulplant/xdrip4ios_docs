@@ -10,7 +10,7 @@ The first setup screen asks how xDrip4iOS should connect.
 
 Use **Primary Mode** when xDrip4iOS should connect directly to the sensor and receive the readings itself.
 
-Another app must not use the same Dexcom connection. Force-close that app or remove its Bluetooth permission before connecting. This includes the Dexcom app and CamAPS.
+Another app or device must not use the same Bluetooth channel. When using the default Mobile App channel, force-close the Dexcom app, CamAPS, or any other app already connected to the sensor before xDrip4iOS makes its first connection. See [Bluetooth Channel](#bluetooth-channel) if another app or device must remain connected on a different channel.
 
 Primary Mode requires the four-digit pairing code from the current applicator. Keep the applicator until xDrip4iOS has connected successfully.
 
@@ -68,15 +68,19 @@ In Coexistence Mode, start, replace, and stop the sensor in the app that control
 
 ## Bluetooth Channel
 
-**Bluetooth Channel** appears under **Developer Settings** on the device screen when Primary Mode is selected.
+Open the current sensor under **Devices**. **Bluetooth Channel** appears near the bottom of the device screen when **Primary Mode** is selected. It is also available while adding a sensor in Primary Mode.
 
-- `Slot 2: Mobile App (Default)` is the normal choice and the validated direct xDrip4iOS connection.
-- `Slot 1: Receiver or Pump` uses the channel normally assigned to a compatible receiver or pump.
-- `Slot 3: Smart Watch` uses the factory smartwatch channel.
+The sensor provides separate Bluetooth channels for different types of app or device. In Primary Mode, xDrip4iOS connects directly through the selected channel. Another app or device using the same channel can prevent xDrip4iOS from connecting.
 
-Leave `Slot 2: Mobile App (Default)` selected unless another device already needs that channel and you understand which Dexcom channel is free. Selecting a channel used by another app or device can prevent one of them from connecting.
+- `Slot 2: Mobile App (Default)` is the normal phone-app channel. This is the default and the validated direct xDrip4iOS connection.
+- `Slot 1: Receiver or Pump` uses the channel normally assigned to a Dexcom receiver or compatible pump. Do not select it if a receiver or pump needs that channel.
+- `Slot 3: Smart Watch` uses the channel intended for a directly connected smartwatch. Do not select it if a watch needs that channel.
 
-The setting is not shown in Coexistence Mode because the other app controls the connection.
+Leave `Slot 2: Mobile App (Default)` selected for a normal xDrip4iOS setup. Select another channel only when the Mobile App channel must remain available for another app and you know that the selected receiver, pump, or smartwatch channel is free.
+
+Changing the channel makes xDrip4iOS disconnect and reconnect using the new selection. A short interruption is normal. If readings do not resume, check that another app or device is not using the selected channel. Return to `Slot 2: Mobile App (Default)` if there is no specific reason to use another channel.
+
+**Bluetooth Channel** is not shown in Coexistence Mode. The other app controls the sensor connection in that mode, so xDrip4iOS does not select or use a separate channel.
 
 ## Sensor information
 
@@ -113,7 +117,7 @@ Enable this only for a G7 sensor that is intended to run for 15 days. Stelo is r
 
 The sensor can send missing readings after it reconnects. xDrip4iOS waits briefly so that the current and missing readings can be stored in the correct order. A short delay after reconnection does not always mean that the connection has failed.
 
-In Coexistence Mode, first confirm that the controlling app is still receiving current values. In Primary Mode, check the selected Bluetooth channel and keep other Dexcom apps disconnected.
+In Coexistence Mode, first confirm that the controlling app is still receiving current values. In Primary Mode, check the selected Bluetooth channel. Keep another Dexcom app disconnected unless it has been deliberately left on a different free channel.
 
 ## Using a heartbeat instead of direct CGM
 

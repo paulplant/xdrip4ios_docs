@@ -117,6 +117,12 @@ Select **Voltage B** to open **Battery History**. The chart begins after the fir
 
 The **Battery Low (G6)** alarm uses the G6 transmitter battery setting. This is separate from the G7 battery alarm.
 
+## Transmitter dates
+
+The G6 device screen groups the transmitter dates before the sensor and firmware information. **Transmitter Expires** has a green indicator when more than 10 days remain, yellow during the final 10 days, and red after the displayed date has passed.
+
+Select **Transmitter Expires** to see the start date, expiry date, and estimated time remaining. The separate transmitter start row is hidden when this combined information is available.
+
 ## Anubis G6 transmitters
 
 An Anubis transmitter is a community-modified Dexcom G6 transmitter. It is designed to remain usable for longer and supports functions that are not available on a standard G6 transmitter.

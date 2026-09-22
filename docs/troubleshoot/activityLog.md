@@ -27,6 +27,8 @@ The Activity Log can include:
 
 The log records useful milestones and outcomes. It filters routine polling, normal between-reading Bluetooth connections, repeated healthy results, and repeated copies of the same problem. A recovery entry appears when a previously failing connection or service works again.
 
+New glucose entries show the value stored by xDrip4iOS after Glucose Adjustments and Smoothing. When that visible value differs from the original reading, the original appears in brackets as `orig`. This makes it easier to confirm why xDrip4iOS and the original data source show different values.
+
 This filtering means the Activity Log is not a list of every background action. A missing routine entry does not mean that the app was inactive.
 
 ## Understand the time shown

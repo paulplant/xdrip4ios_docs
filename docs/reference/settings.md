@@ -30,17 +30,16 @@ Account-based screens provide **Log In**. Some services require account details 
 
 ### Home Screen
 
-- allow screen rotation
-- show clock when locked
-- screen-lock dimming type
-- show mini chart
-- automatically reset the main chart to the current time
-- show original values when Glucose Adjustments are active
-- show sensor noise on the main chart
-- show available IOB and COB curves on the main chart
-- render basal data downwards from the top of the chart
-- select 3, 5, 8, 12, or 24 hours for the main chart
-- show remaining sensor lifetime instead of elapsed time.
+- show the Therapy Summary, Mini-Chart, and Statistics on Home
+- show sensor lifetime as Elapsed or Remaining
+- select a 3, 5, 8, 12, or 24-hour Time Range
+- allow Chart Rotation
+- show Original Values when Glucose Adjustments are active
+- show Sensor Noise on the main chart
+- use the Therapy master display switch
+- show IOB/COB Curves
+- place basal data at the Top or Bottom
+- configure Screen Lock.
 
 ### Glucose Ranges
 
@@ -60,7 +59,7 @@ Account-based screens provide **Log In**. Some services require account details 
 
 - show compact statistics on **Home**
 - time-in-range calculation type
-- show estimated HbA1c in mmol/mol.
+- show GMI in mmol/mol instead of a percentage.
 
 ## Alerts and Notifications
 
@@ -128,7 +127,7 @@ The CarPlay **Style** choices are **Chart** and **Basic**. **Chart** is the defa
 - warnings for smoothed data shared with OS-AID
 - OS-AID sharing disabled for the direct Medtrum Nano Pump source
 - warned opt-in sharing for Medtrum EasyView follower readings
-- spoken reading language, trend, delta, and interval
+- spoken reading language, trend, delta, interval, and daily schedule
 - M5Stack colour and Bluetooth settings.
 
 ## About xDrip4iOS
@@ -145,6 +144,8 @@ Version, build, installation date, licence information, and GitHub project.
 
 **Create Backup** can include app settings and alarms, glucose readings, and treatments. Nightscout AID history and profiles are included when glucose readings or treatments are selected. Account details can be included only in an encrypted backup.
 
+Bluetooth battery history is included with glucose readings. Bluetooth devices, Dexcom G7 pairing codes, and per-device Bluetooth Channel choices are not restored.
+
 **Restore Backup** can keep current data, fill gaps, replace the backup period, or ignore historical data. Settings, alarms, and selected account details can be restored separately when they are present in the backup.
 
 **Import Data** can import glucose readings, treatments, and Device Status from the configured Nightscout site. Device Status supplies historical AID information for Looping statistics and reports. The available import period is limited by the selected data-retention period.
@@ -153,7 +154,7 @@ Version, build, installation date, licence information, and GitHub project.
 
 ## Troubleshooting
 
-**Activity Log** opens a consumer-readable history from up to the previous 24 hours. It shows useful events, failures, and recoveries. The on-screen list can be searched. The toolbar copies or shares the complete report with additional app and configuration context. See [Activity Log](../troubleshoot/activityLog.md).
+**Activity Log** opens a consumer-readable history from up to the previous 24 hours. It shows useful events, failures, and recoveries. A glucose entry can show the original value when Glucose Adjustments or Smoothing changed it. The on-screen list can be searched. The toolbar copies or shares the complete report with additional app and configuration context. See [Activity Log](../troubleshoot/activityLog.md).
 
 ## Advanced Settings
 

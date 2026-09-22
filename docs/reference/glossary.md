@@ -50,7 +50,7 @@ An xDrip4iOS mode that downloads readings from an online source.
 
 **GMI**
 
-Glucose Management Indicator. An estimated HbA1c value calculated from average CGM glucose. It is not a laboratory HbA1c result.
+Glucose Management Indicator. A value calculated from average CGM glucose. It can be shown as a percentage or in `mmol/mol`. It is not a laboratory HbA1c result.
 
 **Heartbeat device**
 

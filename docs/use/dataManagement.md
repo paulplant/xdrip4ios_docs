@@ -20,6 +20,8 @@ Select **Create Backup**, then choose whether to include:
 
 Stored Nightscout AID history and profiles are included automatically when glucose readings or treatments are selected.
 
+Saved Bluetooth battery history is included when glucose readings are selected.
+
 Enable **Encrypt Backup** to protect the file with a password. An encrypted backup can also include account details for Nightscout, Dexcom Share, LibreLinkUp, Medtrum EasyView, CareLink, and M5Stack.
 
 Enter and confirm the password, then select **Create and Share Backup**. Save the `.xdripbackup` file in a location that will still be available if the device is lost or replaced.
@@ -40,7 +42,11 @@ Enter the password if the backup is encrypted. Review its date and contents, the
 
 App settings, alarms, and account details have separate restore controls. Account categories can be selected individually when the encrypted backup contains them.
 
+Restoring battery history does not add or activate a Bluetooth device. Device-specific Dexcom G7 pairing codes and Bluetooth Channel choices are not restored. Add the required CGM again and confirm its connection settings after moving to another device.
+
 Restoring CareLink account details restores any saved username and password, the region, and the selected patient. The username and password are optional and only pre-fill Medtronic's login page. You may still need to complete the CareLink login again before readings resume.
+
+Restored CareLink treatments keep their saved patient association so that history from different followed people remains separated.
 
 !!! warning
     **Replace Backup Range** permanently replaces local history within the dates covered by the backup. Review the backup summary and date range before confirming.

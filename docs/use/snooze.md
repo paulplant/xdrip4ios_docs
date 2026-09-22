@@ -8,6 +8,8 @@ The screen lists each enabled alarm and shows whether it is currently snoozed.
 
 Enable the switch beside an alarm, choose the required time, and select **Snooze**. The row then shows when that snooze will end.
 
+The available durations are 10, 15, 30, or 45 minutes, 1, 2, 4, 6, 8, 10, or 12 hours, and 1, 2, or 7 days.
+
 Disable the switch to cancel the snooze before it expires. Snoozing one alarm does not silence the other enabled alarms.
 
 ## Snooze all alarms
@@ -28,7 +30,7 @@ An Alarm Type can allow snoozing directly from its iOS notification. Its **Defau
 
 Disable this option to use the standard-size picker for active alarms. The normal Snooze screen opened from the Home toolbar always keeps its usual layout.
 
-Change the option under **Settings > Alerts and Notifications > Alarms** or **Quick Show/Hide > Additional Items**.
+Change the option under **Settings > Alerts and Notifications > Alarms** or **Quick Show/Hide > Alerts and Speech**.
 
 Snooze does not correct the condition that caused an alarm. It does not restore a missing CGM or follower connection.
 

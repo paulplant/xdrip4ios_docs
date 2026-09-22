@@ -24,7 +24,7 @@ The main chart shows recent readings and can also show treatments, calibrations,
 - Double-tap the chart to return to the current time.
 - Spread two fingers on the chart to zoom in to a shorter period.
 - Pinch the chart inward to zoom out to a longer period.
-- Select **Main Chart Hours** under **Quick Show/Hide > Glucose Chart** to choose the range directly.
+- Select **Time Range** under **Quick Show/Hide > Chart** to choose the range directly.
 - When the chart is moved into the past, the large value changes to the latest reading visible at the chart's end time. The value is shown as historical, not current.
 
 The main chart periods are 3, 5, 8, 12, and 24 hours. A short message shows the selected period after a successful pinch.
@@ -33,11 +33,13 @@ The main chart periods are 3, 5, 8, 12, and 24 hours. A short message shows the 
 
 The mini chart provides a 1, 2, 3, or 7-day overview. Drag the highlighted time window to move the main chart through the stored history. Select the mini-chart period to choose a range, or double-tap the mini chart to move to the next period.
 
-Open **Settings > General > Home Screen** or **Quick Show/Hide** and enable **Show IOB/COB** to add available IOB and COB curves. The values can come from a connected AID source or can be estimated from recorded treatments. **Render Basal Downwards** places pump basal data at the top of the chart so that it is separated from the IOB and COB curves. Basal injection markers remain with the treatment markers.
+Open **Settings > General > Home Screen** and enable **IOB/COB Curves** to add available IOB and COB curves. The values can come from a connected AID source or can be estimated from recorded treatments. **Basal Position** selects whether pump basal data appears at the top or bottom of the chart. Basal injection markers remain with the treatment markers.
+
+The **Therapy** switch controls all therapy content on Home and the landscape chart. This includes treatment markers, basal data, IOB and COB curves, pump information, and AID status. **Therapy Summary** separately controls the pump panel and therapy status area on Home.
 
 ## Statistics
 
-When enabled, the statistics area shows low, in-range, and high percentages, average glucose, estimated A1C or GMI information, coefficient of variation, and a time-in-range chart. Use the period menu below the chart to view today, 1 day, 7 days, 30 days, or 90 days.
+When enabled, the statistics area shows low, in-range, and high percentages, average glucose, GMI, coefficient of variation, and a time-in-range chart. Use the period menu below the chart to view today, 1 day, 7 days, 30 days, or 90 days.
 
 Statistics require enough valid readings. They are informational and depend on the glucose ranges configured in **Settings**.
 
@@ -45,11 +47,11 @@ Open **Statistics** for more detailed statistics, longer periods, trend charts, 
 
 ## Landscape chart
 
-Rotate the iPhone to landscape when rotation is enabled to compare one day of glucose readings with an Ambulatory Glucose Profile from recent history. Use the comparison menu to select 3, 7, 30, 60, or 90 previous days. Select **None** to hide the comparison profile.
+Rotate the iPhone to landscape when rotation is enabled to compare one day of glucose readings with an Ambulatory Glucose Profile from recent history. **Show AGP chart data** selects 3, 7, 30, 60, or 90 previous days. Select **None** to hide the comparison profile.
 
 The header shows the selected date, average glucose, and the range summary. Swipe left or right, or select the arrows at the sides, to change the day. Double-tap the middle of the chart or the date to return to today. Double-tap the range summary to switch between Time in Range and Time in Tight Range.
 
-When compatible Nightscout AID information is available, the landscape screen also shows temporary basal changes, insulin on board, and carbohydrates on board for the selected day. A marker shows the current time when today is selected.
+When **Therapy** is enabled, the landscape screen can show treatment markers and available IOB and COB data. These values can come from compatible Nightscout AID history or can be estimated locally from recorded treatments. Temporary basal data appears when it is available. A marker shows the current time when today is selected.
 
 ## iPad layout
 
@@ -59,7 +61,7 @@ In landscape, select the expand button on the main chart to open a larger Ambula
 
 ## Sensor and data source information
 
-The progress line near the bottom of the **Home** screen shows the estimated position in the active sensor lifetime when this information is available. It normally shows elapsed time. Open **Settings > General > Home Screen** and enable **Prefer Sensor Countdown** to show the estimated time remaining instead.
+The progress line near the bottom of the **Home** screen shows the estimated position in the active sensor lifetime when this information is available. Open **Settings > General > Home Screen > Sensor Lifetime** and select **Elapsed** or **Remaining**.
 
 The section below the progress line shows the connected transmitter or follower source and indicates whether the connection has a problem. When sensor noise information is available, a coloured dot beside the data source shows its current status. Double-tap this section to open the related device or **Data Source** settings.
 
