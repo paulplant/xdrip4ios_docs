@@ -95,9 +95,11 @@ The device screen can also show the sensor start date, firmware, version code, s
 
 ## Calibration
 
-G7-family sensors are factory calibrated. When the sensor reports that an optional calibration is allowed, **Sensor Management** shows the calibration control.
+G7-family sensors are factory calibrated. xDrip4iOS supports optional calibration submission for G7 and ONE+ in both **Primary Mode** and **Coexistence Mode**, subject to the sensor permitting it. In Coexistence Mode, the other app must authenticate the connection before xDrip4iOS can send the calibration.
 
 After a calibration is entered, xDrip4iOS can show whether it is queued, sent, processing, completed, or rejected. A rejection can occur because of the value, time, a duplicate entry, or a limit reported by the sensor. Wait for the current calibration to finish before entering another one.
+
+**Stelo:** Calibration has been observed to be accepted without changing the sensor readings. An accepted or completed status is therefore not proof that Stelo has applied the calibration. Do not rely on Stelo calibration in either connection mode.
 
 Follow the Dexcom guidance for meter checks and calibrations. The availability of the control does not mean that calibration is required.
 
