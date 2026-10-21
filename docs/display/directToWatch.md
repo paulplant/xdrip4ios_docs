@@ -9,14 +9,12 @@ This is different from the normal xDrip4iOS Watch app and complications. Those d
 Direct to Watch is available for:
 
 - Dexcom G6 transmitters with an ID beginning with `8`
-- compatible Anubis G6 transmitters
+- Anubis G6 transmitters
 - the Dexcom G7 family, including G7, ONE+, and Stelo.
 
-The iPhone must be in Master mode and use the Dexcom device as its direct data source. For G6, **Algorithm Type** must show **Native algorithm**. An active sensor must already be running on the iPhone.
+The iPhone must be in Master mode and use the Dexcom device as its direct data source in either Primary or Coexistence mode. An active sensor must already be running on the iPhone.
 
-For the G7 family, xDrip4iOS must use **Primary Mode** and have the current four-digit pairing code. Direct to Watch is not available when the iPhone uses **Coexistence Mode**.
-
-Update xDrip4iOS on both the iPhone and Apple Watch before starting.
+For the G7 family, xDrip4iOS must use **Primary Mode** and be set up with the current four-digit pairing code. For the G7 family, Direct to Watch is not available when the iPhone uses **Coexistence Mode**.
 
 ## Bluetooth slots
 
@@ -24,8 +22,8 @@ The iPhone and Apple Watch need different Bluetooth slots. A slot cannot be shar
 
 - **Slot 1 · Medical device** is normally used by a receiver, pump, or another medical device.
 - **Slot 2 · Mobile app** is normally used by the iPhone app.
-- **Slot 3 · Watch** is available on the G7 family and is the recommended Watch slot.
-- **Slot 3 · Anubis extra** is available on compatible Anubis transmitters and is the recommended Watch slot.
+- **Slot 3 · Watch** is available on the G7 family and <u>is the recommended Watch slot</u>.
+- **Slot 3 · Anubis extra** is available on compatible Anubis transmitters and <u>is the recommended Watch slot</u>.
 
 Standard G6 transmitters have only the medical-device and mobile-app slots. If the iPhone uses the mobile-app slot, the Watch can connect only through the medical-device slot.
 
@@ -41,7 +39,7 @@ Standard G6 transmitters have only the medical-device and mobile-app slots. If t
 5. Open xDrip4iOS on Apple Watch.
 6. Scroll to **Direct to Watch** and accept the Bluetooth pairing request if it appears.
 
-Allow up to five minutes for the first connection. Sensor start, stop, and calibration controls remain on the iPhone.
+Allow up to five minutes for the first connection/pairing. Sensor start, stop, and calibration controls remain on the iPhone.
 
 ## Using Direct to Watch
 
@@ -49,9 +47,17 @@ The **Direct to Watch** screen on Apple Watch shows the CGM type, Bluetooth slot
 
 The Watch stores readings that it collects. When it can communicate with the iPhone again, it sends those readings back to xDrip4iOS. The app handles readings collected by both devices without creating duplicate glucose history.
 
-Select **Collected Readings** to review the readings stored on the Watch. Use **Pause Collection** when the Watch should temporarily stop connecting. Collection can also be paused from the iPhone device screen.
+Select **Collected Readings** to review the readings stored on the Watch.
 
-Triple-tap a glucose view in the Watch app to pause or resume collection quickly.
+!!! tip
+    Set up Direct to Watch and allow it to make its first connection before you need it. You can then use **Pause Collection** on the Watch or the iPhone device screen to temporarily deactivate the feature. Triple-tap a glucose view in the Watch app to pause or resume collection quickly.
+
+    Resume collection when you are away from your iPhone and want the Watch to collect readings directly. This avoids the additional Watch battery use while collection is paused.
+
+!!! note
+    Watch collection can be less reliable while the iPhone is also collecting readings. This is due to the way the transmitter manages its Bluetooth connections. Once you move away from the iPhone, Watch collection will usually become more reliable.
+
+    To test this without leaving the iPhone behind, open **Direct to Watch** on the iPhone, select **Testing and Logs**, and enable **Pause iPhone collection**. Disable it again when you finish testing.
 
 ## Watch alerts
 
@@ -81,6 +87,4 @@ Open **Direct to Watch** on Apple Watch and check its status. Confirm that:
 - the xDrip4iOS Watch app is installed
 - Watch collection is not paused.
 
-Use **Reset connection** on Apple Watch if the saved pairing must be cleared and created again. On the iPhone, **Testing and Logs** can temporarily pause iPhone Bluetooth collection, request Watch logs, and share the received log for support.
-
-Do not leave iPhone Bluetooth collection paused after testing.
+Use **Reset connection** on Apple Watch if the saved pairing must be cleared and created again. On the iPhone, **Testing and Logs** can request Watch logs and share the received log for support.
