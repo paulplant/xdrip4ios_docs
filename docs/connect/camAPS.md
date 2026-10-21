@@ -7,7 +7,7 @@ xDrip4iOS can work alongside CamAPS when CamAPS uses a supported Dexcom sensor. 
 | Dexcom G6 | Yes | Add `Dexcom G6/ONE` in **Coexistence Mode** |
 | Dexcom G7 | Yes | Add `Dexcom G7/ONE+/Stelo` in **Coexistence Mode** |
 | Libre 2 or Libre 2 Plus | No | There is no supported direct connection while CamAPS uses the sensor |
-| Libre 3 or Libre 3 Plus | No | Libre 3 is not available as a direct CGM in xDrip4iOS |
+| Libre 3 or Libre 3 Plus | No | The direct sensor connection cannot be shared while CamAPS uses it |
 
 CamAPS support for each sensor can depend on the country and the version of CamAPS. The connection rules above apply when the named sensor is supported by your CamAPS system. Check the [CamAPS compatibility information](https://camdiab.com/faq) for current availability.
 
@@ -59,7 +59,7 @@ There is no supported way for xDrip4iOS to receive direct readings from the same
 
 Do not disable Bluetooth permission for CamAPS or try to move the sensor connection to xDrip4iOS. CamAPS needs its glucose connection for the features provided by the CamAPS system.
 
-xDrip4iOS does not currently provide a CamAPS follower source. Libre 3 is not available as a direct CGM choice in xDrip4iOS.
+xDrip4iOS does not currently provide a CamAPS follower source. Libre 3 is available as a direct CGM, but it cannot use the same active sensor connection as CamAPS.
 
 ## If Dexcom readings stop in xDrip4iOS
 

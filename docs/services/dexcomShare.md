@@ -12,18 +12,18 @@ Select the US service only for an account hosted in the United States. Accounts 
 
 ## Configure upload
 
-Open **Settings > Sharing and Services > Dexcom Share** and configure:
+Open **Settings > Sharing and Services > Dexcom Share**. Enable **Dexcom Share Upload**, then complete these sections:
 
-- upload enabled
-- account name
-- password
-- transmitter or upload serial number
-- US or non-US service
-- an optional schedule.
+- **Account** contains the account name and password.
+- **Connection** contains the server region, receiver serial number, current status, and **Test Connection**.
+- **Activity** shows the last successful connection, the last successful upload, and any current account or upload error.
+- **Options** contains the optional upload schedule.
 
 The serial number is not the six-character Dexcom G6 transmitter ID and it is not a G7 pairing code. Enter the receiver or upload serial number required by the Dexcom Share account.
 
-After enabling upload, wait for a new reading and confirm that it appears in Dexcom Share with the correct time.
+Select **Test Connection** after entering the account details. This confirms that xDrip4iOS can sign in. The receiver serial number is checked when a reading is uploaded.
+
+After enabling upload, wait for a new reading. Confirm that **Last successful upload** changes and that the reading appears in Dexcom Share with the correct time.
 
 ## Upload schedule
 
@@ -37,7 +37,11 @@ Dexcom Share upload is disabled when xDrip4iOS uses Dexcom Share as its follower
 
 ## If readings do not appear
 
-Check the account name, password, serial number, and US service selection. Confirm that xDrip4iOS has received a new reading during an active upload period.
+Check the status in **Connection** and the messages in **Activity**. **Not checked** means that the account has not yet been tested. **Paused by schedule** means that the current time is outside the upload schedule.
+
+If the screen asks for configuration, enter the account name, password, and receiver serial number. If it says that the receiver is not assigned to the account, register that receiver through the official Dexcom app.
+
+Confirm that xDrip4iOS has received a new reading during an active upload period. **Last successful connection** can be current even when **Last successful upload** has not changed, so check both values.
 
 An account can accept a login but reject an unsupported serial number or product. Confirm the account and product requirements in the official Dexcom system.
 

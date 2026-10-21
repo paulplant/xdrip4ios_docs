@@ -55,6 +55,14 @@ Repeat the NFC scan only when the device screen asks for it. Repeated scans do n
 
 If CamAPS uses the Libre sensor, xDrip4iOS cannot receive direct readings from it at the same time. Do not change the CamAPS Bluetooth connection to troubleshoot xDrip4iOS. See [Using xDrip4iOS with CamAPS](../connect/camAPS.md).
 
+### Libre 3 and Libre 3 Plus
+
+Confirm that xDrip4iOS has Bluetooth permission and that the original Libre app is no longer using the sensor Bluetooth connection.
+
+For an active sensor, confirm that you selected **Connect using Receiver ID** or **Import from original app**. **Start a new sensor** is only for a sensor that has not been started. The Receiver ID must be the one used to start the current sensor.
+
+If the NFC scan is disabled because credentials are unavailable, connect the iPhone to the internet and select **Retry download**. See [Libre 3 and Libre 3 Plus](../connect/libre3.md).
+
 ### Libre with MiaoMiao or Bubble
 
 Check that the bridge is charged, firmly positioned over the sensor, and selected as the correct family in xDrip4iOS. The battery shown in **Devices** is the bridge battery, not the Libre sensor battery. See [Libre with MiaoMiao or Bubble](../connect/libreTransmitters.md).
@@ -90,6 +98,7 @@ Adding an existing sensor session does not normally require starting it again.
 - For Dexcom G6 and ONE, select **Use Without Code**, then select **Continue** and confirm the warning. xDrip4iOS reads the session already stored in the transmitter.
 - For Dexcom G7, ONE+, and Stelo, xDrip4iOS reads the running session without restarting it. Primary Mode still requires the pairing code from the current applicator. In Coexistence Mode, manage the sensor in the controlling app.
 - For Libre 2 and Libre 2 Plus EU, scan the running sensor when requested. xDrip4iOS uses its existing start time.
+- For Libre 3 and Libre 3 Plus, use the original Receiver ID or the experimental import from the original app. Do not select **Start a new sensor** for an active sensor.
 
 Do not stop a working sensor only to add it to xDrip4iOS.
 

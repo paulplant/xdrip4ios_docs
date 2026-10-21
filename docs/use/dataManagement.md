@@ -42,7 +42,7 @@ Enter the password if the backup is encrypted. Review its date and contents, the
 
 App settings, alarms, and account details have separate restore controls. Account categories can be selected individually when the encrypted backup contains them.
 
-Restoring battery history does not add or activate a Bluetooth device. Device-specific Dexcom G7 pairing codes and Bluetooth Channel choices are not restored. Add the required CGM again and confirm its connection settings after moving to another device.
+Restoring battery history does not add or activate a Bluetooth device. Device-specific Dexcom G7 pairing codes, Bluetooth Channel choices, and active Libre 3 connection details are not restored. Add the required CGM again and confirm its connection settings after moving to another device. Keep the Receiver ID for an active Libre 3 sensor separately until that sensor has ended.
 
 Restoring CareLink account details restores any saved username and password, the region, and the selected patient. The username and password are optional and only pre-fill Medtronic's login page. You may still need to complete the CareLink login again before readings resume.
 

@@ -6,6 +6,8 @@ xDrip4iOS requests permissions only when a related feature needs them. iOS can c
 
 Bluetooth permission is required for direct CGM, heartbeat, and M5Stack devices. In iOS, open **Settings > Privacy & Security > Bluetooth** and confirm that xDrip4iOS is enabled.
 
+When permission is denied or restricted, the affected device screen shows a Bluetooth permission warning instead of normal connection controls. Return to the screen after changing the iOS setting.
+
 Keep Bluetooth enabled. A direct CGM connection can fail if the device is connected to the maximum number of phones or receivers that it supports.
 
 ## Notifications
@@ -24,7 +26,7 @@ iOS makes the final decision about whether the app can remain active in the back
 
 ## NFC
 
-Libre 2 and Libre 2 Plus direct connection requires an NFC scan during setup. Hold the top of the iPhone close to the sensor and keep it still until the scan finishes.
+Libre 2, Libre 2 Plus, Libre 3, and Libre 3 Plus direct connection requires an NFC scan during setup. Hold the top of the iPhone close to the sensor and keep it still until the scan finishes.
 
 ## Apple Health, Calendar, and Contacts
 

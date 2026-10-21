@@ -10,6 +10,8 @@ The summary can show the sensor family, start date, elapsed time, remaining time
 
 Dexcom G7-family sensors and the CGM used by the Medtrum Nano Pump do not show manual start or stop controls in xDrip4iOS. The available controls for Libre and Dexcom G6/ONE depend on the connected transmitter.
 
+When xDrip4iOS knows the expected expiry, optional **Sensor Ending Soon** and **Expected Sensor Expiry** reminders are available under **Settings > Alerts and Notifications > Alarms**. See [Alerts and Notifications](alertsAndNotifications.md#sensor-expiry-reminders).
+
 ## Start a sensor
 
 If **Start Sensor** is available:

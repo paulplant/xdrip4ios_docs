@@ -9,6 +9,7 @@ Select **Master** in **Settings** and add the CGM from the **Devices** tab. Use 
 - Dexcom G6 or ONE
 - Dexcom G7, ONE+, or Stelo
 - Libre 2 or Libre 2 Plus EU
+- Libre 3 or Libre 3 Plus
 - a Libre sensor with MiaoMiao or a Bubble-family transmitter
 - Medtrum Nano Pump.
 

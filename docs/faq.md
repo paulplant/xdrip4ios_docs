@@ -2,7 +2,9 @@
 
 ## Can Apple Watch connect directly to my CGM without the iPhone?
 
-No. The xDrip4iOS Watch app displays data supplied by the paired iPhone app. The iPhone remains the Master or Follower data source.
+Yes, for supported Dexcom G6, Anubis, and G7-family devices using **Direct to Watch**. The iPhone and Watch need separate Bluetooth slots, and the setup must be completed on the iPhone first.
+
+Without Direct to Watch, the xDrip4iOS Watch app and complications display data supplied by the paired iPhone. See [Direct to Watch](display/directToWatch.md).
 
 ## Why does TestFlight say that the build will expire?
 
@@ -10,7 +12,7 @@ All TestFlight builds expire after Apple's displayed test period. The publisher 
 
 ## Can I use Libre 3 directly by Bluetooth?
 
-Libre 3 is not a direct CGM choice in xDrip4iOS. It can be viewed through a supported follower path, such as LibreLinkUp, when the official system uploads its readings.
+Yes. xDrip4iOS can start a compatible Libre 3 or Libre 3 Plus sensor directly, reconnect an active sensor with its Receiver ID, or use the experimental import from the original app. See [Libre 3 and Libre 3 Plus](connect/libre3.md).
 
 ## Can I use xDrip4iOS with CamAPS?
 

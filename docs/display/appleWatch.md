@@ -1,6 +1,6 @@
 # Apple Watch
 
-xDrip4iOS offers four ways to show glucose information on Apple Watch. They do not all update in the same way.
+xDrip4iOS offers several ways to show glucose information on Apple Watch. They do not all update in the same way.
 
 | Option | What it is | How it receives glucose |
 | --- | --- | --- |
@@ -8,6 +8,7 @@ xDrip4iOS offers four ways to show glucose information on Apple Watch. They do n
 | xDrip4iOS complication | A complication supplied by xDrip4iOS | Receives background updates from the iPhone through the xDrip4iOS Watch app |
 | Contact Image complication | Apple's Contacts complication showing an image created by xDrip4iOS | Uses the image of the xDrip4iOS contact stored on the iPhone |
 | Calendar complication | Apple's Calendar complication showing an event created by xDrip4iOS | Uses the latest event in the calendar selected in xDrip4iOS |
+| Direct to Watch | A separate Bluetooth connection for supported Dexcom devices | Receives readings directly from the CGM and later synchronises them with the iPhone |
 
 The Watch app and xDrip4iOS complications require the xDrip4iOS Watch app to be installed. The Contact Image and Calendar options use standard Apple complications.
 
@@ -27,7 +28,7 @@ Swipe between the views. The Ambulatory Glucose Profile view compares the curren
 
 While the Watch app is open, it repeatedly asks the paired iPhone for current data. Double-tap the glucose information to request another update.
 
-The Watch app does not connect directly to the CGM or an online Follower service. The iPhone must receive the reading first.
+The normal Watch app receives its data from the paired iPhone. The iPhone must receive the reading first unless [Direct to Watch](directToWatch.md) is configured for a supported Dexcom device.
 
 When sensor information is available, the Watch app uses the **Elapsed** or **Remaining** choice under **Settings > General > Home Screen > Sensor Lifetime** on the iPhone. A coloured dot beside the data source can show the current sensor noise status.
 
@@ -90,6 +91,7 @@ Use a dedicated calendar for xDrip4iOS. This keeps glucose events separate from 
 ## Which option should I use?
 
 - Open the xDrip4iOS Watch app when you want the newest available reading and chart.
+- Use Direct to Watch with a supported Dexcom device when the Watch must collect readings while the iPhone is away.
 - Use an xDrip4iOS complication for the closest connection to the Watch app and a tap that opens xDrip4iOS.
 - Use Contact Image when you prefer Apple's Contacts complication or a watch face that supports it.
 - Use Calendar when you already use a calendar complication and want a configurable text display.
@@ -104,6 +106,7 @@ You can enable more than one option. Always compare the reading time because eac
 4. Confirm that the Watch is connected to its paired iPhone.
 5. For an xDrip4iOS complication, confirm that it is on the active watch face.
 6. For Contact Image or Calendar, confirm the related iPhone permission and Apple complication selection.
+7. For Direct to Watch, open its screen on Apple Watch and check the collection and connection status.
 
 Remove and add a complication again only when it is missing or its layout is incorrect. Re-adding it does not remove Apple's update limits.
 

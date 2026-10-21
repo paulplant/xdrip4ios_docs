@@ -26,6 +26,7 @@ Most users should leave both settings disabled. More frequent data increases sto
 ## Connection and account options
 
 - **Suppress Unlock Payload** changes the Libre 2 direct connection for a specialised parallel-app setup. Do not enable it during normal Libre 2 setup.
+- **Libre 3 Credentials** shows the downloaded connection credential versions used for Libre 3 and Libre 3 Plus setup. The current version downloads automatically before the first NFC scan. Select another version only when support asks you to do so.
 - **LibreLinkUp version** changes the version sent to the LibreLinkUp service. An incorrect value can cause login problems or an account restriction. Change it only when instructed.
 - **CareLink version** changes the app version used for CareLink requests. Enter the exact `0.0.0` value supplied by support. An incorrect value can stop CareLink downloads.
 - **CAGE Max Hours** changes when imported cannula information is shown as expired. Enter `0` to restore the default.

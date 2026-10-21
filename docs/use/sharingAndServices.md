@@ -7,7 +7,7 @@ These services are separate from the current data source. A follower source brin
 ## Choose a service
 
 - [Nightscout](../services/nightscout.md) sends glucose to a Nightscout site and can also provide treatment and AID information.
-- [Dexcom Share](../services/dexcomShare.md) sends readings to the Dexcom Share service so approved followers can receive them.
+- [Dexcom Share](../services/dexcomShare.md) sends readings to the Dexcom Share service so approved followers can receive them. Its settings show account, connection, and upload activity separately.
 - [Apple Health](../services/appleHealth.md) writes glucose readings to Apple Health on the same iPhone.
 - [Calendar Share](../services/calendarShare.md) writes readings to a selected calendar. Another xDrip4iOS or Zukka user can follow the shared calendar.
 - [Contact Image](../display/contactImage.md) updates a contact photo that can be shown by Apple's Contacts complication on Apple Watch.

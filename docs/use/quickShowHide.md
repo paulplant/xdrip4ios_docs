@@ -9,8 +9,9 @@ Select **Quick Show/Hide** in the toolbar at the top of **Home** to change commo
 - **Therapy** shows or hides treatments, basal data, IOB, COB, pump information, and AID status on Home and the landscape chart.
 - **Sensor Noise** shows or hides the sensor noise bands.
 
-## Alerts and Speech
+## Glucose Display
 
+- **Live Activity** enables or disables the saved Live Activity style. It is shown in Master mode and in Follower mode when Heartbeat keep-alive is available.
 - **Speak Glucose** enables or disables spoken glucose readings.
 - **Large Snooze Screen** uses a larger snooze picker when an active alarm opens the screen automatically.
 

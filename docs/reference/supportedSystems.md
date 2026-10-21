@@ -9,6 +9,7 @@ xDrip4iOS supports the systems listed below. Regional sensor revisions and manuf
 | Dexcom G6/ONE | Dexcom G6, ONE, and compatible Anubis G6 transmitters | A six-character transmitter ID. Use Coexistence Mode or separate Bluetooth channels when another app or device also connects |
 | Dexcom G7/ONE+/Stelo | Dexcom G7, ONE+, and Stelo | Choose Primary Mode for a direct connection or Coexistence Mode when another app controls the connection |
 | Libre 2/2+ EU | European Libre 2 and Libre 2 Plus variants recognised by the app | NFC scan and Bluetooth permission disabled for the Libre app |
+| Libre 3/3 Plus | Compatible Libre 3 and Libre 3 Plus sensors | NFC scan and the Receiver ID used to start the sensor |
 | MiaoMiao | Libre sensors supported by the attached MiaoMiao transmitter | Charged transmitter attached to the sensor |
 | Nano/Bubble/Bubble Mini | Libre sensors supported by the attached transmitter | Charged transmitter attached to the sensor |
 | Medtrum Nano Pump | Medtrum TouchCare Nano CGM relayed by the pump | EasyPatch must remain active in the background and receive readings |
@@ -23,6 +24,7 @@ xDrip4iOS supports the systems listed below. Regional sensor revisions and manuf
 - Compatible Anubis G6 transmitters are recognised automatically and can provide additional transmitter information, a shorter warm-up, extended transmitter life, transmitter reset controls, and an experimental third Bluetooth channel.
 - Dexcom G7, ONE+, and Stelo can use **Primary Mode** or **Coexistence Mode**. Primary Mode requires the four-digit pairing code from the current applicator. Coexistence Mode relies on the official Dexcom app, CamAPS, or another compatible app and that app must remain running and receiving readings.
 - Libre 2 and Libre 2 Plus EU connect after an NFC scan. Bluetooth permission for the Libre app must remain disabled.
+- Libre 3 and Libre 3 Plus connect directly after an NFC scan. Start a new sensor in xDrip4iOS, reconnect an active sensor with its Receiver ID, or use the experimental import from the original app.
 - MiaoMiao, Bubble, and Nano devices are separate rechargeable transmitters attached to a compatible Libre sensor.
 - Medtrum Nano Pump is the Medtrum patch pump connection. It is not a separate CGM named Nano. The EasyPatch app must remain running and receiving readings.
 
@@ -52,9 +54,13 @@ The app can use a Libre/Generic, Dexcom G7/ONE+/Stelo, or OmniPod device as a ba
 
 The heartbeat device is optional and separate from the selected follower source. It must be added in the **Devices** tab and selected under **Settings > Data Source > Keep-alive**.
 
+## Direct to Watch
+
+Supported Dexcom G6, Anubis, and G7-family devices can provide readings directly to Apple Watch. The iPhone and Watch must use separate Bluetooth slots. G7-family devices require Primary Mode and the current pairing code. See [Direct to Watch](../display/directToWatch.md).
+
 ## Not available as direct CGM choices
 
-xDrip4iOS does not provide direct CGM choices for Dexcom G4, Libre 3, Medtronic, Eversense, or GlucoMen systems. Some of these systems can still be usable indirectly if their readings are uploaded to a supported follower service.
+xDrip4iOS does not provide direct CGM choices for Dexcom G4, Medtronic, Eversense, or GlucoMen systems. Some of these systems can still be usable indirectly if their readings are uploaded to a supported follower service.
 
 !!! note
     "Not available as a direct choice" is different from "cannot be viewed." Check whether the system can publish readings to Nightscout, LibreLinkUp, Dexcom Share, Shared Calendar, CareLink, or Medtrum EasyView.

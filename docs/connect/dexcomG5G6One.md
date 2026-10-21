@@ -129,6 +129,8 @@ An Anubis transmitter is a community-modified Dexcom G6 transmitter. It is desig
 
 xDrip4iOS recognises an Anubis transmitter automatically. The transmitter screen in **Devices** shows **Anubis** with a green checkmark. Use the normal `Dexcom G6/ONE` CGM choice when connecting it.
 
+Compatible Anubis transmitters and Dexcom G6 transmitters with an ID beginning with `8` can use [Direct to Watch](../display/directToWatch.md). The iPhone and Watch must use separate Bluetooth slots.
+
 When an Anubis transmitter is detected, xDrip4iOS provides these extra features:
 
 - The sensor warm-up time is shown as approximately 50 minutes instead of the standard two hours.

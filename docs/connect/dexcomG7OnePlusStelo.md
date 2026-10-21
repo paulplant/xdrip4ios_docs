@@ -76,6 +76,8 @@ The sensor provides separate Bluetooth channels for different types of app or de
 - `Slot 1: Receiver or Pump` uses the channel normally assigned to a Dexcom receiver or compatible pump. Do not select it if a receiver or pump needs that channel.
 - `Slot 3: Smart Watch` uses the channel intended for a directly connected smartwatch. Do not select it if a watch needs that channel.
 
+Use [Direct to Watch](../display/directToWatch.md) when xDrip4iOS on Apple Watch should collect readings directly. Direct to Watch requires Primary Mode, the current pairing code, and a different slot from the iPhone. Slot 3 is the recommended Watch slot when it is not already used by another smartwatch.
+
 Leave `Slot 2: Mobile App (Default)` selected for a normal xDrip4iOS setup. Select another channel only when the Mobile App channel must remain available for another app and you know that the selected receiver, pump, or smartwatch channel is free.
 
 Changing the channel makes xDrip4iOS disconnect and reconnect using the new selection. A short interruption is normal. If readings do not resume, check that another app or device is not using the selected channel. Return to `Slot 2: Mobile App (Default)` if there is no specific reason to use another channel.

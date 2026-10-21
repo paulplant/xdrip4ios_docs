@@ -14,9 +14,11 @@ The project provides small, medium, and large system widgets plus circular and r
 
 ## Live Activity
 
-Open **Settings > Alerts and Notifications > Notifications** and select Disabled, Minimal, Normal, or Large. The presentation can include the Lock Screen, Dynamic Island, and StandBy layouts supported by the device.
+Open **Settings > Alerts and Notifications > Notifications** and enable **Live Activity**. Under **Style**, select Minimal, Normal, or Large. The presentation can include the Lock Screen, Dynamic Island, and StandBy layouts supported by the device.
 
-When a Live Activity type is selected, the settings screen shows a preview of that layout. It uses the latest available information or example data when no current preview is available.
+Disabling the Live Activity keeps the selected style for the next time it is enabled. **Quick Show/Hide** on Home provides another Live Activity switch without changing the style.
+
+When a Live Activity is enabled, the settings screen shows a preview of the selected layout. It uses the latest available information or example data when no current preview is available.
 
 Live Activities are available in Master mode. In Follower mode, they require **Heartbeat** under **Settings > Data Source > Keep-alive** and a connected heartbeat device.
 

@@ -27,4 +27,6 @@ Heartbeat requires a connected heartbeat device. iOS decides when background wor
 
 Widgets, Apple Watch, and Live Activities update separately from the main app and can show an older value. Open xDrip4iOS first. If the main reading is current, open or re-add the affected item. Compare its reading time with **Home**.
 
+When Direct to Watch is configured, Apple Watch can collect supported Dexcom readings without the iPhone. Open **Direct to Watch** on Apple Watch and check its status before troubleshooting the normal iPhone-to-Watch update path. See [Direct to Watch](../display/directToWatch.md).
+
 In Follower mode, widgets and xDrip4iOS Watch complications show a warning when **Keep-alive** is **Disabled**. This prevents an old glucose value from looking current. Select Normal, Aggressive, Continuous, or Heartbeat under **Settings > Data Source > Keep-alive** if background display is required.

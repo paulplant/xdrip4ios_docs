@@ -26,6 +26,7 @@ nav:
           - Dexcom G6 and ONE: connect/dexcomG5G6One.md
           - Dexcom G7, ONE+ and Stelo: connect/dexcomG7OnePlusStelo.md
           - Libre 2 and Libre 2 Plus EU: connect/libre2.md
+          - Libre 3 and Libre 3 Plus: connect/libre3.md
           - Libre with MiaoMiao or Bubble: connect/libreTransmitters.md
           - Medtrum Nano Pump: connect/medtrum.md
           - Using xDrip4iOS with CamAPS: connect/camAPS.md
@@ -78,6 +79,7 @@ nav:
       - iPad use: use/ipad.md
   - Display glucose elsewhere:
       - Apple Watch: display/appleWatch.md
+      - Direct to Watch: display/directToWatch.md
       - Widgets and Live Activities: display/widgetsLiveActivities.md
       - Siri, Shortcuts, and quick actions: display/shortcuts.md
       - Other smartwatches: display/otherSmartwatches.md

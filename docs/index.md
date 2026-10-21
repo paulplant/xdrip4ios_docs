@@ -18,7 +18,7 @@ xDrip4iOS displays glucose readings from a supported continuous glucose monitori
 
 ## How xDrip4iOS works
 
-In **Master** mode, xDrip4iOS receives glucose data from a locally configured CGM device. In **Follower** mode, it receives glucose data from Nightscout, Dexcom Share, Shared Calendar, CareLink, LibreLinkUp, or Medtrum EasyView. Both modes can show the current value, trend, chart, alerts, treatments, statistics, widgets, and Apple Watch data. Some functions depend on the selected data source.
+In **Master** mode, xDrip4iOS receives glucose data from a locally configured CGM device, including compatible Libre 3 and Libre 3 Plus sensors. In **Follower** mode, it receives glucose data from Nightscout, Dexcom Share, Shared Calendar, CareLink, LibreLinkUp, or Medtrum EasyView. Both modes can show the current value, trend, chart, alerts, treatments, statistics, widgets, and Apple Watch data. Supported Dexcom devices can also use Direct to Watch. Some functions depend on the selected data source.
 
 The app stores its settings and glucose history locally on the device. **Data Management** can create an encrypted backup, restore a backup, import Nightscout history, and control how long local history is kept. Optional services, such as Nightscout, Dexcom Share upload, and Apple Health, remain disabled until you configure them.
 

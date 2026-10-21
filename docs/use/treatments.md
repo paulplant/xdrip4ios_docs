@@ -12,6 +12,8 @@ The list can show insulin, carbohydrates, exercise, blood glucose checks, basal 
 
 The filter choices are saved. If a treatment appears to be missing, check the selected date and enable its treatment type in the filter.
 
+The small bolus threshold under **Settings > General > Treatments** can identify very small boluses in the list. It does not hide or change the stored treatment. The same settings control small treatment labels and marker sizes on the Home chart. See [Treatment settings](treatmentSettings.md).
+
 On wider iPad windows, the date and filter controls appear beside the treatment list. The available treatment types and editing rules are unchanged.
 
 ## Add a treatment

@@ -6,12 +6,15 @@ Open **Settings > Sharing and Services > Speak Glucose**. Configure:
 
 - **Speak Glucose**, which is the main on or off switch
 - the speech language
+- **Speak Introduction**, which includes the opening words before the glucose value
 - whether trend is spoken
 - whether delta is spoken
 - the speech interval
 - an optional daily schedule.
 
 The interval controls how often a reading is spoken. It does not change how often xDrip4iOS receives or stores readings.
+
+Select **Preview Speak Glucose** to hear one example using the current language and speech choices. The preview does not enable automatic spoken readings or change the interval.
 
 ## Daily schedule
 

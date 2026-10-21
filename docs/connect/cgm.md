@@ -19,6 +19,7 @@ Only one CGM device can be active. If another CGM is present in **Devices**, dis
 - [Dexcom G6 and ONE](dexcomG5G6One.md)
 - [Dexcom G7, ONE+, and Stelo](dexcomG7OnePlusStelo.md)
 - [Libre 2 and Libre 2 Plus EU](libre2.md)
+- [Libre 3 and Libre 3 Plus](libre3.md)
 - [Libre with MiaoMiao or Bubble](libreTransmitters.md)
 - [Medtrum Nano Pump](medtrum.md)
 - [Using xDrip4iOS with CamAPS](camAPS.md)

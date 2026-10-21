@@ -16,8 +16,6 @@ Select the add button, select a category, and then select the device family. xDr
 
 The **CGM** category lists the direct CGM families supported by xDrip4iOS. Before scanning for Libre 2, Dexcom, or Medtrum Nano Pump, the app shows the connection requirement for that system. Read and complete it before selecting **Scan**.
 
-![The supported direct CGM device families in the Devices tab](../img/screenshots/source/devicesAddCgm.png)
-
 ## Device information
 
 Select a configured device in the **Devices** tab. The page for that device always shows its connection and a connect or disconnect action. It can also include:
@@ -27,6 +25,7 @@ Select a configured device in the **Devices** tab. The page for that device alwa
 - battery information
 - sensor details
 - Dexcom connection mode and Bluetooth channel
+- Direct to Watch settings for supported Dexcom devices
 - Bluetooth signal strength
 - the percentage of expected readings received
 - Libre calibration options
@@ -57,6 +56,8 @@ Supported devices save genuine battery readings and provide a **Battery History*
 The available range depends on how long battery readings have been stored. It can include 3, 7, or 12 days and the recorded device lifetime. Gaps show periods when no battery value was received.
 
 For a newly added device, the chart can show **No battery history** until the next genuine battery reading arrives. A battery symbol is a quick status indicator. Open the chart to review the change over time.
+
+When a saved device is no longer active, its battery history ends at the last genuine battery reading. The inactive status and red date labels distinguish stored history from a live battery value.
 
 ## Connection status and wait time
 

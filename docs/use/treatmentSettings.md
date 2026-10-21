@@ -24,6 +24,25 @@ Select how long recorded carbohydrates should remain active. The available choic
 
 The longer choices may be useful when digestion is slower, including for some people who use GLP-1 medication. This setting changes an estimate. It does not measure actual absorption.
 
+## Treatment Thresholds
+
+Treatment thresholds reduce labels for very small treatments when the chart would otherwise become difficult to read.
+
+**Small Bolus** can show all insulin labels or hide labels below 0.5 or 1.0 units. This threshold also identifies small boluses in the Treatments list.
+
+**Small Carbs** can show all carbohydrate labels or hide labels below 5 or 10 grams.
+
+Select **None** to show every treatment label. The treatments remain stored when a label is hidden.
+
+## Treatment Scale
+
+**Treatment Scale** changes the relative size of insulin and carbohydrate markers on the chart.
+
+- **Standard** uses the normal marker scale.
+- **Small Doses** makes differences between smaller treatments easier to see.
+
+This changes only the marker display. It does not change treatment values, IOB, COB, or reports.
+
 ## When the settings are automatic
 
 If Nightscout supplies IOB and COB from an AID system, both settings show **Automatic** and cannot be changed.

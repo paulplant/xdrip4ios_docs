@@ -13,10 +13,15 @@ An Alarm Type contains:
 - **Vibrate**
 - **Sound**, including no sound, the default iOS sound, or an included xDrip4iOS sound
 - **Override Mute**, which requests sound even when the mute switch is active
+- **Repeat Sound**, which repeats an eligible immediate alarm until it is acknowledged or snoozed
 - **Snooze Via Notification**
 - **Default Snooze Time**.
 
-Selecting a sound in the picker plays a preview. An Alarm Type cannot be deleted while an alarm still uses it. Disable it or assign a different type to those alarms first.
+The editor groups these choices under **Sound** and **Snooze**. Select **Preview Alert** to play or pause the current sound and vibration choices. Selecting a sound in the picker also plays a short preview.
+
+**Repeat Sound** is available when **Override Mute** is enabled and an xDrip4iOS sound is selected. Vibration also repeats when **Vibrate** is enabled. Missed Reading, sensor expiry, and sensor or transmitter failure alerts play once even when their Alarm Type has Repeat Sound enabled.
+
+An Alarm Type cannot be deleted while an alarm still uses it. Disable it or assign a different type to those alarms first.
 
 **Override Mute** still depends on iOS allowing the app and audio session to run. Test it on the device instead of assuming that it will always override every system state.
 
@@ -37,6 +42,8 @@ Alarms can cover:
 - calibration reminder
 - transmitter battery, when supported
 - sensor or transmitter failure
+- sensor ending soon
+- expected sensor expiry
 - iPhone battery.
 
 Each alarm has a start time, trigger value or rate where applicable, and Alarm Type. Add more than one alarm when different times of day need different behaviour. Disable an alarm instead of deleting it when you may need it later.
@@ -48,6 +55,14 @@ Some alarms are event-based and do not use a daily schedule. They have one all-d
 Disabling an alarm disables the complete alarm group. Deleting a later scheduled entry removes only that part of the schedule.
 
 The low iPhone battery alarm is not shown while the iPhone is charging.
+
+### Sensor expiry reminders
+
+**Sensor Ending Soon** sends a reminder before the expected sensor expiry. Set **Hours before expiry** to a whole number from 1 to 48.
+
+**Expected Sensor Expiry** sends a reminder when the expected expiry time is reached.
+
+Both reminders are disabled by default. They work only when the current data source provides an expected sensor expiry. Assign an Alarm Type to each reminder and enable it when required. A sensor change or a changed expiry time updates the scheduled reminder.
 
 Dexcom G6 and G7-family devices use separate battery assessments. The alarm editor identifies the active setting as **Battery Low (G6)** or **Battery Low (G7)**. Changing one does not replace the saved threshold for the other family.
 
@@ -77,7 +92,8 @@ Under **Settings > Alerts and Notifications > Notifications**, configure:
 
 - whether a glucose reading appears in notifications
 - the minimum notification interval
-- Live Activity display type
+- whether the Live Activity is enabled
+- Minimal, Normal, or Large Live Activity style
 - whether available IOB and COB are shown in supported Live Activity layouts
 - a preview of the selected Live Activity layout
 - CarPlay style and preview on iOS 26 or later
@@ -85,6 +101,8 @@ Under **Settings > Alerts and Notifications > Notifications**, configure:
 - whether a badge value is multiplied by ten for mmol/L display compatibility.
 
 Live Activities are available in Master mode. In Follower mode, they are available only when **Keep-alive** is set to **Heartbeat** and a heartbeat device is connected.
+
+Disabling the Live Activity keeps the selected style. The same enable switch is available under **Quick Show/Hide** on Home.
 
 When a Live Activity is enabled on iOS 26 or later, the **CarPlay** section provides **Chart** and **Basic** styles. **Chart** includes the recent glucose chart. **Basic** shows a larger glucose value without the chart. The selected style can also affect the Apple Watch Smart Stack because Apple uses the same compact Live Activity layout for both displays.
 

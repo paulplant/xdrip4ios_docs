@@ -53,13 +53,18 @@ Account-based screens provide **Log In**. Some services require account details 
 
 - Insulin Type for locally estimated IOB
 - Carb Duration for locally estimated COB
+- Small Bolus and Small Carbs thresholds for chart labels
+- Standard or Small Doses treatment marker scale
 - Automatic values when the selected online source supplies the calculation.
 
 ### Statistics
 
 - show compact statistics on **Home**
 - time-in-range calculation type
-- show GMI in mmol/mol instead of a percentage.
+- select GMI or Estimated HbA1c for Home and Statistics
+- show the selected estimate in mmol/mol instead of a percentage.
+
+Clinical PDF reports always use GMI.
 
 ## Alerts and Notifications
 
@@ -67,7 +72,8 @@ Account-based screens provide **Log In**. Some services require account details 
 
 - show readings in notifications
 - notification interval
-- Live Activity type
+- enable or disable the Live Activity
+- Minimal, Normal, or Large Live Activity style
 - Show IOB/COB for supported Live Activity layouts
 - preview of the selected Live Activity layout
 - CarPlay style and preview on iOS 26 or later when a Live Activity is enabled
@@ -79,7 +85,9 @@ The CarPlay **Style** choices are **Chart** and **Basic**. **Chart** is the defa
 ### Alarms
 
 - Alarm Types
+- Alarm Type sound preview and optional Repeat Sound
 - scheduled alarms
+- Sensor Ending Soon and Expected Sensor Expiry reminders
 - use the Large Snooze Screen when an active alarm opens the snooze picker
 - Not Looping alarm when compatible Nightscout AID status is available
 - Sensor/Transmitter Failure alarm
@@ -105,10 +113,10 @@ The CarPlay **Style** choices are **Chart** and **Basic**. **Chart** is the defa
 ### Dexcom Share
 
 - enabled
-- account name and password
-- upload serial number
-- US service selection
-- upload schedule.
+- Account with account name and password
+- Connection with server region, receiver serial number, status, and connection test
+- Activity with last successful connection, last successful upload, and errors
+- optional upload schedule.
 
 ### Calendar Share
 
@@ -127,7 +135,7 @@ The CarPlay **Style** choices are **Chart** and **Basic**. **Chart** is the defa
 - warnings for smoothed data shared with OS-AID
 - OS-AID sharing disabled for the direct Medtrum Nano Pump source
 - warned opt-in sharing for Medtrum EasyView follower readings
-- spoken reading language, trend, delta, interval, and daily schedule
+- spoken reading introduction, language, trend, delta, interval, preview, and daily schedule
 - M5Stack colour and Bluetooth settings.
 
 ## About xDrip4iOS
@@ -144,7 +152,7 @@ Version, build, installation date, licence information, and GitHub project.
 
 **Create Backup** can include app settings and alarms, glucose readings, and treatments. Nightscout AID history and profiles are included when glucose readings or treatments are selected. Account details can be included only in an encrypted backup.
 
-Bluetooth battery history is included with glucose readings. Bluetooth devices, Dexcom G7 pairing codes, and per-device Bluetooth Channel choices are not restored.
+Bluetooth battery history is included with glucose readings. Bluetooth devices, Dexcom G7 pairing codes, per-device Bluetooth Channel choices, and active Libre 3 connection details are not restored.
 
 **Restore Backup** can keep current data, fill gaps, replace the backup period, or ignore historical data. Settings, alarms, and selected account details can be restored separately when they are present in the backup.
 
@@ -158,4 +166,4 @@ Bluetooth battery history is included with glucose readings. Bluetooth devices, 
 
 ## Advanced Settings
 
-Advanced settings can include Issue Report, support logging, sensor unlock data, LibreLinkUp and CareLink versions, maximum carbohydrate hours, StandBy display, frequent Nightscout or Apple Health readings, and online-help translation. Change an advanced setting only when its feature guide or a support instruction tells you to do so.
+Advanced settings can include Issue Report, support logging, sensor unlock data, Libre 3 Credentials, LibreLinkUp and CareLink versions, maximum carbohydrate hours, StandBy display, frequent Nightscout or Apple Health readings, and online-help translation. Change an advanced setting only when its feature guide or a support instruction tells you to do so.

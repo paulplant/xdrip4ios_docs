@@ -43,6 +43,6 @@ iOS controls background operation, so no option can guarantee that every reading
 
 ## Direct and cloud paths are different
 
-A sensor can work through a Follower service even when xDrip4iOS cannot connect to it directly. For example, xDrip4iOS can download Libre 3 readings from LibreLinkUp, but it cannot connect directly to a Libre 3 sensor.
+A supported sensor can sometimes use either a direct connection or a Follower service. For example, xDrip4iOS can connect directly to a compatible Libre 3 sensor or download readings from LibreLinkUp. These are separate setups. Do not configure both for the same sensor in xDrip4iOS.
 
 If you use CamAPS, the sensor determines whether xDrip4iOS can receive readings at the same time. Supported Dexcom sensors can work with both apps. Libre 2 and Libre 3 sensors cannot provide direct readings to xDrip4iOS while CamAPS is using them. See [Using xDrip4iOS with CamAPS](../connect/camAPS.md).
