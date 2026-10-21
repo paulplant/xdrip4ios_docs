@@ -85,6 +85,7 @@ nav:
       - Other smartwatches: display/otherSmartwatches.md
   - Install and maintain:
       - TestFlight: install/testflight.md
+      - Browser build with Fastlane: install/browserBuild.md
       - Build from source: install/build.md
       - Personal TestFlight: install/personalTestFlight.md
       - Update and back up: install/update.md

@@ -8,6 +8,12 @@ A TestFlight build is signed and managed by the person or team that publishes it
 
 Continue with [TestFlight](testflight.md) if you already have an invitation.
 
+## Browser build with Fastlane
+
+A browser build uses GitHub Actions and Fastlane to build xDrip4iOS and upload it to your own App Store Connect account. It requires a paid Apple Developer Program membership but does not require a Mac.
+
+Continue with [Browser build with Fastlane](browserBuild.md).
+
 ## Build from source
 
 Building requires a Mac, a compatible Xcode version, an Apple ID, and the ability to configure unique signing identifiers. A free Apple developer account can install a development build for a limited signing period. A paid Apple Developer Program membership provides longer-lived signing and TestFlight capabilities.
